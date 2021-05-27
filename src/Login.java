@@ -28,9 +28,9 @@ public class Login extends javax.swing.JFrame {
 
         btningresar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
-        fieldUsuario = new javax.swing.JTextField();
+        fieldUsuarioAUTI = new javax.swing.JTextField();
         lblTituloAutenticacion = new javax.swing.JLabel();
-        fieldContrasena = new javax.swing.JTextField();
+        fieldContrasenaAUTI = new javax.swing.JTextField();
         lblUsuario = new javax.swing.JLabel();
         lblContrasena = new javax.swing.JLabel();
         lblimagenlibros = new javax.swing.JLabel();
@@ -55,17 +55,17 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        fieldUsuario.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        fieldUsuario.addActionListener(new java.awt.event.ActionListener() {
+        fieldUsuarioAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        fieldUsuarioAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldUsuarioActionPerformed(evt);
+                fieldUsuarioAUTIActionPerformed(evt);
             }
         });
 
         lblTituloAutenticacion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTituloAutenticacion.setText("AUTENTICACIÓN SISTEMA BIBLIOTECA");
 
-        fieldContrasena.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        fieldContrasenaAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         lblUsuario.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblUsuario.setText("USUARIO:");
@@ -93,8 +93,8 @@ public class Login extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(fieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(43, 43, 43)
                                 .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -113,19 +113,17 @@ public class Login extends javax.swing.JFrame {
                         .addGap(62, 62, 62)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblUsuario)
-                            .addComponent(fieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblContrasena)
-                            .addComponent(fieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btningresar)
-                            .addComponent(btnsalir))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblimagenlibros)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnsalir)))
+                    .addComponent(lblimagenlibros))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -139,9 +137,9 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnsalirActionPerformed
 
-    private void fieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldUsuarioActionPerformed
+    private void fieldUsuarioAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldUsuarioAUTIActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldUsuarioActionPerformed
+    }//GEN-LAST:event_fieldUsuarioAUTIActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,8 +179,8 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btningresar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JTextField fieldContrasena;
-    private javax.swing.JTextField fieldUsuario;
+    private javax.swing.JTextField fieldContrasenaAUTI;
+    private javax.swing.JTextField fieldUsuarioAUTI;
     private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblTituloAutenticacion;
     private javax.swing.JLabel lblUsuario;
