@@ -98,7 +98,7 @@ public class FormVenderLibros extends javax.swing.JFrame {
         
         if(resp==JOptionPane.YES_OPTION)
         {
-            System.exit(0);
+            this.dispose();
         }
     }
 
