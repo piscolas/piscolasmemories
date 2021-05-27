@@ -17,8 +17,8 @@ public class SistemaBiblioteca {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        //EDITADO POR EL BENJA
-        System.out.println("123");
+        //EDITADO POR EL TOMI
+        System.out.println("69");
     }
     
 }

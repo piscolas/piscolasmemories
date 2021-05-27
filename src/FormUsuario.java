@@ -83,7 +83,7 @@ public class FormUsuario extends javax.swing.JFrame {
             Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
                         .addComponent(lblNombreCompleto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -105,8 +105,8 @@ public class FormUsuario extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblRepContrasenaMU)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldRepContrasenaMU, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addComponent(fieldRepContrasenaMU, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Panel1MantenedorUsuariosLayout.setVerticalGroup(
             Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,15 +150,15 @@ public class FormUsuario extends javax.swing.JFrame {
         Panel2MantenedorUsuarioLayout.setHorizontalGroup(
             Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnIngresarMU)
                 .addGap(18, 18, 18)
                 .addComponent(btnModificarMU)
-                .addGap(10, 10, 10)
+                .addGap(18, 18, 18)
                 .addComponent(btnEliminarMU)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btnCancelarMU)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(169, 169, 169))
         );
         Panel2MantenedorUsuarioLayout.setVerticalGroup(
             Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,6 +189,11 @@ public class FormUsuario extends javax.swing.JFrame {
         jLabel1.setText("LISTADO DE USUARIOS (26)");
 
         jButton1.setText("Exportar a Excel");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Panel3MantenedorUsuarioLayout = new javax.swing.GroupLayout(Panel3MantenedorUsuario);
         Panel3MantenedorUsuario.setLayout(Panel3MantenedorUsuarioLayout);
@@ -263,6 +268,10 @@ public class FormUsuario extends javax.swing.JFrame {
     private void fieldRepContrasenaMUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldRepContrasenaMUActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldRepContrasenaMUActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
