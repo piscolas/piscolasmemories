@@ -30,17 +30,23 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jPasswordField2 = new javax.swing.JPasswordField();
+        btnFormUsuariosMP = new javax.swing.JButton();
+        btnFormAutoresMP = new javax.swing.JButton();
+        btnFormIdiomasMP = new javax.swing.JButton();
+        btnFormCategoriasMP = new javax.swing.JButton();
+        btnFormArrendarLibrosMP = new javax.swing.JButton();
+        btnFormLibrosMP = new javax.swing.JButton();
+        btnFormEditorialesMP = new javax.swing.JButton();
+        btnFormVenderLibrosMP = new javax.swing.JButton();
+        btnDevolverLibrosMP = new javax.swing.JButton();
+        btnSalirDelSistemaMP = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+
+        jPasswordField1.setText("jPasswordField1");
+
+        jPasswordField2.setText("jPasswordField2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("MENU PRINCIPAL DE ACCESO A MODULOS");
@@ -51,163 +57,248 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Mantenedor de Usuarios");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnFormUsuariosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormUsuariosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\equipo (1).png")); // NOI18N
+        btnFormUsuariosMP.setText("Mantenedor de Usuarios");
+        btnFormUsuariosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnFormUsuariosMPActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("Mantenedor de Autores");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnFormAutoresMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormAutoresMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\escritor.png")); // NOI18N
+        btnFormAutoresMP.setText("Mantenedor de Autores");
+        btnFormAutoresMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnFormAutoresMPActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("Mantenedor de Idiomas");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnFormIdiomasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormIdiomasMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\idiomas.png")); // NOI18N
+        btnFormIdiomasMP.setText("Mantenedor de Idiomas");
+        btnFormIdiomasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnFormIdiomasMPActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("Mantenedor de Categorias");
-
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton5.setText("Mantenedor de Editoriales");
-
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton6.setText("Mantenedor de Libros");
-
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton7.setText("Mantenedor de Idiomas");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnFormCategoriasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormCategoriasMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\contenido.png")); // NOI18N
+        btnFormCategoriasMP.setText("Mantenedor de Categorias");
+        btnFormCategoriasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnFormCategoriasMPActionPerformed(evt);
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton8.setText("Vender Libros");
-
-        jButton9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton9.setText("Devolver Libros");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnFormArrendarLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormArrendarLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\trato.png")); // NOI18N
+        btnFormArrendarLibrosMP.setText("Arrendar Libros");
+        btnFormArrendarLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btnFormArrendarLibrosMPActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton10.setText("Salir del Sistema");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btnFormLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\libros.png")); // NOI18N
+        btnFormLibrosMP.setText("Mantenedor de Libros");
+        btnFormLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnFormLibrosMPActionPerformed(evt);
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\bookshelf (2).png")); // NOI18N
+        btnFormEditorialesMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormEditorialesMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\editorial.png")); // NOI18N
+        btnFormEditorialesMP.setText("Mantenedor de Editoriales");
+        btnFormEditorialesMP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFormEditorialesMPActionPerformed(evt);
+            }
+        });
+
+        btnFormVenderLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormVenderLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\dinero.png")); // NOI18N
+        btnFormVenderLibrosMP.setText("Vender Libros");
+        btnFormVenderLibrosMP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFormVenderLibrosMPActionPerformed(evt);
+            }
+        });
+
+        btnDevolverLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnDevolverLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\leyendo.png")); // NOI18N
+        btnDevolverLibrosMP.setText("Devolver Libros");
+        btnDevolverLibrosMP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDevolverLibrosMPActionPerformed(evt);
+            }
+        });
+
+        btnSalirDelSistemaMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnSalirDelSistemaMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\salida-de-emergencia.png")); // NOI18N
+        btnSalirDelSistemaMP.setText("Salir del Sistema");
+        btnSalirDelSistemaMP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirDelSistemaMPActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\libro (1).png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFormEditorialesMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel1))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jButton5))
-                                .addGap(0, 5, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton9)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(55, 55, 55))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(31, 31, 31)
+                                        .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(33, 33, 33)
+                                        .addComponent(btnSalirDelSistemaMP)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jButton10)
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnSalirDelSistemaMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnFormEditorialesMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnFormUsuariosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormUsuariosMPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        FormUsuario menu=new FormUsuario();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormUsuariosMPActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnFormAutoresMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormAutoresMPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        FormAutor menu=new FormAutor();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormAutoresMPActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnFormIdiomasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormIdiomasMPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        FormIdiomas menu=new FormIdiomas();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormIdiomasMPActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnSalirDelSistemaMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirDelSistemaMPActionPerformed
         // TODO add your handling code here:
         cerrar();
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnSalirDelSistemaMPActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btnDevolverLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevolverLibrosMPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+        FormDevolverLibros menu=new FormDevolverLibros();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnDevolverLibrosMPActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         // TODO add your handling code here:
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnFormEditorialesMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormEditorialesMPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+        FormEditorial menu=new FormEditorial();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormEditorialesMPActionPerformed
+
+    private void btnFormArrendarLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormArrendarLibrosMPActionPerformed
+        // TODO add your handling code here:
+        FormArrendarLibros menu=new FormArrendarLibros();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormArrendarLibrosMPActionPerformed
+
+    private void btnFormCategoriasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormCategoriasMPActionPerformed
+        // TODO add your handling code here:
+        FormCategoria menu=new FormCategoria();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormCategoriasMPActionPerformed
+
+    private void btnFormLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormLibrosMPActionPerformed
+        // TODO add your handling code here:
+        FormLibros menu=new FormLibros();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormLibrosMPActionPerformed
+
+    private void btnFormVenderLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormVenderLibrosMPActionPerformed
+        // TODO add your handling code here:
+        FormVenderLibros menu=new FormVenderLibros();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnFormVenderLibrosMPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,18 +346,21 @@ public class MenuPrincipal extends javax.swing.JFrame {
         }
     }  
     
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnDevolverLibrosMP;
+    private javax.swing.JButton btnFormArrendarLibrosMP;
+    private javax.swing.JButton btnFormAutoresMP;
+    private javax.swing.JButton btnFormCategoriasMP;
+    private javax.swing.JButton btnFormEditorialesMP;
+    private javax.swing.JButton btnFormIdiomasMP;
+    private javax.swing.JButton btnFormLibrosMP;
+    private javax.swing.JButton btnFormUsuariosMP;
+    private javax.swing.JButton btnFormVenderLibrosMP;
+    private javax.swing.JButton btnSalirDelSistemaMP;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPasswordField2;
     // End of variables declaration//GEN-END:variables
 }

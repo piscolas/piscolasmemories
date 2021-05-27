@@ -1,5 +1,7 @@
 package Vistas;
 
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -50,8 +52,10 @@ public class FormUsuario extends javax.swing.JFrame {
         TablaMantenedorUsuario = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("MANTENEDOR DE USUARIOS");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
@@ -138,48 +142,25 @@ public class FormUsuario extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
+        lblMantenedorUsuarios.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblMantenedorUsuarios.setText("MANTENEDOR DE USUARIOS");
 
         btnIngresarMU.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\Ingresar\\log-in.png")); // NOI18N
         btnIngresarMU.setText("INGRESAR");
 
+        btnModificarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Modificar\\editar (3).png")); // NOI18N
         btnModificarMU.setText("MODIFICAR");
 
+        btnEliminarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Eliminar\\eliminar.png")); // NOI18N
         btnEliminarMU.setText("ELIMINAR");
 
+        btnCancelarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Cancelar\\cancelar (2).png")); // NOI18N
         btnCancelarMU.setText("CANCELAR");
         btnCancelarMU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarMUActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout Panel2MantenedorUsuarioLayout = new javax.swing.GroupLayout(Panel2MantenedorUsuario);
-        Panel2MantenedorUsuario.setLayout(Panel2MantenedorUsuarioLayout);
-        Panel2MantenedorUsuarioLayout.setHorizontalGroup(
-            Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIngresarMU)
-                .addGap(18, 18, 18)
-                .addComponent(btnModificarMU)
-                .addGap(18, 18, 18)
-                .addComponent(btnEliminarMU)
-                .addGap(18, 18, 18)
-                .addComponent(btnCancelarMU)
-                .addGap(169, 169, 169))
-        );
-        Panel2MantenedorUsuarioLayout.setVerticalGroup(
-            Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarMU)
-                    .addComponent(btnModificarMU)
-                    .addComponent(btnEliminarMU)
-                    .addComponent(btnCancelarMU))
-                .addGap(497, 497, 497))
-        );
 
         TablaMantenedorUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -197,6 +178,7 @@ public class FormUsuario extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("LISTADO DE USUARIOS (26)");
 
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\excel.png")); // NOI18N
         jButton1.setText("Exportar a Excel");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +200,7 @@ public class FormUsuario extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
-                        .addGap(57, 57, 57))))
+                        .addGap(26, 26, 26))))
         );
         Panel3MantenedorUsuarioLayout.setVerticalGroup(
             Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,39 +210,72 @@ public class FormUsuario extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jButton1))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout Panel2MantenedorUsuarioLayout = new javax.swing.GroupLayout(Panel2MantenedorUsuario);
+        Panel2MantenedorUsuario.setLayout(Panel2MantenedorUsuarioLayout);
+        Panel2MantenedorUsuarioLayout.setHorizontalGroup(
+            Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(btnIngresarMU)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnModificarMU)
+                .addGap(59, 59, 59)
+                .addComponent(btnEliminarMU)
+                .addGap(60, 60, 60)
+                .addComponent(btnCancelarMU)
+                .addGap(50, 50, 50))
+        );
+        Panel2MantenedorUsuarioLayout.setVerticalGroup(
+            Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresarMU)
+                    .addComponent(btnModificarMU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEliminarMU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCancelarMU))
+                .addGap(18, 18, 18)
+                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\equipo.png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(lblMantenedorUsuarios)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addComponent(lblMantenedorUsuarios))
-                            .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblMantenedorUsuarios)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMantenedorUsuarios)
+                    .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(18, 18, 18)
+                .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -284,6 +299,7 @@ public class FormUsuario extends javax.swing.JFrame {
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         // TODO add your handling code here:
+        cerrar();
     }//GEN-LAST:event_formWindowClosing
 
     /**
@@ -320,6 +336,20 @@ public class FormUsuario extends javax.swing.JFrame {
             }
         });
     }
+    
+    /**
+     *
+     */
+    public void cerrar()
+    {
+        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea salir del sistema?","Confirmación de Cierre",
+                JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        
+        if(resp==JOptionPane.YES_OPTION)
+        {
+            System.exit(0);
+        }
+    }  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> BoxEstadoMU;
@@ -337,6 +367,7 @@ public class FormUsuario extends javax.swing.JFrame {
     private javax.swing.JTextField fieldUsuarioMU;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblContrasenaMU;
     private javax.swing.JLabel lblEstadoMU;
