@@ -5,6 +5,8 @@
  */
 package sistemabiblioteca;
 
+import Vistas.Login;
+
 /**
  *
  * @author tomas
@@ -17,8 +19,11 @@ public class SistemaBiblioteca {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        //EDITADO POR EL TOMI
-        System.out.println("69");
+        Login login=new Login();
+        login.setVisible(true);
+        login.setLocationRelativeTo(null);
+        
+        
     }
     
 }
