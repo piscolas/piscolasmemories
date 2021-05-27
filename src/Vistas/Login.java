@@ -2,6 +2,7 @@ package Vistas;
 
 import javax.swing.JOptionPane;
 import Config.Hash;
+import Modelo.Conexión;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -153,9 +154,9 @@ public class Login extends javax.swing.JFrame {
             System.out.println(Hash.md5(fieldPasswordAUTI.getPassword().toString()));
             System.out.println(Hash.sha1(fieldPasswordAUTI.getPassword().toString()));
             
-            //BORRAR COMENTARIO CUANDO SE CREE LA CLASE Conexion
-            //Conexion con=new Conexion();
+            Conexión con=new Conexión();
             
+            //BORRAR COMENTARIO CUANDO CLASE CONEXION ESTÉ COMPLETADA
             //System.out.println(con.conectar());
             
             MenuPrincipal menu=new MenuPrincipal();
