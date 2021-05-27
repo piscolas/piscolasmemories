@@ -93,7 +93,7 @@ public class FormVenderLibros extends javax.swing.JFrame {
     
         public void cerrar()
     {
-        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea salir del sistema?","Confirmación de Cierre",
+        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea cerrar la ventana de Vender Libros?","Confirmación de Cierre",
                 JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         
         if(resp==JOptionPane.YES_OPTION)

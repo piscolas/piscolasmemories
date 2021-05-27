@@ -145,16 +145,12 @@ public class FormUsuario extends javax.swing.JFrame {
         lblMantenedorUsuarios.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblMantenedorUsuarios.setText("MANTENEDOR DE USUARIOS");
 
-        btnIngresarMU.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\Ingresar\\log-in.png")); // NOI18N
         btnIngresarMU.setText("INGRESAR");
 
-        btnModificarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Modificar\\editar (3).png")); // NOI18N
         btnModificarMU.setText("MODIFICAR");
 
-        btnEliminarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Eliminar\\eliminar.png")); // NOI18N
         btnEliminarMU.setText("ELIMINAR");
 
-        btnCancelarMU.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\Icons\\Cancelar\\cancelar (2).png")); // NOI18N
         btnCancelarMU.setText("CANCELAR");
         btnCancelarMU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +174,6 @@ public class FormUsuario extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("LISTADO DE USUARIOS (26)");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\excel.png")); // NOI18N
         jButton1.setText("Exportar a Excel");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -247,8 +242,6 @@ public class FormUsuario extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\equipo.png")); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -269,9 +262,9 @@ public class FormUsuario extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblMantenedorUsuarios)
-                    .addComponent(jLabel2))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(lblMantenedorUsuarios))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -342,12 +335,12 @@ public class FormUsuario extends javax.swing.JFrame {
      */
     public void cerrar()
     {
-        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea salir del sistema?","Confirmación de Cierre",
+        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea cerrar la ventana Usuarios?","Confirmación de Cierre",
                 JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         
         if(resp==JOptionPane.YES_OPTION)
         {
-            System.exit(0);
+            this.dispose();
         }
     }  
 

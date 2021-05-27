@@ -8,7 +8,7 @@
       <Rectangle value="[0, 0, 0, 0]"/>
     </Property>
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-      <Color id="Default Cursor"/>
+      <Color id="Cursor Por defecto"/>
     </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
@@ -54,9 +54,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblMantenedorUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblMantenedorUsuarios" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Panel1MantenedorUsuarios" min="-2" pref="100" max="-2" attributes="0"/>
@@ -242,33 +242,21 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnIngresarMU">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\tomas\Downloads\Ingresar\log-in.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="INGRESAR"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnModificarMU">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\U 2021\DISE&#xd1;O APP\SistemaBiblioteca\Icons\Modificar\editar (3).png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="MODIFICAR"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnEliminarMU">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\U 2021\DISE&#xd1;O APP\SistemaBiblioteca\Icons\Eliminar\eliminar.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="ELIMINAR"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnCancelarMU">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\U 2021\DISE&#xd1;O APP\SistemaBiblioteca\Icons\Cancelar\cancelar (2).png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="CANCELAR"/>
           </Properties>
           <Events>
@@ -344,9 +332,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\tomas\Downloads\excel.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Exportar a Excel"/>
               </Properties>
               <Events>
@@ -358,11 +343,6 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\tomas\Downloads\equipo.png"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

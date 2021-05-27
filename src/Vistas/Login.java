@@ -1,6 +1,7 @@
 package Vistas;
 
 import javax.swing.JOptionPane;
+import Config.Hash;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -34,10 +35,10 @@ public class Login extends javax.swing.JFrame {
         btnsalir = new javax.swing.JButton();
         fieldUsuarioAUTI = new javax.swing.JTextField();
         lblTituloAutenticacion = new javax.swing.JLabel();
-        fieldContrasenaAUTI = new javax.swing.JTextField();
         lblUsuario = new javax.swing.JLabel();
         lblContrasena = new javax.swing.JLabel();
         lblimagenlibros = new javax.swing.JLabel();
+        fieldPasswordAUTI = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("SISTEMA DE BIBLIOTECA MANDINGAS LTDA");
@@ -49,7 +50,6 @@ public class Login extends javax.swing.JFrame {
         });
 
         btningresar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btningresar.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\comprobado (1).png")); // NOI18N
         btningresar.setText("INGRESAR");
         btningresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +58,6 @@ public class Login extends javax.swing.JFrame {
         });
 
         btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnsalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\cerrar-sesion.png")); // NOI18N
         btnsalir.setText("SALIR");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,15 +75,17 @@ public class Login extends javax.swing.JFrame {
         lblTituloAutenticacion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTituloAutenticacion.setText("AUTENTICACIÓN SISTEMA BIBLIOTECA");
 
-        fieldContrasenaAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
         lblUsuario.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblUsuario.setText("USUARIO:");
 
         lblContrasena.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblContrasena.setText("CONTRASEÑA:");
 
-        lblimagenlibros.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\bookshelf (2).png")); // NOI18N
+        fieldPasswordAUTI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldPasswordAUTIActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -102,13 +103,13 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(btningresar))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(43, 43, 43)
-                                .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                                    .addComponent(fieldPasswordAUTI)))))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblTituloAutenticacion)))
@@ -128,7 +129,7 @@ public class Login extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblContrasena)
-                            .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldPasswordAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btningresar)
@@ -142,10 +143,26 @@ public class Login extends javax.swing.JFrame {
 
     private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         // TODO add your handling code here:
-        MenuPrincipal menu=new MenuPrincipal();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        if(fieldUsuarioAUTI.getText().equals("") || fieldPasswordAUTI.getPassword().equals(""))
+        {
+             JOptionPane.showConfirmDialog(null,"Debe ingresar los datos usuario y/o Contraseña","Error de Acceso",
+                     JOptionPane.WARNING_MESSAGE);
+             fieldUsuarioAUTI.requestFocus();
+        }else{
+        
+            System.out.println(Hash.md5(fieldPasswordAUTI.getPassword().toString()));
+            System.out.println(Hash.sha1(fieldPasswordAUTI.getPassword().toString()));
+            
+            //BORRAR COMENTARIO CUANDO SE CREE LA CLASE Conexion
+            //Conexion con=new Conexion();
+            
+            //System.out.println(con.conectar());
+            
+            MenuPrincipal menu=new MenuPrincipal();
+            menu.setVisible(true);
+            menu.setLocationRelativeTo(null);
+            this.dispose();
+        }
     }//GEN-LAST:event_btningresarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
@@ -161,6 +178,10 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         cerrar();
     }//GEN-LAST:event_formWindowClosing
+
+    private void fieldPasswordAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldPasswordAUTIActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldPasswordAUTIActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,7 +233,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btningresar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JTextField fieldContrasenaAUTI;
+    private javax.swing.JPasswordField fieldPasswordAUTI;
     private javax.swing.JTextField fieldUsuarioAUTI;
     private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblTituloAutenticacion;

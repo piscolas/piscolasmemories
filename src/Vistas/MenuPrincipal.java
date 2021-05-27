@@ -50,7 +50,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("MENU PRINCIPAL DE ACCESO A MODULOS");
-        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
@@ -58,7 +57,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormUsuariosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormUsuariosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\equipo (1).png")); // NOI18N
         btnFormUsuariosMP.setText("Mantenedor de Usuarios");
         btnFormUsuariosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,7 +65,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormAutoresMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormAutoresMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\escritor.png")); // NOI18N
         btnFormAutoresMP.setText("Mantenedor de Autores");
         btnFormAutoresMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +73,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormIdiomasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormIdiomasMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\idiomas.png")); // NOI18N
         btnFormIdiomasMP.setText("Mantenedor de Idiomas");
         btnFormIdiomasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +81,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormCategoriasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormCategoriasMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\contenido.png")); // NOI18N
         btnFormCategoriasMP.setText("Mantenedor de Categorias");
         btnFormCategoriasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +89,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormArrendarLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormArrendarLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\trato.png")); // NOI18N
         btnFormArrendarLibrosMP.setText("Arrendar Libros");
         btnFormArrendarLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +97,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\libros.png")); // NOI18N
         btnFormLibrosMP.setText("Mantenedor de Libros");
         btnFormLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +105,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormEditorialesMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormEditorialesMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\editorial.png")); // NOI18N
         btnFormEditorialesMP.setText("Mantenedor de Editoriales");
         btnFormEditorialesMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +113,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnFormVenderLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnFormVenderLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\dinero.png")); // NOI18N
         btnFormVenderLibrosMP.setText("Vender Libros");
         btnFormVenderLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,7 +121,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnDevolverLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnDevolverLibrosMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\leyendo.png")); // NOI18N
         btnDevolverLibrosMP.setText("Devolver Libros");
         btnDevolverLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,15 +129,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         btnSalirDelSistemaMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnSalirDelSistemaMP.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\salida-de-emergencia.png")); // NOI18N
         btnSalirDelSistemaMP.setText("Salir del Sistema");
         btnSalirDelSistemaMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirDelSistemaMPActionPerformed(evt);
             }
         });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomas\\Downloads\\libro (1).png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -223,7 +210,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         FormUsuario menu=new FormUsuario();
         menu.setVisible(true);
         menu.setLocationRelativeTo(null);
-        this.dispose();
+       
     }//GEN-LAST:event_btnFormUsuariosMPActionPerformed
 
     private void btnFormAutoresMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormAutoresMPActionPerformed
@@ -231,7 +218,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         FormAutor menu=new FormAutor();
         menu.setVisible(true);
         menu.setLocationRelativeTo(null);
-        this.dispose();
+        
     }//GEN-LAST:event_btnFormAutoresMPActionPerformed
 
     private void btnFormIdiomasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormIdiomasMPActionPerformed
