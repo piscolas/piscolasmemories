@@ -153,7 +153,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
                                 .addComponent(jLabel1))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -207,26 +207,26 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormUsuariosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormUsuariosMPActionPerformed
         // TODO add your handling code here:
-        FormUsuario menu=new FormUsuario();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
+        FormUsuario usu=new FormUsuario();
+        usu.setVisible(true);
+        usu.setLocationRelativeTo(null);
        
     }//GEN-LAST:event_btnFormUsuariosMPActionPerformed
 
     private void btnFormAutoresMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormAutoresMPActionPerformed
         // TODO add your handling code here:
-        FormAutor menu=new FormAutor();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
+        FormAutor autor=new FormAutor();
+        autor.setVisible(true);
+        autor.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_btnFormAutoresMPActionPerformed
 
     private void btnFormIdiomasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormIdiomasMPActionPerformed
         // TODO add your handling code here:
-        FormIdiomas menu=new FormIdiomas();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormIdiomas idioma=new FormIdiomas();
+        idioma.setVisible(true);
+        idioma.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormIdiomasMPActionPerformed
 
     private void btnSalirDelSistemaMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirDelSistemaMPActionPerformed
@@ -236,10 +236,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnDevolverLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevolverLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormDevolverLibros menu=new FormDevolverLibros();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormDevolverLibros devolverL=new FormDevolverLibros();
+        devolverL.setVisible(true);
+        devolverL.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnDevolverLibrosMPActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -249,42 +249,42 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormEditorialesMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormEditorialesMPActionPerformed
         // TODO add your handling code here:
-        FormEditorial menu=new FormEditorial();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormEditorial editorial=new FormEditorial();
+        editorial.setVisible(true);
+        editorial.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormEditorialesMPActionPerformed
 
     private void btnFormArrendarLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormArrendarLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormArrendarLibros menu=new FormArrendarLibros();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormArrendarLibros arriendo=new FormArrendarLibros();
+        arriendo.setVisible(true);
+        arriendo.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormArrendarLibrosMPActionPerformed
 
     private void btnFormCategoriasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormCategoriasMPActionPerformed
         // TODO add your handling code here:
-        FormCategoria menu=new FormCategoria();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormCategoria categoria=new FormCategoria();
+        categoria.setVisible(true);
+        categoria.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormCategoriasMPActionPerformed
 
     private void btnFormLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormLibros menu=new FormLibros();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormLibros libro=new FormLibros();
+        libro.setVisible(true);
+        libro.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormLibrosMPActionPerformed
 
     private void btnFormVenderLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormVenderLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormVenderLibros menu=new FormVenderLibros();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        this.dispose();
+        FormVenderLibros ventaLibro=new FormVenderLibros();
+        ventaLibro.setVisible(true);
+        ventaLibro.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnFormVenderLibrosMPActionPerformed
 
     /**
