@@ -18,6 +18,7 @@ public class SistemaBiblioteca {
         // TODO code application logic here
         
         //EDITADO POR EL BENJA
+        System.out.println("123");
     }
     
 }
