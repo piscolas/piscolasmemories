@@ -32,14 +32,15 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btningresar = new javax.swing.JButton();
-        btnsalir = new javax.swing.JButton();
+        btnIngresarAUTI = new javax.swing.JButton();
+        btnSalirAUTI = new javax.swing.JButton();
         fieldUsuarioAUTI = new javax.swing.JTextField();
         lblTituloAutenticacion = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         lblContrasena = new javax.swing.JLabel();
         lblimagenlibros = new javax.swing.JLabel();
-        fieldPasswordAUTI = new javax.swing.JPasswordField();
+        fieldContrasenaAUTI = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("SISTEMA DE BIBLIOTECA MANDINGAS LTDA");
@@ -50,19 +51,19 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        btningresar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btningresar.setText("INGRESAR");
-        btningresar.addActionListener(new java.awt.event.ActionListener() {
+        btnIngresarAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnIngresarAUTI.setText("INGRESAR");
+        btnIngresarAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btningresarActionPerformed(evt);
+                btnIngresarAUTIActionPerformed(evt);
             }
         });
 
-        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnsalir.setText("SALIR");
-        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+        btnSalirAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSalirAUTI.setText("SALIR");
+        btnSalirAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsalirActionPerformed(evt);
+                btnSalirAUTIActionPerformed(evt);
             }
         });
 
@@ -82,11 +83,13 @@ public class Login extends javax.swing.JFrame {
         lblContrasena.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblContrasena.setText("CONTRASEÑA:");
 
-        fieldPasswordAUTI.addActionListener(new java.awt.event.ActionListener() {
+        fieldContrasenaAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldPasswordAUTIActionPerformed(evt);
+                fieldContrasenaAUTIActionPerformed(evt);
             }
         });
+
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,64 +98,67 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblimagenlibros)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblTituloAutenticacion)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblContrasena)
-                            .addComponent(lblUsuario)
-                            .addComponent(btningresar))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(43, 43, 43)
-                                .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
-                                    .addComponent(fieldPasswordAUTI)))))
-                    .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblUsuario))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTituloAutenticacion)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(fieldContrasenaAUTI)
+                            .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(jLabel1)))))
+                .addGap(55, 55, 55))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblTituloAutenticacion)
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblUsuario)
-                            .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblContrasena)
-                            .addComponent(fieldPasswordAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(57, 57, 57)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btningresar)
-                            .addComponent(btnsalir)))
+                    .addComponent(lblTituloAutenticacion)
                     .addComponent(lblimagenlibros))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(63, 63, 63)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblUsuario)
+                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblContrasena)
+                    .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSalirAUTI)
+                    .addComponent(btnIngresarAUTI))
+                .addGap(38, 38, 38))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
+    private void btnIngresarAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAUTIActionPerformed
         // TODO add your handling code here:
-        if(fieldUsuarioAUTI.getText().equals("") || fieldPasswordAUTI.getPassword().equals(""))
+        if(fieldUsuarioAUTI.getText().equals("") || fieldContrasenaAUTI.getPassword().equals(""))
         {
              JOptionPane.showConfirmDialog(null,"Debe ingresar los datos usuario y/o Contraseña","Error de Acceso",
                      JOptionPane.WARNING_MESSAGE);
              fieldUsuarioAUTI.requestFocus();
         }else{
         
-            System.out.println(Hash.md5(fieldPasswordAUTI.getPassword().toString()));
-            System.out.println(Hash.sha1(fieldPasswordAUTI.getPassword().toString()));
+            System.out.println(Hash.md5(fieldContrasenaAUTI.getPassword().toString()));
+            System.out.println(Hash.sha1(fieldContrasenaAUTI.getPassword().toString()));
             
             Conexión con=new Conexión();
             
@@ -164,12 +170,12 @@ public class Login extends javax.swing.JFrame {
             menu.setLocationRelativeTo(null);
             this.dispose();
         }
-    }//GEN-LAST:event_btningresarActionPerformed
+    }//GEN-LAST:event_btnIngresarAUTIActionPerformed
 
-    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+    private void btnSalirAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirAUTIActionPerformed
         // TODO add your handling code here:
         cerrar();
-    }//GEN-LAST:event_btnsalirActionPerformed
+    }//GEN-LAST:event_btnSalirAUTIActionPerformed
 
     private void fieldUsuarioAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldUsuarioAUTIActionPerformed
         // TODO add your handling code here:
@@ -180,9 +186,9 @@ public class Login extends javax.swing.JFrame {
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void fieldPasswordAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldPasswordAUTIActionPerformed
+    private void fieldContrasenaAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldContrasenaAUTIActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldPasswordAUTIActionPerformed
+    }//GEN-LAST:event_fieldContrasenaAUTIActionPerformed
 
     /**
      * @param args the command line arguments
@@ -232,10 +238,11 @@ public class Login extends javax.swing.JFrame {
         
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btningresar;
-    private javax.swing.JButton btnsalir;
-    private javax.swing.JPasswordField fieldPasswordAUTI;
+    private javax.swing.JButton btnIngresarAUTI;
+    private javax.swing.JButton btnSalirAUTI;
+    private javax.swing.JPasswordField fieldContrasenaAUTI;
     private javax.swing.JTextField fieldUsuarioAUTI;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblTituloAutenticacion;
     private javax.swing.JLabel lblUsuario;

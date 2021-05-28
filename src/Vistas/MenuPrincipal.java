@@ -50,11 +50,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("MENU PRINCIPAL DE ACCESO A MODULOS");
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnFormUsuariosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormUsuariosMP.setText("Mantenedor de Usuarios");
@@ -63,6 +65,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormUsuariosMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormUsuariosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 239, 106));
 
         btnFormAutoresMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormAutoresMP.setText("Mantenedor de Autores");
@@ -71,6 +74,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormAutoresMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormAutoresMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 123, 239, 106));
 
         btnFormIdiomasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormIdiomasMP.setText("Mantenedor de Idiomas");
@@ -79,6 +83,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormIdiomasMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormIdiomasMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 235, 239, 106));
 
         btnFormCategoriasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormCategoriasMP.setText("Mantenedor de Categorias");
@@ -87,6 +92,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormCategoriasMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormCategoriasMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 347, -1, 106));
 
         btnFormArrendarLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormArrendarLibrosMP.setText("Arrendar Libros");
@@ -95,6 +101,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormArrendarLibrosMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormArrendarLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 183, 240, 80));
 
         btnFormLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormLibrosMP.setText("Mantenedor de Libros");
@@ -103,6 +110,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormLibrosMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 459, 239, 106));
 
         btnFormEditorialesMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormEditorialesMP.setText("Mantenedor de Editoriales");
@@ -111,6 +119,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormEditorialesMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormEditorialesMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 269, 239, 106));
 
         btnFormVenderLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormVenderLibrosMP.setText("Vender Libros");
@@ -119,6 +128,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormVenderLibrosMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnFormVenderLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 11, 250, 80));
 
         btnDevolverLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDevolverLibrosMP.setText("Devolver Libros");
@@ -127,6 +137,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnDevolverLibrosMPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDevolverLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 97, 250, 80));
 
         btnSalirDelSistemaMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnSalirDelSistemaMP.setText("Salir del Sistema");
@@ -135,72 +146,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnSalirDelSistemaMPActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFormEditorialesMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(31, 31, 31)
-                                        .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(33, 33, 33)
-                                        .addComponent(btnSalirDelSistemaMP)))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSalirDelSistemaMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnFormEditorialesMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        getContentPane().add(btnSalirDelSistemaMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 250, 80));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 485, -1, 226));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
