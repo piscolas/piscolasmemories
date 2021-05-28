@@ -43,6 +43,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnDevolverLibrosMP = new javax.swing.JButton();
         btnSalirDelSistemaMP = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jPasswordField1.setText("jPasswordField1");
 
@@ -101,7 +102,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormArrendarLibrosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormArrendarLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 183, 240, 80));
+        getContentPane().add(btnFormArrendarLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 183, 250, 80));
 
         btnFormLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormLibrosMP.setText("Mantenedor de Libros");
@@ -119,7 +120,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnFormEditorialesMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormEditorialesMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 269, 239, 106));
+        getContentPane().add(btnFormEditorialesMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, 239, 106));
 
         btnFormVenderLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFormVenderLibrosMP.setText("Vender Libros");
@@ -146,8 +147,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 btnSalirDelSistemaMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalirDelSistemaMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 250, 80));
+        getContentPane().add(btnSalirDelSistemaMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, 240, 80));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 485, -1, 226));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\iconos tomas\\libro (1).png")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -294,6 +298,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnFormVenderLibrosMP;
     private javax.swing.JButton btnSalirDelSistemaMP;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     // End of variables declaration//GEN-END:variables
