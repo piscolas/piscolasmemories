@@ -9,7 +9,6 @@ import Modelo.Conexión;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author tomas
@@ -150,22 +149,20 @@ public class Login extends javax.swing.JFrame {
 
     private void btnIngresarAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAUTIActionPerformed
         // TODO add your handling code here:
-        if(fieldUsuarioAUTI.getText().equals("") || fieldContrasenaAUTI.getPassword().equals(""))
-        {
-             JOptionPane.showConfirmDialog(null,"Debe ingresar los datos usuario y/o Contraseña","Error de Acceso",
-                     JOptionPane.WARNING_MESSAGE);
-             fieldUsuarioAUTI.requestFocus();
-        }else{
-        
+        if (fieldUsuarioAUTI.getText().equals("") || fieldContrasenaAUTI.getPassword().equals("")) {
+            JOptionPane.showConfirmDialog(null, "Debe ingresar los datos usuario y/o Contraseña", "Error de Acceso",
+                    JOptionPane.WARNING_MESSAGE);
+            fieldUsuarioAUTI.requestFocus();
+        } else {
+
             System.out.println(Hash.md5(fieldContrasenaAUTI.getPassword().toString()));
             System.out.println(Hash.sha1(fieldContrasenaAUTI.getPassword().toString()));
-            
-            Conexión con=new Conexión();
-            
-            //BORRAR COMENTARIO CUANDO CLASE CONEXION ESTÉ COMPLETADA
-            //System.out.println(con.conectar());
-            
-            MenuPrincipal menu=new MenuPrincipal();
+
+            Conexión con = new Conexión();
+
+            System.out.println(con.conectar());
+
+            MenuPrincipal menu = new MenuPrincipal();
             menu.setVisible(true);
             menu.setLocationRelativeTo(null);
             this.dispose();
@@ -224,18 +221,16 @@ public class Login extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void cerrar()
-    {
-        int resp=JOptionPane.showConfirmDialog(null,"Esta seguro/a que desea salir del sistema","Confirmación de Cierre",
-                JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
-        
-        if(resp==JOptionPane.YES_OPTION)
-        {
+
+    public void cerrar() {
+        int resp = JOptionPane.showConfirmDialog(null, "Esta seguro/a que desea salir del sistema", "Confirmación de Cierre",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+        if (resp == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
-    }    
-        
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresarAUTI;
