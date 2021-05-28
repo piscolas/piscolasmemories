@@ -56,7 +56,6 @@ public class FormIdiomas extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre Idioma :");
 
-        jBtnINGRESAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/disquete.png"))); // NOI18N
         jBtnINGRESAR.setText("INGRESAR");
         jBtnINGRESAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,10 +63,13 @@ public class FormIdiomas extends javax.swing.JFrame {
             }
         });
 
-        jBtnBUSCAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/browse.png"))); // NOI18N
         jBtnBUSCAR.setText("BUSCAR");
+        jBtnBUSCAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnBUSCARActionPerformed(evt);
+            }
+        });
 
-        jBtnELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar (5).png"))); // NOI18N
         jBtnELIMINAR.setText("ELIMINAR");
         jBtnELIMINAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +110,7 @@ public class FormIdiomas extends javax.swing.JFrame {
                 .addComponent(jBtnBUSCAR)
                 .addGap(48, 48, 48)
                 .addComponent(jBtnELIMINAR)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -186,7 +188,7 @@ public class FormIdiomas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -205,6 +207,10 @@ public class FormIdiomas extends javax.swing.JFrame {
     private void jBtnINGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnINGRESARActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnINGRESARActionPerformed
+
+    private void jBtnBUSCARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnBUSCARActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnBUSCARActionPerformed
 
     /**
      * @param args the command line arguments
