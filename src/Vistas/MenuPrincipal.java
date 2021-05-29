@@ -43,7 +43,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnDevolverLibrosMP = new javax.swing.JButton();
         btnSalirDelSistemaMP = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         jPasswordField1.setText("jPasswordField1");
 
@@ -150,8 +150,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnSalirDelSistemaMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, 240, 80));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 485, -1, 226));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("E:\\U 2021\\DISEÑO APP\\SistemaBiblioteca\\iconos tomas\\libro (1).png")); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro (1).png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 270, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -298,7 +298,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnFormVenderLibrosMP;
     private javax.swing.JButton btnSalirDelSistemaMP;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     // End of variables declaration//GEN-END:variables

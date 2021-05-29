@@ -209,15 +209,15 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="E:\U 2021\DISE&#xd1;O APP\SistemaBiblioteca\iconos tomas\libro (1).png"/>
+          <Image iconType="3" name="/Icons/libro (1).png"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="280" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="280" y="290" width="270" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
