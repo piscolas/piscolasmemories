@@ -29,57 +29,53 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="lblApellidoMaternoMA" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="lblNacionalidadMA" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Component id="lblSexoMA" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblOtrosTitulosMA" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblCodAutorMA" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="lblNombreMA" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblApellidoPaternoMA" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="fieldNacionalidadMA" max="32767" attributes="0"/>
-                          <Component id="fieldApellidoMA" max="32767" attributes="0"/>
-                          <Component id="fieldNombreMA" max="32767" attributes="0"/>
-                          <Component id="fieldApellidoPaternoMA" alignment="0" max="32767" attributes="0"/>
-                          <Component id="fieldOtrosTitulosMA" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="comboBoxSexoMA" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="fieldCodigoAutorMA" alignment="0" pref="86" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
+                  <Component id="lblApellidoMaternoMA" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                      <Component id="lblNacionalidadMA" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Component id="lblSexoMA" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblOtrosTitulosMA" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnINGRESARMA" min="-2" pref="201" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnLIMPIARMA" min="-2" pref="201" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnVolverMA" min="-2" pref="201" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="lblCodAutorMA" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblNombreMA" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblApellidoPaternoMA" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="fieldNacionalidadMA" max="32767" attributes="0"/>
+                  <Component id="fieldApellidoMA" max="32767" attributes="0"/>
+                  <Component id="fieldNombreMA" max="32767" attributes="0"/>
+                  <Component id="fieldApellidoPaternoMA" alignment="0" max="32767" attributes="0"/>
+                  <Component id="fieldOtrosTitulosMA" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="comboBoxSexoMA" alignment="0" max="32767" attributes="0"/>
+                          <Component id="fieldCodigoAutorMA" alignment="0" pref="86" max="32767" attributes="0"/>
+                      </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="233" max="32767" attributes="0"/>
               <Component id="lblTituloMA" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnINGRESARMA" min="-2" pref="201" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnLIMPIARMA" min="-2" pref="201" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnVolverMA" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
