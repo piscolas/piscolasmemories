@@ -39,7 +39,7 @@ public class Login extends javax.swing.JFrame {
         lblContrasena = new javax.swing.JLabel();
         lblimagenlibros = new javax.swing.JLabel();
         fieldContrasenaAUTI = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
+        lblIconAUTI = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("SISTEMA DE BIBLIOTECA MANDINGAS LTDA");
@@ -51,6 +51,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         btnIngresarAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnIngresarAUTI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btnIngresarAUTI.setText("INGRESAR");
         btnIngresarAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,6 +60,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         btnSalirAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSalirAUTI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/salida-de-emergencia.png"))); // NOI18N
         btnSalirAUTI.setText("SALIR");
         btnSalirAUTI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,25 +90,16 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro (1).png"))); // NOI18N
+        lblIconAUTI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro (1).png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(lblTituloAutenticacion, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblimagenlibros)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblIconAUTI)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblContrasena)
@@ -116,9 +109,16 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
                             .addComponent(fieldContrasenaAUTI)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(jLabel1)))
-                .addGap(49, 49, 49))
+                        .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(55, 55, 55))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(lblTituloAutenticacion, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblimagenlibros)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,7 +128,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(lblTituloAutenticacion)
                     .addComponent(lblimagenlibros))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(lblIconAUTI)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUsuario)
@@ -137,10 +137,10 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblContrasena)
                     .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSalirAUTI)
-                    .addComponent(btnIngresarAUTI))
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -237,8 +237,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton btnSalirAUTI;
     private javax.swing.JPasswordField fieldContrasenaAUTI;
     private javax.swing.JTextField fieldUsuarioAUTI;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblContrasena;
+    private javax.swing.JLabel lblIconAUTI;
     private javax.swing.JLabel lblTituloAutenticacion;
     private javax.swing.JLabel lblUsuario;
     private javax.swing.JLabel lblimagenlibros;

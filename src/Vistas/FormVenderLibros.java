@@ -30,30 +30,31 @@ public class FormVenderLibros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        fieldNombre = new javax.swing.JTextField();
-        fieldApellidoPaterno = new javax.swing.JTextField();
-        fieldApellidoMaterno = new javax.swing.JTextField();
-        fieldRut = new javax.swing.JTextField();
-        fieldTelefono = new javax.swing.JTextField();
-        fieldDireccion = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        fieldCantidad = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        comboBoxFormaPago = new javax.swing.JComboBox<>();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        fieldPrecio = new javax.swing.JTextField();
-        btnGenerarOrden = new javax.swing.JButton();
-        comboBoxTitulo = new javax.swing.JComboBox<>();
+        lblTituloMantenedorVentas = new javax.swing.JLabel();
+        lblDatosCompradorMV = new javax.swing.JLabel();
+        lvlNombreMV = new javax.swing.JLabel();
+        lblApellidoPaternoMV = new javax.swing.JLabel();
+        lblApellidoMaternoMV = new javax.swing.JLabel();
+        lblRUTMV = new javax.swing.JLabel();
+        lblTelefonoMV = new javax.swing.JLabel();
+        lblDireccionMV = new javax.swing.JLabel();
+        fieldNombreMV = new javax.swing.JTextField();
+        fieldApellidoPaternoMV = new javax.swing.JTextField();
+        fieldApellidoMaternoMV = new javax.swing.JTextField();
+        fieldRUTMV = new javax.swing.JTextField();
+        fieldTelefonoMV = new javax.swing.JTextField();
+        fieldDireccionMV = new javax.swing.JTextField();
+        lblCantidadMV = new javax.swing.JLabel();
+        fieldCantidadMV = new javax.swing.JTextField();
+        lblFormaDePagoMV = new javax.swing.JLabel();
+        comboBoxFormaPagoMV = new javax.swing.JComboBox<>();
+        lblTituloMV = new javax.swing.JLabel();
+        lblCarritoMV = new javax.swing.JLabel();
+        lblPrecioMV = new javax.swing.JLabel();
+        fieldPrecioMV = new javax.swing.JTextField();
+        btnGenerarOrdenMV = new javax.swing.JButton();
+        comboBoxTituloMV = new javax.swing.JComboBox<>();
+        btnVolverMV = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("VENTA DE LIBROS");
@@ -64,55 +65,63 @@ public class FormVenderLibros extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/dinero.png"))); // NOI18N
-        jLabel1.setText("MANTENEDOR DE VENTAS");
+        lblTituloMantenedorVentas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTituloMantenedorVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/dinero.png"))); // NOI18N
+        lblTituloMantenedorVentas.setText("MANTENEDOR DE VENTAS");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comprador.png"))); // NOI18N
-        jLabel2.setText("DATOS DEL COMPRADOR");
+        lblDatosCompradorMV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDatosCompradorMV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comprador.png"))); // NOI18N
+        lblDatosCompradorMV.setText("DATOS DEL COMPRADOR");
 
-        jLabel3.setText("Nombre:");
+        lvlNombreMV.setText("Nombre:");
 
-        jLabel4.setText("Apellido Paterno:");
+        lblApellidoPaternoMV.setText("Apellido Paterno:");
 
-        jLabel5.setText("Apellido Materno:");
+        lblApellidoMaternoMV.setText("Apellido Materno:");
 
-        jLabel6.setText("RUT:");
+        lblRUTMV.setText("RUT:");
 
-        jLabel7.setText("Teléfono:");
+        lblTelefonoMV.setText("Teléfono:");
 
-        jLabel8.setText("Dirección:");
+        lblDireccionMV.setText("Dirección:");
 
-        jLabel9.setText("Cantidad:");
+        lblCantidadMV.setText("Cantidad:");
 
-        fieldCantidad.addActionListener(new java.awt.event.ActionListener() {
+        fieldCantidadMV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldCantidadActionPerformed(evt);
+                fieldCantidadMVActionPerformed(evt);
             }
         });
 
-        jLabel10.setText("Forma de pago:");
+        lblFormaDePagoMV.setText("Forma de pago:");
 
-        comboBoxFormaPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxFormaPagoMV.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel11.setText("Título:");
+        lblTituloMV.setText("Título:");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ventas.png"))); // NOI18N
-        jLabel12.setText("CARRITO");
+        lblCarritoMV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblCarritoMV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ventas.png"))); // NOI18N
+        lblCarritoMV.setText("CARRITO");
 
-        jLabel13.setText("Precio:");
+        lblPrecioMV.setText("Precio:");
 
-        btnGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/orden.png"))); // NOI18N
-        btnGenerarOrden.setText("GENERAR ORDEN DE COMPRA");
-        btnGenerarOrden.addActionListener(new java.awt.event.ActionListener() {
+        btnGenerarOrdenMV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/orden.png"))); // NOI18N
+        btnGenerarOrdenMV.setText("GENERAR ORDEN DE COMPRA");
+        btnGenerarOrdenMV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGenerarOrdenActionPerformed(evt);
+                btnGenerarOrdenMVActionPerformed(evt);
             }
         });
 
-        comboBoxTitulo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxTituloMV.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        btnVolverMV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
+        btnVolverMV.setText("VOLVER AL MENÚ PRINCIPAL");
+        btnVolverMV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverMVActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -121,110 +130,107 @@ public class FormVenderLibros extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblDatosCompradorMV)
+                            .addComponent(lblCarritoMV)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(comboBoxFormaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(29, 29, 29)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel11)
-                                            .addComponent(jLabel9)
-                                            .addComponent(jLabel13))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(13, 13, 13)
-                                                .addComponent(comboBoxTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(fieldPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(fieldCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel12)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(67, 67, 67)
-                                        .addComponent(jLabel1))))
+                                .addComponent(lblFormaDePagoMV)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(comboBoxFormaPagoMV, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblTituloMV)
+                                    .addComponent(lblCantidadMV)
+                                    .addComponent(lblPrecioMV))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
+                                    .addComponent(fieldPrecioMV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fieldCantidadMV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboBoxTituloMV, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnVolverMV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnGenerarOrdenMV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTituloMantenedorVentas)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblApellidoMaternoMV)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jLabel4))
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addComponent(lvlNombreMV)
+                                        .addComponent(lblApellidoPaternoMV))
+                                    .addComponent(lblRUTMV, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblTelefonoMV, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblDireccionMV, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(fieldNombre)
-                                    .addComponent(fieldApellidoPaterno)
-                                    .addComponent(fieldApellidoMaterno)
-                                    .addComponent(fieldRut)
-                                    .addComponent(fieldTelefono)
-                                    .addComponent(fieldDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 10, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnGenerarOrden)))
-                .addContainerGap())
+                                    .addComponent(fieldNombreMV)
+                                    .addComponent(fieldApellidoPaternoMV)
+                                    .addComponent(fieldApellidoMaternoMV)
+                                    .addComponent(fieldRUTMV)
+                                    .addComponent(fieldTelefonoMV)
+                                    .addComponent(fieldDireccionMV, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblTituloMantenedorVentas)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(lblDatosCompradorMV)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(fieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lvlNombreMV)
+                    .addComponent(fieldNombreMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(fieldApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellidoPaternoMV)
+                    .addComponent(fieldApellidoPaternoMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(fieldApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellidoMaternoMV)
+                    .addComponent(fieldApellidoMaternoMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(fieldRut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblRUTMV)
+                    .addComponent(fieldRUTMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(fieldTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTelefonoMV)
+                    .addComponent(fieldTelefonoMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(fieldDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblDireccionMV)
+                    .addComponent(fieldDireccionMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel12)
+                .addComponent(lblCarritoMV)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(comboBoxTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTituloMV)
+                    .addComponent(comboBoxTituloMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(fieldCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCantidadMV)
+                    .addComponent(fieldCantidadMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(fieldPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblPrecioMV)
+                    .addComponent(fieldPrecioMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(comboBoxFormaPago, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnGenerarOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                    .addComponent(lblFormaDePagoMV)
+                    .addComponent(comboBoxFormaPagoMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnGenerarOrdenMV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnVolverMV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -235,13 +241,18 @@ public class FormVenderLibros extends javax.swing.JFrame {
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void fieldCantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldCantidadActionPerformed
+    private void fieldCantidadMVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldCantidadMVActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldCantidadActionPerformed
+    }//GEN-LAST:event_fieldCantidadMVActionPerformed
 
-    private void btnGenerarOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarOrdenActionPerformed
+    private void btnGenerarOrdenMVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarOrdenMVActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGenerarOrdenActionPerformed
+    }//GEN-LAST:event_btnGenerarOrdenMVActionPerformed
+
+    private void btnVolverMVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMVActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverMVActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,29 +301,30 @@ public class FormVenderLibros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGenerarOrden;
-    private javax.swing.JComboBox<String> comboBoxFormaPago;
-    private javax.swing.JComboBox<String> comboBoxTitulo;
-    private javax.swing.JTextField fieldApellidoMaterno;
-    private javax.swing.JTextField fieldApellidoPaterno;
-    private javax.swing.JTextField fieldCantidad;
-    private javax.swing.JTextField fieldDireccion;
-    private javax.swing.JTextField fieldNombre;
-    private javax.swing.JTextField fieldPrecio;
-    private javax.swing.JTextField fieldRut;
-    private javax.swing.JTextField fieldTelefono;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton btnGenerarOrdenMV;
+    private javax.swing.JButton btnVolverMV;
+    private javax.swing.JComboBox<String> comboBoxFormaPagoMV;
+    private javax.swing.JComboBox<String> comboBoxTituloMV;
+    private javax.swing.JTextField fieldApellidoMaternoMV;
+    private javax.swing.JTextField fieldApellidoPaternoMV;
+    private javax.swing.JTextField fieldCantidadMV;
+    private javax.swing.JTextField fieldDireccionMV;
+    private javax.swing.JTextField fieldNombreMV;
+    private javax.swing.JTextField fieldPrecioMV;
+    private javax.swing.JTextField fieldRUTMV;
+    private javax.swing.JTextField fieldTelefonoMV;
+    private javax.swing.JLabel lblApellidoMaternoMV;
+    private javax.swing.JLabel lblApellidoPaternoMV;
+    private javax.swing.JLabel lblCantidadMV;
+    private javax.swing.JLabel lblCarritoMV;
+    private javax.swing.JLabel lblDatosCompradorMV;
+    private javax.swing.JLabel lblDireccionMV;
+    private javax.swing.JLabel lblFormaDePagoMV;
+    private javax.swing.JLabel lblPrecioMV;
+    private javax.swing.JLabel lblRUTMV;
+    private javax.swing.JLabel lblTelefonoMV;
+    private javax.swing.JLabel lblTituloMV;
+    private javax.swing.JLabel lblTituloMantenedorVentas;
+    private javax.swing.JLabel lvlNombreMV;
     // End of variables declaration//GEN-END:variables
 }

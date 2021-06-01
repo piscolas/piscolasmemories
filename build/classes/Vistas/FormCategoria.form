@@ -28,78 +28,66 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jButton39" pref="159" max="32767" attributes="0"/>
-                              <Component id="jButton12" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jButton28" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jButton24" alignment="1" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="jButton26" alignment="0" min="-2" pref="159" max="-2" attributes="0"/>
+                          <Component id="btnCienciasSociales" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                          <Component id="btnCine" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                          <Component id="btnComics" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                          <Component id="btnCronicas" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                          <Component id="btnCuentos" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jButton35" max="32767" attributes="0"/>
-                          <Component id="jButton27" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton20" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton7" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton4" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton38" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton31" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton30" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton25" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton19" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jButton9" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jButton40" max="32767" attributes="0"/>
-                              <Component id="jButton6" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButton36" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButton29" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButton37" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButton32" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jButton13" min="-2" pref="169" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jButton15" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton8" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton10" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton23" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton18" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton14" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton34" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton17" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton33" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton22" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton21" alignment="1" min="-2" pref="169" max="-2" attributes="0"/>
+                          <Component id="btnCatVolver" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnLibrosCostumbristas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnManuales" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroLirico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroEpico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroDramatico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnEnsayos" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnEnciclopedia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnDiccionarios" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnCienciasExactas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnCienciaFiccion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnBiografias" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosBolsillo" min="-2" pref="179" max="-2" attributes="0"/>
+                                  <Component id="btnLibrosCocina" min="-2" pref="179" max="-2" attributes="0"/>
+                                  <Component id="btnLibrosAstrologia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosdeArte" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btnRevistas" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosComunicacion" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosConsulta" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosCriticas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosCultura" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosDeportes" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEconomia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLiteraturaIlustrada" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnNovelas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEspiritualidad" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEsoterismo" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosFantasia" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosFilosofia" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibroPartituras" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosReligion" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEroticos" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosInteractivos" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLecturaProlongada" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosSagrados" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnSagas" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jButton16" alignment="0" pref="159" max="32767" attributes="0"/>
-                          <Component id="jButton11" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton41" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -110,113 +98,113 @@
           <Group type="102" attributes="0">
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton40" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnBiografias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosComunicacion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton19" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCienciaFiccion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosConsulta" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton25" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton36" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCienciasExactas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosCriticas" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton39" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton29" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCienciasSociales" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosCultura" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton26" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton37" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCine" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosDeportes" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton32" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnComics" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosEconomia" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton22" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCronicas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosEspiritualidad" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton24" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton33" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCuentos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosEsoterismo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton30" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton17" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDiccionarios" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosFantasia" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton31" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton34" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEnciclopedia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosFilosofia" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton38" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEnsayos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibroPartituras" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton18" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGeneroDramatico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosReligion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton23" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGeneroEpico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosEroticos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGeneroLirico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosInteractivos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnManuales" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLecturaProlongada" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton27" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosCostumbristas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosSagrados" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton20" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosdeArte" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLiteraturaIlustrada" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton35" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosAstrologia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnNovelas" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton21" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosBolsillo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnRevistas" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton16" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLibrosCocina" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSagas" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton41" min="-2" pref="57" max="-2" attributes="0"/>
+              <Component id="btnCatVolver" min="-2" pref="78" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnLibrosInteractivos">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/visualizacion-interactiva.png"/>
@@ -224,7 +212,7 @@
         <Property name="text" type="java.lang.String" value="Libros interactivos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="btnGeneroLirico">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/letra.png"/>
@@ -232,7 +220,7 @@
         <Property name="text" type="java.lang.String" value="G&#xe9;nero L&#xed;rico"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="btnGeneroEpico">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/caballero.png"/>
@@ -240,7 +228,7 @@
         <Property name="text" type="java.lang.String" value="G&#xe9;nero &#xc9;pico"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="btnGeneroDramatico">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/drama.png"/>
@@ -248,7 +236,7 @@
         <Property name="text" type="java.lang.String" value="G&#xe9;nero Dram&#xe1;tico"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="btnLecturaProlongada">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/libross (1).png"/>
@@ -256,10 +244,10 @@
         <Property name="text" type="java.lang.String" value="Lectura prolongada"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLecturaProlongadaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="btnLibrosConsulta">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/consulta.png"/>
@@ -267,7 +255,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Consulta"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="btnManuales">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/guia.png"/>
@@ -275,10 +263,10 @@
         <Property name="text" type="java.lang.String" value="Manuales"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnManualesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="btnLiteraturaIlustrada">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/hombre.png"/>
@@ -286,10 +274,10 @@
         <Property name="text" type="java.lang.String" value="Literatura Ilustrada"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLiteraturaIlustradaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="btnBiografias">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/biografia.png"/>
@@ -297,7 +285,7 @@
         <Property name="text" type="java.lang.String" value="Biograf&#xed;as"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="btnLibrosSagrados">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/escrituras-sagradas.png"/>
@@ -305,7 +293,7 @@
         <Property name="text" type="java.lang.String" value="Libros sagrados"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton11">
+    <Component class="javax.swing.JButton" name="btnLibrosBolsillo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/bolsillo.png"/>
@@ -313,7 +301,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Bolsillo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton12">
+    <Component class="javax.swing.JButton" name="btnComics">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/comic.png"/>
@@ -321,7 +309,7 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;mics"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton13">
+    <Component class="javax.swing.JButton" name="btnSagas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/libros-serializados.png"/>
@@ -329,7 +317,7 @@
         <Property name="text" type="java.lang.String" value="Sagas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton14">
+    <Component class="javax.swing.JButton" name="btnLibroPartituras">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/partitura.png"/>
@@ -337,7 +325,7 @@
         <Property name="text" type="java.lang.String" value="Libro de Partituras"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton15">
+    <Component class="javax.swing.JButton" name="btnNovelas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/escribir.png"/>
@@ -345,7 +333,7 @@
         <Property name="text" type="java.lang.String" value="Novelas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton16">
+    <Component class="javax.swing.JButton" name="btnLibrosCocina">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/cocinando.png"/>
@@ -353,7 +341,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Cocina"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton17">
+    <Component class="javax.swing.JButton" name="btnLibrosFantasia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/fantasia.png"/>
@@ -361,7 +349,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Fantas&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton18">
+    <Component class="javax.swing.JButton" name="btnLibrosReligion">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/religion.png"/>
@@ -369,7 +357,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Religi&#xf3;n"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton19">
+    <Component class="javax.swing.JButton" name="btnCienciaFiccion">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/ciencia-ficcion.png"/>
@@ -377,7 +365,7 @@
         <Property name="text" type="java.lang.String" value="Ciencia Ficci&#xf3;n"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton20">
+    <Component class="javax.swing.JButton" name="btnLibrosdeArte">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/imagen.png"/>
@@ -385,7 +373,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Arte"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton21">
+    <Component class="javax.swing.JButton" name="btnRevistas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/revista.png"/>
@@ -393,7 +381,7 @@
         <Property name="text" type="java.lang.String" value="Revistas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton22">
+    <Component class="javax.swing.JButton" name="btnLibrosEspiritualidad">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/bienestar-espiritual.png"/>
@@ -401,7 +389,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Espiritualidad"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton23">
+    <Component class="javax.swing.JButton" name="btnLibrosEroticos">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/erotico.png"/>
@@ -409,7 +397,7 @@
         <Property name="text" type="java.lang.String" value="Libros Er&#xf3;ticos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton24">
+    <Component class="javax.swing.JButton" name="btnCuentos">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/bebe.png"/>
@@ -417,7 +405,7 @@
         <Property name="text" type="java.lang.String" value="Cuentos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton25">
+    <Component class="javax.swing.JButton" name="btnCienciasExactas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/exactitud.png"/>
@@ -425,7 +413,7 @@
         <Property name="text" type="java.lang.String" value="Ciencias Exactas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton26">
+    <Component class="javax.swing.JButton" name="btnCine">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/cine.png"/>
@@ -433,7 +421,7 @@
         <Property name="text" type="java.lang.String" value="Cine"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton27">
+    <Component class="javax.swing.JButton" name="btnLibrosCostumbristas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/nativo.png"/>
@@ -441,7 +429,7 @@
         <Property name="text" type="java.lang.String" value="Libros Costumbristas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton28">
+    <Component class="javax.swing.JButton" name="btnCronicas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/periodico.png"/>
@@ -449,7 +437,7 @@
         <Property name="text" type="java.lang.String" value="Cr&#xf3;nicas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton29">
+    <Component class="javax.swing.JButton" name="btnLibrosCultura">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/personas.png"/>
@@ -457,7 +445,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Cultura"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton30">
+    <Component class="javax.swing.JButton" name="btnDiccionarios">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/diccionario.png"/>
@@ -465,7 +453,7 @@
         <Property name="text" type="java.lang.String" value="Diccionarios"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton31">
+    <Component class="javax.swing.JButton" name="btnEnciclopedia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/libro.png"/>
@@ -473,7 +461,7 @@
         <Property name="text" type="java.lang.String" value="Enciclopedias"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton32">
+    <Component class="javax.swing.JButton" name="btnLibrosEconomia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/analitica.png"/>
@@ -481,10 +469,10 @@
         <Property name="text" type="java.lang.String" value="Libros de Econom&#xed;a"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton32ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLibrosEconomiaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton33">
+    <Component class="javax.swing.JButton" name="btnLibrosEsoterismo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/luna.png"/>
@@ -492,7 +480,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Esoterismo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton34">
+    <Component class="javax.swing.JButton" name="btnLibrosFilosofia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/aristoteles.png"/>
@@ -500,7 +488,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Filosof&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton35">
+    <Component class="javax.swing.JButton" name="btnLibrosAstrologia">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/astrologia.png"/>
@@ -508,7 +496,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Astrolog&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton36">
+    <Component class="javax.swing.JButton" name="btnLibrosCriticas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/cliente.png"/>
@@ -516,7 +504,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Cr&#xed;ticas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton37">
+    <Component class="javax.swing.JButton" name="btnLibrosDeportes">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/deportes.png"/>
@@ -524,7 +512,7 @@
         <Property name="text" type="java.lang.String" value="Libros de Deportes"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton38">
+    <Component class="javax.swing.JButton" name="btnEnsayos">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/nota.png"/>
@@ -532,7 +520,7 @@
         <Property name="text" type="java.lang.String" value="Ensayos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton39">
+    <Component class="javax.swing.JButton" name="btnCienciasSociales">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/ciencias-sociales.png"/>
@@ -540,7 +528,7 @@
         <Property name="text" type="java.lang.String" value="Ciencias Sociales"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton40">
+    <Component class="javax.swing.JButton" name="btnLibrosComunicacion">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/comunicacion-bidireccional.png"/>
@@ -548,13 +536,16 @@
         <Property name="text" type="java.lang.String" value="Libros de Comunicaci&#xf3;n"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton41">
+    <Component class="javax.swing.JButton" name="btnCatVolver">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icons/regreso.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VOLVER AL MEN&#xda; PRINCIPAL"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCatVolverActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

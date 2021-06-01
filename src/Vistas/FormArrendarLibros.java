@@ -30,30 +30,31 @@ public class FormArrendarLibros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        fieldNombre = new javax.swing.JTextField();
-        fieldApellidoPaterno = new javax.swing.JTextField();
-        fieldApellidoMaterno = new javax.swing.JTextField();
-        fieldRUT = new javax.swing.JTextField();
-        fieldTelefono = new javax.swing.JTextField();
-        fieldDireccion = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        lblTituloMantenedorArriendos = new javax.swing.JLabel();
+        lblDatosSolicitanteMA = new javax.swing.JLabel();
+        lblNombreMA = new javax.swing.JLabel();
+        lblApellidoPaternoMA = new javax.swing.JLabel();
+        lblApellidoMaternoMA = new javax.swing.JLabel();
+        lblRUTMA = new javax.swing.JLabel();
+        lblTelefonoMA = new javax.swing.JLabel();
+        lblDireccionMA = new javax.swing.JLabel();
+        fieldNombreMA = new javax.swing.JTextField();
+        fieldApellidoPaternoMA = new javax.swing.JTextField();
+        fieldApellidoMaternoMA = new javax.swing.JTextField();
+        fieldRUTMA = new javax.swing.JTextField();
+        fieldTelefonoMA = new javax.swing.JTextField();
+        fieldDireccionMA = new javax.swing.JTextField();
+        lblCarritoMA = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        fieldCantidad = new javax.swing.JTextField();
-        fieldPrecio = new javax.swing.JTextField();
+        fieldCantidadMA = new javax.swing.JTextField();
+        fieldPrecioMA = new javax.swing.JTextField();
         comboBoxFormaPago = new javax.swing.JComboBox<>();
         btnGenerarOrden = new javax.swing.JButton();
-        comboBoxTitulo = new javax.swing.JComboBox<>();
+        comboBoxTituloMA = new javax.swing.JComboBox<>();
+        btnVolverMA = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("ARRIENDO DE LIBROS");
@@ -64,41 +65,41 @@ public class FormArrendarLibros extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/trato.png"))); // NOI18N
-        jLabel1.setText("MANTENEDOR DE ARRIENDOS");
+        lblTituloMantenedorArriendos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTituloMantenedorArriendos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/trato.png"))); // NOI18N
+        lblTituloMantenedorArriendos.setText("MANTENEDOR DE ARRIENDOS");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comprador (1).png"))); // NOI18N
-        jLabel2.setText("DATOS DEL SOLICITANTE");
+        lblDatosSolicitanteMA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDatosSolicitanteMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comprador (1).png"))); // NOI18N
+        lblDatosSolicitanteMA.setText("DATOS DEL SOLICITANTE");
 
-        jLabel3.setText("Nombre:");
+        lblNombreMA.setText("Nombre:");
 
-        jLabel4.setText("Apellido Paterno:");
+        lblApellidoPaternoMA.setText("Apellido Paterno:");
 
-        jLabel5.setText("Apellido Materno:");
+        lblApellidoMaternoMA.setText("Apellido Materno:");
 
-        jLabel6.setText("RUT:");
+        lblRUTMA.setText("RUT:");
 
-        jLabel7.setText("Teléfono:");
+        lblTelefonoMA.setText("Teléfono:");
 
-        jLabel8.setText("Dirección:");
+        lblDireccionMA.setText("Dirección:");
 
-        fieldNombre.addActionListener(new java.awt.event.ActionListener() {
+        fieldNombreMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldNombreActionPerformed(evt);
+                fieldNombreMAActionPerformed(evt);
             }
         });
 
-        fieldTelefono.addActionListener(new java.awt.event.ActionListener() {
+        fieldTelefonoMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldTelefonoActionPerformed(evt);
+                fieldTelefonoMAActionPerformed(evt);
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ventas.png"))); // NOI18N
-        jLabel9.setText("CARRITO");
+        lblCarritoMA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblCarritoMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ventas.png"))); // NOI18N
+        lblCarritoMA.setText("CARRITO");
 
         jLabel10.setText("Título:");
 
@@ -108,9 +109,9 @@ public class FormArrendarLibros extends javax.swing.JFrame {
 
         jLabel13.setText("Forma de pago:");
 
-        fieldCantidad.addActionListener(new java.awt.event.ActionListener() {
+        fieldCantidadMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldCantidadActionPerformed(evt);
+                fieldCantidadMAActionPerformed(evt);
             }
         });
 
@@ -119,7 +120,15 @@ public class FormArrendarLibros extends javax.swing.JFrame {
         btnGenerarOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/orden.png"))); // NOI18N
         btnGenerarOrden.setText("GENERAR ORDEN DE ARRIENDO");
 
-        comboBoxTitulo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxTituloMA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        btnVolverMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
+        btnVolverMA.setText("VOLVER AL MENÚ PRINCIPAL");
+        btnVolverMA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverMAActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,31 +137,11 @@ public class FormArrendarLibros extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel4))
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(fieldNombre)
-                            .addComponent(fieldApellidoPaterno)
-                            .addComponent(fieldApellidoMaterno)
-                            .addComponent(fieldRUT)
-                            .addComponent(fieldTelefono)
-                            .addComponent(fieldDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblCarritoMA)
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel13)
@@ -161,70 +150,102 @@ public class FormArrendarLibros extends javax.swing.JFrame {
                                     .addComponent(jLabel10))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(comboBoxTitulo, 0, 241, Short.MAX_VALUE)
+                                    .addComponent(comboBoxTituloMA, 0, 250, Short.MAX_VALUE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(fieldCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(fieldPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(fieldCantidadMA, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(fieldPrecioMA, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(comboBoxFormaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, Short.MAX_VALUE))))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnGenerarOrden)))
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(lblTituloMantenedorArriendos)
+                                .addGap(26, 26, 26))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(51, 51, 51)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblApellidoMaternoMA)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lblNombreMA)
+                                        .addComponent(lblApellidoPaternoMA))
+                                    .addComponent(lblRUTMA, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblTelefonoMA, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblDireccionMA, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(fieldNombreMA)
+                                    .addComponent(fieldApellidoPaternoMA)
+                                    .addComponent(fieldApellidoMaternoMA)
+                                    .addComponent(fieldRUTMA)
+                                    .addComponent(fieldTelefonoMA)
+                                    .addComponent(fieldDireccionMA, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblDatosSolicitanteMA))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(67, 67, 67)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnGenerarOrden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnVolverMA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblTituloMantenedorArriendos)
                 .addGap(24, 24, 24)
-                .addComponent(jLabel2)
+                .addComponent(lblDatosSolicitanteMA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(fieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNombreMA)
+                    .addComponent(fieldNombreMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(fieldApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellidoPaternoMA)
+                    .addComponent(fieldApellidoPaternoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(fieldApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellidoMaternoMA)
+                    .addComponent(fieldApellidoMaternoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(fieldRUT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblRUTMA)
+                    .addComponent(fieldRUTMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(fieldTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTelefonoMA)
+                    .addComponent(fieldTelefonoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(fieldDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblDireccionMA)
+                    .addComponent(fieldDireccionMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel9)
+                .addComponent(lblCarritoMA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(comboBoxTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comboBoxTituloMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(fieldCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fieldCantidadMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(fieldPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fieldPrecioMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(comboBoxFormaPago, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnGenerarOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnGenerarOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -235,17 +256,22 @@ public class FormArrendarLibros extends javax.swing.JFrame {
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void fieldNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldNombreActionPerformed
+    private void fieldNombreMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldNombreMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldNombreActionPerformed
+    }//GEN-LAST:event_fieldNombreMAActionPerformed
 
-    private void fieldTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldTelefonoActionPerformed
+    private void fieldTelefonoMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldTelefonoMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldTelefonoActionPerformed
+    }//GEN-LAST:event_fieldTelefonoMAActionPerformed
 
-    private void fieldCantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldCantidadActionPerformed
+    private void fieldCantidadMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldCantidadMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldCantidadActionPerformed
+    }//GEN-LAST:event_fieldCantidadMAActionPerformed
+
+    private void btnVolverMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMAActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverMAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -295,28 +321,29 @@ public class FormArrendarLibros extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGenerarOrden;
+    private javax.swing.JButton btnVolverMA;
     private javax.swing.JComboBox<String> comboBoxFormaPago;
-    private javax.swing.JComboBox<String> comboBoxTitulo;
-    private javax.swing.JTextField fieldApellidoMaterno;
-    private javax.swing.JTextField fieldApellidoPaterno;
-    private javax.swing.JTextField fieldCantidad;
-    private javax.swing.JTextField fieldDireccion;
-    private javax.swing.JTextField fieldNombre;
-    private javax.swing.JTextField fieldPrecio;
-    private javax.swing.JTextField fieldRUT;
-    private javax.swing.JTextField fieldTelefono;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JComboBox<String> comboBoxTituloMA;
+    private javax.swing.JTextField fieldApellidoMaternoMA;
+    private javax.swing.JTextField fieldApellidoPaternoMA;
+    private javax.swing.JTextField fieldCantidadMA;
+    private javax.swing.JTextField fieldDireccionMA;
+    private javax.swing.JTextField fieldNombreMA;
+    private javax.swing.JTextField fieldPrecioMA;
+    private javax.swing.JTextField fieldRUTMA;
+    private javax.swing.JTextField fieldTelefonoMA;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblApellidoMaternoMA;
+    private javax.swing.JLabel lblApellidoPaternoMA;
+    private javax.swing.JLabel lblCarritoMA;
+    private javax.swing.JLabel lblDatosSolicitanteMA;
+    private javax.swing.JLabel lblDireccionMA;
+    private javax.swing.JLabel lblNombreMA;
+    private javax.swing.JLabel lblRUTMA;
+    private javax.swing.JLabel lblTelefonoMA;
+    private javax.swing.JLabel lblTituloMantenedorArriendos;
     // End of variables declaration//GEN-END:variables
 }

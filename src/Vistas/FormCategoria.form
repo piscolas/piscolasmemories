@@ -28,7 +28,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -43,48 +43,51 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="btnLibrosAstrologia" max="32767" attributes="0"/>
-                              <Component id="btnLibrosCostumbristas" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnLibrosdeArte" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnManuales" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnGeneroLirico" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnGeneroEpico" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnGeneroDramatico" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnEnsayos" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnEnciclopedia" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnDiccionarios" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnCienciasExactas" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnCienciaFiccion" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnBiografias" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnCatVolver" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnLibrosCostumbristas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnManuales" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroLirico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroEpico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnGeneroDramatico" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnEnsayos" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnEnciclopedia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnDiccionarios" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnCienciasExactas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnCienciaFiccion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnBiografias" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosBolsillo" min="-2" pref="179" max="-2" attributes="0"/>
+                                  <Component id="btnLibrosCocina" min="-2" pref="179" max="-2" attributes="0"/>
+                                  <Component id="btnLibrosAstrologia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosdeArte" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btnRevistas" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosComunicacion" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosConsulta" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosCriticas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosCultura" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosDeportes" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEconomia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLiteraturaIlustrada" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnNovelas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEspiritualidad" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEsoterismo" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosFantasia" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosFilosofia" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibroPartituras" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosReligion" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosEroticos" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosInteractivos" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLecturaProlongada" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnLibrosSagrados" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnSagas" alignment="1" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="btnLibrosBolsillo" min="-2" pref="179" max="-2" attributes="0"/>
-                          <Component id="btnLibrosCocina" min="-2" pref="179" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="29" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnRevistas" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosComunicacion" max="32767" attributes="0"/>
-                          <Component id="btnLibrosConsulta" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLibrosCriticas" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLibrosCultura" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLibrosDeportes" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLibrosEconomia" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLiteraturaIlustrada" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnNovelas" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLibrosEspiritualidad" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosEsoterismo" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosFantasia" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosFilosofia" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibroPartituras" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosReligion" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosEroticos" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosInteractivos" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLecturaProlongada" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnLibrosSagrados" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnSagas" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -193,6 +196,8 @@
                   <Component id="btnLibrosCocina" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnSagas" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnCatVolver" min="-2" pref="78" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -530,6 +535,17 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Libros de Comunicaci&#xf3;n"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCatVolver">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/regreso.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="VOLVER AL MEN&#xda; PRINCIPAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCatVolverActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -30,10 +30,11 @@ public class FormDevolverLibros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblMantenedorDeDevoluciones = new javax.swing.JLabel();
+        lblTituloMantenedorDevoluciones = new javax.swing.JLabel();
         lblMD2 = new javax.swing.JLabel();
-        fieldNumeroOrden = new javax.swing.JTextField();
+        fieldNumeroOrdenMD = new javax.swing.JTextField();
         btnIngresarMD = new javax.swing.JButton();
+        btnVolverMD = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("DEVOLUCIÓN DE LIBROS");
@@ -44,9 +45,9 @@ public class FormDevolverLibros extends javax.swing.JFrame {
             }
         });
 
-        lblMantenedorDeDevoluciones.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblMantenedorDeDevoluciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/leyendo.png"))); // NOI18N
-        lblMantenedorDeDevoluciones.setText("MANTENEDOR DE DEVOLUCIONES");
+        lblTituloMantenedorDevoluciones.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTituloMantenedorDevoluciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/leyendo.png"))); // NOI18N
+        lblTituloMantenedorDevoluciones.setText("MANTENEDOR DE DEVOLUCIONES");
 
         lblMD2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/codigo.png"))); // NOI18N
         lblMD2.setText("INGRESE NÚMERO DE ORDEN DE ARRIENDO");
@@ -54,39 +55,48 @@ public class FormDevolverLibros extends javax.swing.JFrame {
         btnIngresarMD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btnIngresarMD.setText("INGRESAR");
 
+        btnVolverMD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
+        btnVolverMD.setText("VOLVER AL MENÚ PRINCIPAL");
+        btnVolverMD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverMDActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 54, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnIngresarMD)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblMantenedorDeDevoluciones)
-                        .addGap(46, 46, 46))))
+                .addComponent(lblTituloMantenedorDevoluciones)
+                .addGap(46, 46, 46))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldNumeroOrden)
+                    .addComponent(fieldNumeroOrdenMD)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblMD2)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnIngresarMD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVolverMD)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblMantenedorDeDevoluciones)
+                .addComponent(lblTituloMantenedorDevoluciones)
                 .addGap(18, 18, 18)
                 .addComponent(lblMD2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(fieldNumeroOrden, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fieldNumeroOrdenMD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnIngresarMD)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresarMD)
+                    .addComponent(btnVolverMD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -97,6 +107,11 @@ public class FormDevolverLibros extends javax.swing.JFrame {
         // TODO add your handling code here:
         cerrar();
     }//GEN-LAST:event_formWindowClosing
+
+    private void btnVolverMDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMDActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverMDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,8 +161,9 @@ public class FormDevolverLibros extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresarMD;
-    private javax.swing.JTextField fieldNumeroOrden;
+    private javax.swing.JButton btnVolverMD;
+    private javax.swing.JTextField fieldNumeroOrdenMD;
     private javax.swing.JLabel lblMD2;
-    private javax.swing.JLabel lblMantenedorDeDevoluciones;
+    private javax.swing.JLabel lblTituloMantenedorDevoluciones;
     // End of variables declaration//GEN-END:variables
 }

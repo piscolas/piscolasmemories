@@ -30,23 +30,24 @@ public class FormAutor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        fieldNacionalidad = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        fieldOtrosTitulos = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        comboBoxSexo = new javax.swing.JComboBox<>();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        fieldNombre = new javax.swing.JTextField();
-        fieldApellido = new javax.swing.JTextField();
+        fieldNacionalidadMA = new javax.swing.JTextField();
+        lblNacionalidadMA = new javax.swing.JLabel();
+        lblOtrosTitulosMA = new javax.swing.JLabel();
+        fieldOtrosTitulosMA = new javax.swing.JTextField();
+        lblSexoMA = new javax.swing.JLabel();
+        comboBoxSexoMA = new javax.swing.JComboBox<>();
+        lblNombreMA = new javax.swing.JLabel();
+        lblApellidoMaternoMA = new javax.swing.JLabel();
+        fieldNombreMA = new javax.swing.JTextField();
+        fieldApellidoMA = new javax.swing.JTextField();
         lblTituloMA = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        fieldCodigoAutor = new javax.swing.JTextField();
-        btnINGRESAR = new javax.swing.JButton();
-        btnLIMPIAR = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        lblCodAutorMA = new javax.swing.JLabel();
+        fieldCodigoAutorMA = new javax.swing.JTextField();
+        btnINGRESARMA = new javax.swing.JButton();
+        btnLIMPIARMA = new javax.swing.JButton();
+        lblApellidoPaternoMA = new javax.swing.JLabel();
+        fieldApellidoPaternoMA = new javax.swing.JTextField();
+        btnVolverMA = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("BUSCADOR DE AUTORES");
@@ -57,21 +58,21 @@ public class FormAutor extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Nacionalidad:");
+        lblNacionalidadMA.setText("Nacionalidad:");
 
-        jLabel2.setText("Otros títulos:");
+        lblOtrosTitulosMA.setText("Otros títulos:");
 
-        jLabel3.setText("Sexo:");
+        lblSexoMA.setText("Sexo:");
 
-        comboBoxSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino", "No Binario" }));
+        comboBoxSexoMA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino", "No Binario" }));
 
-        jLabel5.setText("Nombre:");
+        lblNombreMA.setText("Nombre:");
 
-        jLabel6.setText("Apellido Materno:");
+        lblApellidoMaternoMA.setText("Apellido Materno:");
 
-        fieldNombre.addActionListener(new java.awt.event.ActionListener() {
+        fieldNombreMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldNombreActionPerformed(evt);
+                fieldNombreMAActionPerformed(evt);
             }
         });
 
@@ -79,29 +80,37 @@ public class FormAutor extends javax.swing.JFrame {
         lblTituloMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/escritor.png"))); // NOI18N
         lblTituloMA.setText("MANTENEDOR DE AUTORES");
 
-        jLabel4.setText("Código Autor:");
+        lblCodAutorMA.setText("Código Autor:");
 
-        btnINGRESAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
-        btnINGRESAR.setText("INGRESAR");
-        btnINGRESAR.addActionListener(new java.awt.event.ActionListener() {
+        btnINGRESARMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
+        btnINGRESARMA.setText("INGRESAR");
+        btnINGRESARMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnINGRESARActionPerformed(evt);
+                btnINGRESARMAActionPerformed(evt);
             }
         });
 
-        btnLIMPIAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
-        btnLIMPIAR.setText("LIMPIAR");
-        btnLIMPIAR.addActionListener(new java.awt.event.ActionListener() {
+        btnLIMPIARMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
+        btnLIMPIARMA.setText("LIMPIAR");
+        btnLIMPIARMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLIMPIARActionPerformed(evt);
+                btnLIMPIARMAActionPerformed(evt);
             }
         });
 
-        jLabel7.setText("Apellido Paterno:");
+        lblApellidoPaternoMA.setText("Apellido Paterno:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        fieldApellidoPaternoMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                fieldApellidoPaternoMAActionPerformed(evt);
+            }
+        });
+
+        btnVolverMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
+        btnVolverMA.setText("VOLVER AL MENÚ PRINCIPAL");
+        btnVolverMA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverMAActionPerformed(evt);
             }
         });
 
@@ -110,45 +119,46 @@ public class FormAutor extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApellidoMaternoMA)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblNacionalidadMA)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel6)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel2)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(1, 1, 1))
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel7))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fieldNacionalidad)
-                                    .addComponent(fieldApellido)
-                                    .addComponent(fieldNombre)
-                                    .addComponent(jTextField1)
-                                    .addComponent(fieldOtrosTitulos)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(comboBoxSexo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(fieldCodigoAutor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE))
-                                        .addGap(0, 0, Short.MAX_VALUE))))
+                                    .addComponent(lblSexoMA)
+                                    .addComponent(lblOtrosTitulosMA)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addComponent(lblTituloMA)
-                                .addGap(0, 53, Short.MAX_VALUE))))
+                                .addComponent(lblCodAutorMA)
+                                .addGap(1, 1, 1))
+                            .addComponent(lblNombreMA)
+                            .addComponent(lblApellidoPaternoMA))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fieldNacionalidadMA)
+                            .addComponent(fieldApellidoMA)
+                            .addComponent(fieldNombreMA)
+                            .addComponent(fieldApellidoPaternoMA)
+                            .addComponent(fieldOtrosTitulosMA)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(fieldCodigoAutorMA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnINGRESAR, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap()
+                        .addComponent(btnINGRESARMA, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnLIMPIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblTituloMA)
+                .addGap(179, 179, 179))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,63 +167,69 @@ public class FormAutor extends javax.swing.JFrame {
                 .addComponent(lblTituloMA)
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(fieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNombreMA)
+                    .addComponent(fieldNombreMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(fieldApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellidoMaternoMA)
+                    .addComponent(fieldApellidoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                    .addComponent(fieldApellidoPaternoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblApellidoPaternoMA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(fieldNacionalidadMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNacionalidadMA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(fieldOtrosTitulos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblOtrosTitulosMA)
+                    .addComponent(fieldOtrosTitulosMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboBoxSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSexoMA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldCodigoAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(fieldCodigoAutorMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCodAutorMA))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnINGRESAR)
-                    .addComponent(btnLIMPIAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnINGRESARMA)
+                    .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fieldNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldNombreActionPerformed
+    private void fieldNombreMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldNombreMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldNombreActionPerformed
+    }//GEN-LAST:event_fieldNombreMAActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         // TODO add your handling code here:
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void btnINGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINGRESARActionPerformed
+    private void btnINGRESARMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINGRESARMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnINGRESARActionPerformed
+    }//GEN-LAST:event_btnINGRESARMAActionPerformed
 
-    private void btnLIMPIARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLIMPIARActionPerformed
+    private void btnLIMPIARMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLIMPIARMAActionPerformed
         // TODO add your handling code here:
         limpiar();
-    }//GEN-LAST:event_btnLIMPIARActionPerformed
+    }//GEN-LAST:event_btnLIMPIARMAActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void fieldApellidoPaternoMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldApellidoPaternoMAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_fieldApellidoPaternoMAActionPerformed
+
+    private void btnVolverMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMAActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnVolverMAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -251,14 +267,14 @@ public class FormAutor extends javax.swing.JFrame {
     }
     public void limpiar()
     {
-         fieldNombre.setText("");
-         fieldApellido.setText("");
-         fieldNacionalidad.setText("");
-         fieldOtrosTitulos.setText("");
-         fieldCodigoAutor.setText("");
+         fieldNombreMA.setText("");
+         fieldApellidoMA.setText("");
+         fieldNacionalidadMA.setText("");
+         fieldOtrosTitulosMA.setText("");
+         fieldCodigoAutorMA.setText("");
       
          
-         fieldNombre.requestFocus();
+         fieldNombreMA.requestFocus();
     }
     
         public void cerrar()
@@ -273,22 +289,23 @@ public class FormAutor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnINGRESAR;
-    private javax.swing.JButton btnLIMPIAR;
-    private javax.swing.JComboBox<String> comboBoxSexo;
-    private javax.swing.JTextField fieldApellido;
-    private javax.swing.JTextField fieldCodigoAutor;
-    private javax.swing.JTextField fieldNacionalidad;
-    private javax.swing.JTextField fieldNombre;
-    private javax.swing.JTextField fieldOtrosTitulos;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton btnINGRESARMA;
+    private javax.swing.JButton btnLIMPIARMA;
+    private javax.swing.JButton btnVolverMA;
+    private javax.swing.JComboBox<String> comboBoxSexoMA;
+    private javax.swing.JTextField fieldApellidoMA;
+    private javax.swing.JTextField fieldApellidoPaternoMA;
+    private javax.swing.JTextField fieldCodigoAutorMA;
+    private javax.swing.JTextField fieldNacionalidadMA;
+    private javax.swing.JTextField fieldNombreMA;
+    private javax.swing.JTextField fieldOtrosTitulosMA;
+    private javax.swing.JLabel lblApellidoMaternoMA;
+    private javax.swing.JLabel lblApellidoPaternoMA;
+    private javax.swing.JLabel lblCodAutorMA;
+    private javax.swing.JLabel lblNacionalidadMA;
+    private javax.swing.JLabel lblNombreMA;
+    private javax.swing.JLabel lblOtrosTitulosMA;
+    private javax.swing.JLabel lblSexoMA;
     private javax.swing.JLabel lblTituloMA;
     // End of variables declaration//GEN-END:variables
 }
