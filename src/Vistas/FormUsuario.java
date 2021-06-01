@@ -179,7 +179,7 @@ public class FormUsuario extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
-        jLabel1.setText("LISTADO DE USUARIOS (26)");
+        jLabel1.setText("LISTADO DE USUARIOS");
 
         btnExportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
         btnExportar.setText("Exportar a Excel");
@@ -221,19 +221,18 @@ public class FormUsuario extends javax.swing.JFrame {
         Panel2MantenedorUsuario.setLayout(Panel2MantenedorUsuarioLayout);
         Panel2MantenedorUsuarioLayout.setHorizontalGroup(
             Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel2MantenedorUsuarioLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(btnIngresarMU)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                .addComponent(btnModificarMU)
-                .addGap(103, 103, 103)
-                .addComponent(btnEliminarMU)
-                .addGap(60, 60, 60)
-                .addComponent(btnLimpiarMU)
-                .addGap(50, 50, 50))
             .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                        .addComponent(btnModificarMU, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnLimpiarMU)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnEliminarMU)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnIngresarMU))
+                    .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Panel2MantenedorUsuarioLayout.setVerticalGroup(
@@ -255,9 +254,7 @@ public class FormUsuario extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(lblMantenedorUsuarios)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(314, 314, 314)
                 .addComponent(jLabel2)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
@@ -266,13 +263,17 @@ public class FormUsuario extends javax.swing.JFrame {
                     .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(251, 251, 251)
+                .addComponent(lblMantenedorUsuarios)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(lblMantenedorUsuarios))
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblMantenedorUsuarios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
