@@ -46,12 +46,16 @@ public class FormDevolverLibros extends javax.swing.JFrame {
         });
 
         lblMantenedorDeDevoluciones.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblMantenedorDeDevoluciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/leyendo.png"))); // NOI18N
         lblMantenedorDeDevoluciones.setText("MANTENEDOR DE DEVOLUCIONES");
 
+        lblMD2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/codigo.png"))); // NOI18N
         lblMD2.setText("INGRESE NÚMERO DE ORDEN DE ARRIENDO");
 
+        btnIngresarMD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btnIngresarMD.setText("INGRESAR");
 
+        btnVolverMD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
         btnVolverMD.setText("VOLVER AL MENÚ PRINCIPAL");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -61,20 +65,24 @@ public class FormDevolverLibros extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addComponent(btnIngresarMD)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnVolverMD))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addComponent(lblMD2)))
+                        .addGap(0, 17, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblMantenedorDeDevoluciones))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(btnIngresarMD)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnVolverMD))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(lblMD2)))
-                .addContainerGap(23, Short.MAX_VALUE))
+                        .addComponent(fieldMD1)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblMantenedorDeDevoluciones)
+                .addGap(27, 27, 27))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -83,9 +91,9 @@ public class FormDevolverLibros extends javax.swing.JFrame {
                 .addComponent(lblMantenedorDeDevoluciones)
                 .addGap(18, 18, 18)
                 .addComponent(lblMD2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIngresarMD)
                     .addComponent(btnVolverMD))

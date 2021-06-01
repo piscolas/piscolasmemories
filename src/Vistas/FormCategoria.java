@@ -81,15 +81,19 @@ public class FormCategoria extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/visualizacion-interactiva.png"))); // NOI18N
         jButton1.setText("Libros interactivos");
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/letra.png"))); // NOI18N
         jButton2.setText("Género Lírico");
 
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/caballero.png"))); // NOI18N
         jButton3.setText("Género Épico");
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/drama.png"))); // NOI18N
         jButton4.setText("Género Dramático");
 
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libross (1).png"))); // NOI18N
         jButton5.setText("Lectura prolongada");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,15 +101,18 @@ public class FormCategoria extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/consulta.png"))); // NOI18N
         jButton6.setText("Libros de Consulta");
 
-        jButton7.setText("Informativos o Manuales");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/guia.png"))); // NOI18N
+        jButton7.setText("Manuales");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/hombre.png"))); // NOI18N
         jButton8.setText("Literatura Ilustrada");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,34 +123,46 @@ public class FormCategoria extends javax.swing.JFrame {
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/biografia.png"))); // NOI18N
         jButton9.setText("Biografías");
 
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/escrituras-sagradas.png"))); // NOI18N
         jButton10.setText("Libros sagrados");
 
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/bolsillo.png"))); // NOI18N
         jButton11.setText("Libros de Bolsillo");
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comic.png"))); // NOI18N
         jButton12.setText("Cómics");
 
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libros-serializados.png"))); // NOI18N
         jButton13.setText("Sagas");
 
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/partitura.png"))); // NOI18N
         jButton14.setText("Libro de Partituras");
 
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/escribir.png"))); // NOI18N
         jButton15.setText("Novelas");
 
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/cocinando.png"))); // NOI18N
         jButton16.setText("Libros de Cocina");
 
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/fantasia.png"))); // NOI18N
         jButton17.setText("Libros de Fantasía");
 
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/religion.png"))); // NOI18N
         jButton18.setText("Libros de Religión");
 
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ciencia-ficcion.png"))); // NOI18N
         jButton19.setText("Ciencia Ficción");
 
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/imagen.png"))); // NOI18N
         jButton20.setText("Libros de Arte");
 
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/revista.png"))); // NOI18N
         jButton21.setText("Revistas");
 
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/bienestar-espiritual.png"))); // NOI18N
         jButton22.setText("Libros de Espiritualidad");
 
+        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/erotico.png"))); // NOI18N
         jButton23.setText("Libros Eróticos");
 
         jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/bebe.png"))); // NOI18N
@@ -155,11 +174,13 @@ public class FormCategoria extends javax.swing.JFrame {
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/cine.png"))); // NOI18N
         jButton26.setText("Cine");
 
+        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/nativo.png"))); // NOI18N
         jButton27.setText("Libros Costumbristas");
 
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/periodico.png"))); // NOI18N
         jButton28.setText("Crónicas");
 
+        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/personas.png"))); // NOI18N
         jButton29.setText("Libros de Cultura");
 
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/diccionario.png"))); // NOI18N
@@ -168,6 +189,7 @@ public class FormCategoria extends javax.swing.JFrame {
         jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro.png"))); // NOI18N
         jButton31.setText("Enciclopedias");
 
+        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/analitica.png"))); // NOI18N
         jButton32.setText("Libros de Economía");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,14 +197,19 @@ public class FormCategoria extends javax.swing.JFrame {
             }
         });
 
+        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/luna.png"))); // NOI18N
         jButton33.setText("Libros de Esoterismo");
 
+        jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/aristoteles.png"))); // NOI18N
         jButton34.setText("Libros de Filosofía");
 
+        jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/astrologia.png"))); // NOI18N
         jButton35.setText("Libros de Astrología");
 
+        jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/cliente.png"))); // NOI18N
         jButton36.setText("Libros de Críticas");
 
+        jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/deportes.png"))); // NOI18N
         jButton37.setText("Libros de Deportes");
 
         jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/nota.png"))); // NOI18N
@@ -191,8 +218,10 @@ public class FormCategoria extends javax.swing.JFrame {
         jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ciencias-sociales.png"))); // NOI18N
         jButton39.setText("Ciencias Sociales");
 
+        jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comunicacion-bidireccional.png"))); // NOI18N
         jButton40.setText("Libros de Comunicación");
 
+        jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
         jButton41.setText("VOLVER AL MENÚ PRINCIPAL");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -206,24 +235,31 @@ public class FormCategoria extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                .addGap(2, 2, 2)
+                                                .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 2, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -233,10 +269,10 @@ public class FormCategoria extends javax.swing.JFrame {
                                         .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
+                                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
                                             .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGroup(layout.createSequentialGroup()
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -244,19 +280,17 @@ public class FormCategoria extends javax.swing.JFrame {
                                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                            .addComponent(jButton19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addComponent(jButton25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                    .addComponent(jButton38, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING))
-                                                    .addComponent(jButton27, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(jButton20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(jButton20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                    .addComponent(jButton30, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                .addComponent(jButton31, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                            .addComponent(jButton38, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                    .addGap(24, 24, 24)
+                                                    .addComponent(jButton7)))
                                             .addGap(18, 18, 18)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -271,17 +305,18 @@ public class FormCategoria extends javax.swing.JFrame {
                                                 .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(24, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton16, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -361,7 +396,7 @@ public class FormCategoria extends javax.swing.JFrame {
                     .addComponent(jButton15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton11)
                     .addComponent(jButton21))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

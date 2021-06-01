@@ -178,6 +178,7 @@ public class FormUsuario extends javax.swing.JFrame {
         jScrollPane1.setViewportView(TablaMantenedorUsuario);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
         jLabel1.setText("LISTADO DE USUARIOS (26)");
 
         btnExportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N

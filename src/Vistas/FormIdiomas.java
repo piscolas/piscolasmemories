@@ -51,12 +51,14 @@ public class FormIdiomas extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/idiomas.png"))); // NOI18N
         jLabel1.setText("MANTENEDOR DE IDIOMAS");
 
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel2.setText("Nombre Idioma :");
 
+        jBtnINGRESAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         jBtnINGRESAR.setText("INGRESAR");
         jBtnINGRESAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +66,7 @@ public class FormIdiomas extends javax.swing.JFrame {
             }
         });
 
+        jBtnBUSCAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/browse.png"))); // NOI18N
         jBtnBUSCAR.setText("BUSCAR");
         jBtnBUSCAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +74,7 @@ public class FormIdiomas extends javax.swing.JFrame {
             }
         });
 
+        jBtnELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
         jBtnELIMINAR.setText("ELIMINAR");
         jBtnELIMINAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,10 +115,11 @@ public class FormIdiomas extends javax.swing.JFrame {
                 .addComponent(jBtnBUSCAR)
                 .addGap(48, 48, 48)
                 .addComponent(jBtnELIMINAR)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
         jLabel3.setText("LISTADO DE IDIOMAS");
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
@@ -171,9 +176,9 @@ public class FormIdiomas extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGap(27, 27, 27))
         );
         layout.setVerticalGroup(

@@ -35,29 +35,38 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jButton41" alignment="1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jButton12" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jButton32" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jButton24" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jButton33" min="-2" pref="151" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jButton39" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton29" min="-2" pref="151" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jButton28" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jButton22" min="-2" pref="151" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jButton12" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jButton25" alignment="1" min="-2" pref="149" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                              <Component id="jButton39" min="-2" pref="149" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jButton19" alignment="1" min="-2" pref="149" max="-2" attributes="0"/>
+                                          <Component id="jButton9" alignment="1" min="-2" pref="149" max="-2" attributes="0"/>
+                                      </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton32" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Component id="jButton29" min="-2" pref="151" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -68,12 +77,12 @@
                                       <Component id="jButton15" min="-2" pref="151" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jButton26" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jButton26" min="-2" pref="149" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                           <Component id="jButton37" min="-2" pref="151" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="103" groupAlignment="1" attributes="0">
                                                   <Group type="103" groupAlignment="1" attributes="0">
@@ -81,26 +90,24 @@
                                                           <Group type="103" groupAlignment="1" attributes="0">
                                                               <Group type="103" groupAlignment="1" attributes="0">
                                                                   <Group type="103" groupAlignment="1" attributes="0">
-                                                                      <Group type="103" groupAlignment="1" attributes="0">
-                                                                          <Component id="jButton9" min="-2" pref="151" max="-2" attributes="0"/>
-                                                                          <Component id="jButton19" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                                                      </Group>
-                                                                      <Component id="jButton25" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                                                      <Component id="jButton27" min="-2" pref="151" max="-2" attributes="0"/>
+                                                                      <Component id="jButton20" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                                                   </Group>
-                                                                  <Component id="jButton31" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
-                                                                  <Component id="jButton38" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                                                  <Component id="jButton30" min="-2" pref="151" max="-2" attributes="0"/>
+                                                                  <Component id="jButton30" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                                               </Group>
-                                                              <Component id="jButton4" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                                              <Component id="jButton31" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                                           </Group>
-                                                          <Component id="jButton3" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                                          <Component id="jButton2" min="-2" pref="151" max="-2" attributes="0"/>
+                                                          <Component id="jButton38" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                                       </Group>
-                                                      <Component id="jButton7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jButton4" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="jButton27" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                                  <Component id="jButton3" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                                               </Group>
-                                              <Component id="jButton20" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Component id="jButton2" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                                  <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -122,19 +129,21 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jButton11" max="32767" attributes="0"/>
+                          <Component id="jButton16" pref="151" max="32767" attributes="0"/>
+                      </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jButton11" min="-2" pref="151" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton21" min="-2" pref="151" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton16" min="-2" pref="151" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton13" min="-2" pref="151" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jButton21" min="-2" pref="151" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -238,7 +247,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton11" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton21" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -256,16 +265,25 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/visualizacion-interactiva.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros interactivos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/letra.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="G&#xe9;nero L&#xed;rico"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/caballero.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="G&#xe9;nero &#xc9;pico"/>
       </Properties>
     </Component>
@@ -279,6 +297,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/libross (1).png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Lectura prolongada"/>
       </Properties>
       <Events>
@@ -287,12 +308,18 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/consulta.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Consulta"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Informativos o Manuales"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/guia.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Manuales"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
@@ -300,6 +327,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/hombre.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Literatura Ilustrada"/>
       </Properties>
       <Events>
@@ -316,11 +346,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/escrituras-sagradas.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros sagrados"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton11">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/bolsillo.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Bolsillo"/>
       </Properties>
     </Component>
@@ -334,31 +370,49 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton13">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/libros-serializados.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Sagas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton14">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/partitura.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libro de Partituras"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton15">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/escribir.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Novelas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton16">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/cocinando.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Cocina"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton17">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/fantasia.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Fantas&#xed;a"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton18">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/religion.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Religi&#xf3;n"/>
       </Properties>
     </Component>
@@ -372,21 +426,33 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton20">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/imagen.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Arte"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton21">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/revista.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Revistas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton22">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/bienestar-espiritual.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Espiritualidad"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton23">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/erotico.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros Er&#xf3;ticos"/>
       </Properties>
     </Component>
@@ -416,6 +482,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton27">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/nativo.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros Costumbristas"/>
       </Properties>
     </Component>
@@ -429,6 +498,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton29">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/personas.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Cultura"/>
       </Properties>
     </Component>
@@ -450,6 +522,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton32">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/analitica.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Econom&#xed;a"/>
       </Properties>
       <Events>
@@ -458,26 +533,41 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton33">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/luna.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Esoterismo"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton34">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/aristoteles.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Filosof&#xed;a"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton35">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/astrologia.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Astrolog&#xed;a"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton36">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/cliente.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Cr&#xed;ticas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton37">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/deportes.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Deportes"/>
       </Properties>
     </Component>
@@ -499,11 +589,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton40">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/comunicacion-bidireccional.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Libros de Comunicaci&#xf3;n"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton41">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/regreso.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="VOLVER AL MEN&#xda; PRINCIPAL"/>
       </Properties>
     </Component>

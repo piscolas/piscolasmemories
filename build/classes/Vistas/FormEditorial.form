@@ -33,8 +33,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel1" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="223" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="260" max="32767" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -59,6 +59,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/editorial.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="MANTENEDOR DE EDITORIAL"/>
       </Properties>
     </Component>
@@ -78,11 +81,11 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="btnBUSCAR" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <Component id="btnBUSCAR" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="btnELIMINAR" min="-2" pref="152" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTextField2" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
@@ -93,7 +96,7 @@
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -117,7 +120,7 @@
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" pref="209" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="189" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -133,6 +136,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnINGRESAR">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Icons/log-in ESTE OCUP&#xc9;.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="INGRESAR"/>
           </Properties>
           <Events>
@@ -141,11 +147,17 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnBUSCAR">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Icons/browse.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="BUSCAR"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnELIMINAR">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Icons/eliminar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="ELIMINAR"/>
           </Properties>
         </Component>
@@ -183,6 +195,9 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Icons/lista-de-quehaceres.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="LISTADO EDITORIALES"/>
           </Properties>
