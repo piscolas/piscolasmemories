@@ -30,22 +30,66 @@ public class FormDevolverLibros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblMantenedorDeDevoluciones = new javax.swing.JLabel();
+        lblMD2 = new javax.swing.JLabel();
+        fieldMD1 = new javax.swing.JTextField();
+        btnIngresarMD = new javax.swing.JButton();
+        btnVolverMD = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("DEVOLUCIÓN DE LIBROS");
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
             }
         });
 
+        lblMantenedorDeDevoluciones.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblMantenedorDeDevoluciones.setText("MANTENEDOR DE DEVOLUCIONES");
+
+        lblMD2.setText("INGRESE NÚMERO DE ORDEN DE ARRIENDO");
+
+        btnIngresarMD.setText("INGRESAR");
+
+        btnVolverMD.setText("VOLVER AL MENÚ PRINCIPAL");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblMantenedorDeDevoluciones))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(btnIngresarMD)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVolverMD))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(lblMD2)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblMantenedorDeDevoluciones)
+                .addGap(18, 18, 18)
+                .addComponent(lblMD2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresarMD)
+                    .addComponent(btnVolverMD))
+                .addContainerGap())
         );
 
         pack();
@@ -103,5 +147,10 @@ public class FormDevolverLibros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnIngresarMD;
+    private javax.swing.JButton btnVolverMD;
+    private javax.swing.JTextField fieldMD1;
+    private javax.swing.JLabel lblMD2;
+    private javax.swing.JLabel lblMantenedorDeDevoluciones;
     // End of variables declaration//GEN-END:variables
 }

@@ -57,101 +57,157 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 formWindowClosing(evt);
             }
         });
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnFormUsuariosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormUsuariosMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/equipo.png"))); // NOI18N
         btnFormUsuariosMP.setText("Mantenedor de Usuarios");
         btnFormUsuariosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormUsuariosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormUsuariosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 239, 106));
 
         btnFormAutoresMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormAutoresMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/escritor.png"))); // NOI18N
         btnFormAutoresMP.setText("Mantenedor de Autores");
         btnFormAutoresMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormAutoresMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormAutoresMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 123, 239, 106));
 
         btnFormIdiomasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormIdiomasMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/idiomas.png"))); // NOI18N
         btnFormIdiomasMP.setText("Mantenedor de Idiomas");
         btnFormIdiomasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormIdiomasMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormIdiomasMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 235, 239, 106));
 
         btnFormCategoriasMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormCategoriasMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/contenido.png"))); // NOI18N
         btnFormCategoriasMP.setText("Mantenedor de Categorias");
         btnFormCategoriasMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormCategoriasMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormCategoriasMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 347, -1, 106));
 
         btnFormArrendarLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormArrendarLibrosMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/trato.png"))); // NOI18N
         btnFormArrendarLibrosMP.setText("Arrendar Libros");
         btnFormArrendarLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormArrendarLibrosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormArrendarLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 183, 250, 80));
 
         btnFormLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormLibrosMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libros.png"))); // NOI18N
         btnFormLibrosMP.setText("Mantenedor de Libros");
         btnFormLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormLibrosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 459, 239, 106));
 
         btnFormEditorialesMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormEditorialesMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/editorial.png"))); // NOI18N
         btnFormEditorialesMP.setText("Mantenedor de Editoriales");
         btnFormEditorialesMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormEditorialesMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormEditorialesMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, 239, 106));
 
         btnFormVenderLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnFormVenderLibrosMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/dinero.png"))); // NOI18N
         btnFormVenderLibrosMP.setText("Vender Libros");
         btnFormVenderLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFormVenderLibrosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFormVenderLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 11, 250, 80));
 
         btnDevolverLibrosMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnDevolverLibrosMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/leyendo.png"))); // NOI18N
         btnDevolverLibrosMP.setText("Devolver Libros");
         btnDevolverLibrosMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDevolverLibrosMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDevolverLibrosMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 97, 250, 80));
 
         btnSalirDelSistemaMP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnSalirDelSistemaMP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/salida-de-emergencia.png"))); // NOI18N
         btnSalirDelSistemaMP.setText("Salir del Sistema");
         btnSalirDelSistemaMP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirDelSistemaMPActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalirDelSistemaMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, 240, 80));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 485, -1, 226));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro (1).png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 270, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnFormEditorialesMP)
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSalirDelSistemaMP, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(485, 485, 485)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnFormUsuariosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnFormAutoresMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnFormIdiomasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnFormCategoriasMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnFormLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnSalirDelSistemaMP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFormEditorialesMP, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnFormVenderLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnDevolverLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(btnFormArrendarLibrosMP, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(jLabel3))))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

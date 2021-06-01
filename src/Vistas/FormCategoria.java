@@ -74,6 +74,7 @@ public class FormCategoria extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("CATEGORIAS DE LIBROS");
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
@@ -86,6 +87,7 @@ public class FormCategoria extends javax.swing.JFrame {
 
         jButton3.setText("Género Épico");
 
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/drama.png"))); // NOI18N
         jButton4.setText("Género Dramático");
 
         jButton5.setText("Lectura prolongada");
@@ -111,12 +113,14 @@ public class FormCategoria extends javax.swing.JFrame {
             }
         });
 
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/biografia.png"))); // NOI18N
         jButton9.setText("Biografías");
 
         jButton10.setText("Libros sagrados");
 
         jButton11.setText("Libros de Bolsillo");
 
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/comic.png"))); // NOI18N
         jButton12.setText("Cómics");
 
         jButton13.setText("Sagas");
@@ -131,6 +135,7 @@ public class FormCategoria extends javax.swing.JFrame {
 
         jButton18.setText("Libros de Religión");
 
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ciencia-ficcion.png"))); // NOI18N
         jButton19.setText("Ciencia Ficción");
 
         jButton20.setText("Libros de Arte");
@@ -141,20 +146,26 @@ public class FormCategoria extends javax.swing.JFrame {
 
         jButton23.setText("Libros Eróticos");
 
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/bebe.png"))); // NOI18N
         jButton24.setText("Cuentos");
 
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/exactitud.png"))); // NOI18N
         jButton25.setText("Ciencias Exactas");
 
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/cine.png"))); // NOI18N
         jButton26.setText("Cine");
 
         jButton27.setText("Libros Costumbristas");
 
+        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/periodico.png"))); // NOI18N
         jButton28.setText("Crónicas");
 
         jButton29.setText("Libros de Cultura");
 
+        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/diccionario.png"))); // NOI18N
         jButton30.setText("Diccionarios");
 
+        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/libro.png"))); // NOI18N
         jButton31.setText("Enciclopedias");
 
         jButton32.setText("Libros de Economía");
@@ -174,8 +185,10 @@ public class FormCategoria extends javax.swing.JFrame {
 
         jButton37.setText("Libros de Deportes");
 
+        jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/nota.png"))); // NOI18N
         jButton38.setText("Ensayos");
 
+        jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ciencias-sociales.png"))); // NOI18N
         jButton39.setText("Ciencias Sociales");
 
         jButton40.setText("Libros de Comunicación");

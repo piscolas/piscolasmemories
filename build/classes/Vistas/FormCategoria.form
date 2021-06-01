@@ -4,6 +4,7 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="0"/>
     <Property name="title" type="java.lang.String" value="CATEGORIAS DE LIBROS"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -270,6 +271,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/drama.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="G&#xe9;nero Dram&#xe1;tico"/>
       </Properties>
     </Component>
@@ -304,6 +308,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/biografia.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Biograf&#xed;as"/>
       </Properties>
     </Component>
@@ -319,6 +326,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton12">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/comic.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C&#xf3;mics"/>
       </Properties>
     </Component>
@@ -354,6 +364,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton19">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/ciencia-ficcion.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ciencia Ficci&#xf3;n"/>
       </Properties>
     </Component>
@@ -379,16 +392,25 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton24">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/bebe.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cuentos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton25">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/exactitud.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ciencias Exactas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton26">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/cine.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cine"/>
       </Properties>
     </Component>
@@ -399,6 +421,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton28">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/periodico.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cr&#xf3;nicas"/>
       </Properties>
     </Component>
@@ -409,11 +434,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton30">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/diccionario.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Diccionarios"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton31">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/libro.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Enciclopedias"/>
       </Properties>
     </Component>
@@ -452,11 +483,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton38">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/nota.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ensayos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton39">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icons/ciencias-sociales.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ciencias Sociales"/>
       </Properties>
     </Component>
