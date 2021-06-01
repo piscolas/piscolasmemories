@@ -91,7 +91,7 @@
                               <Component id="fieldPrecio" alignment="0" max="32767" attributes="0"/>
                               <Component id="fieldAñoPubli" alignment="0" max="32767" attributes="0"/>
                               <Component id="fieldNumeroSerie" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jComboBox1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="comboBoxEstado" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="fieldEditorial" alignment="0" max="32767" attributes="0"/>
                               <Component id="fieldAutor" min="-2" pref="189" max="-2" attributes="0"/>
                           </Group>
@@ -147,7 +147,7 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboBoxEstado" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -226,7 +226,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="fieldA&#xf1;oPubli">
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="comboBoxEstado">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">

@@ -44,7 +44,7 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="fieldMD1" max="32767" attributes="0"/>
+                  <Component id="fieldNumeroOrden" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblMD2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -62,7 +62,7 @@
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Component id="lblMD2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="fieldMD1" min="-2" max="-2" attributes="0"/>
+              <Component id="fieldNumeroOrden" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="btnIngresarMD" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -90,7 +90,7 @@
         <Property name="text" type="java.lang.String" value="INGRESE N&#xda;MERO DE ORDEN DE ARRIENDO"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="fieldMD1">
+    <Component class="javax.swing.JTextField" name="fieldNumeroOrden">
     </Component>
     <Component class="javax.swing.JButton" name="btnIngresarMD">
       <Properties>

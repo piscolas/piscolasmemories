@@ -32,7 +32,7 @@ public class FormDevolverLibros extends javax.swing.JFrame {
 
         lblMantenedorDeDevoluciones = new javax.swing.JLabel();
         lblMD2 = new javax.swing.JLabel();
-        fieldMD1 = new javax.swing.JTextField();
+        fieldNumeroOrden = new javax.swing.JTextField();
         btnIngresarMD = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -70,7 +70,7 @@ public class FormDevolverLibros extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldMD1)
+                    .addComponent(fieldNumeroOrden)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblMD2)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -84,7 +84,7 @@ public class FormDevolverLibros extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblMD2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(fieldMD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fieldNumeroOrden, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnIngresarMD)
                 .addContainerGap())
@@ -146,7 +146,7 @@ public class FormDevolverLibros extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresarMD;
-    private javax.swing.JTextField fieldMD1;
+    private javax.swing.JTextField fieldNumeroOrden;
     private javax.swing.JLabel lblMD2;
     private javax.swing.JLabel lblMantenedorDeDevoluciones;
     // End of variables declaration//GEN-END:variables

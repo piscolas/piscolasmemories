@@ -74,7 +74,7 @@ public class FormUsuario extends javax.swing.JFrame {
 
         lblRepContrasenaMU.setText("Repetir Contraseña:");
 
-        BoxEstadoMU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        BoxEstadoMU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1" }));
 
         lblEstadoMU.setText("Estado:");
 

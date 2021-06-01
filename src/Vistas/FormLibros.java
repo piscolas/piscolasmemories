@@ -46,7 +46,7 @@ public class FormLibros extends javax.swing.JFrame {
         fieldNroPaginas = new javax.swing.JTextField();
         fieldPrecio = new javax.swing.JTextField();
         fieldAñoPubli = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        comboBoxEstado = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         fieldEditorial = new javax.swing.JTextField();
@@ -89,7 +89,7 @@ public class FormLibros extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "0" }));
+        comboBoxEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "0" }));
 
         jLabel9.setText("Editorial :");
 
@@ -144,7 +144,7 @@ public class FormLibros extends javax.swing.JFrame {
                             .addComponent(fieldPrecio)
                             .addComponent(fieldAñoPubli)
                             .addComponent(fieldNumeroSerie)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comboBoxEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fieldEditorial)
                             .addComponent(fieldAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -186,7 +186,7 @@ public class FormLibros extends javax.swing.JFrame {
                     .addComponent(fieldAñoPubli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboBoxEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -319,6 +319,7 @@ public class FormLibros extends javax.swing.JFrame {
     private javax.swing.JButton btnELIMINAR;
     private javax.swing.JButton btnINGRESAR;
     private javax.swing.JButton btnLIMPIAR;
+    private javax.swing.JComboBox<String> comboBoxEstado;
     private javax.swing.JTextField fieldAutor;
     private javax.swing.JTextField fieldAñoPubli;
     private javax.swing.JTextField fieldEditorial;
@@ -327,7 +328,6 @@ public class FormLibros extends javax.swing.JFrame {
     private javax.swing.JTextField fieldNumeroSerie;
     private javax.swing.JTextField fieldPrecio;
     private javax.swing.JTextField fieldTitulo;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
