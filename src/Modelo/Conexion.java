@@ -11,7 +11,7 @@ import java.sql.*;
  *
  * @author tomas
  */
-public class Conexión {
+public class Conexion {
 
     private final String bd = "Sistema_de_Biblioteca";
     private final String usuario = "root";

@@ -5,6 +5,9 @@
  */
 package sistemabiblioteca;
 
+import Controlador.ControladorLogin;
+import Modelo.ConsultaLogin;
+import Modelo.ModeloLogin;
 import Vistas.Login;
 
 /**
@@ -18,11 +21,13 @@ public class SistemaBiblioteca {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Login login=new Login();
-        login.setVisible(true);
-        login.setLocationRelativeTo(null);
-        
+    
+    ModeloLogin mod=new ModeloLogin();
+    ConsultaLogin cons=new ConsultaLogin();
+    Login frm=new Login();
+    
+    ControladorLogin ctrl=new ControladorLogin(mod,cons,frm);
+    ctrl.iniciar();
         
     }
     

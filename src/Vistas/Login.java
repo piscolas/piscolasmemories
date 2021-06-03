@@ -1,8 +1,4 @@
-package Vistas;
-
-import javax.swing.JOptionPane;
-import Config.Hash;
-import Modelo.Conexión;
+ package Vistas;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,14 +27,14 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnIngresarAUTI = new javax.swing.JButton();
-        btnSalirAUTI = new javax.swing.JButton();
-        fieldUsuarioAUTI = new javax.swing.JTextField();
+        btningresar = new javax.swing.JButton();
+        btnsalir = new javax.swing.JButton();
+        frmusuario = new javax.swing.JTextField();
         lblTituloAutenticacion = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         lblContrasena = new javax.swing.JLabel();
         lblimagenlibros = new javax.swing.JLabel();
-        fieldContrasenaAUTI = new javax.swing.JPasswordField();
+        frmclave = new javax.swing.JPasswordField();
         lblIconAUTI = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -50,28 +46,28 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        btnIngresarAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnIngresarAUTI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
-        btnIngresarAUTI.setText("INGRESAR");
-        btnIngresarAUTI.addActionListener(new java.awt.event.ActionListener() {
+        btningresar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
+        btningresar.setText("INGRESAR");
+        btningresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAUTIActionPerformed(evt);
+                btningresarActionPerformed(evt);
             }
         });
 
-        btnSalirAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnSalirAUTI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/salida-de-emergencia.png"))); // NOI18N
-        btnSalirAUTI.setText("SALIR");
-        btnSalirAUTI.addActionListener(new java.awt.event.ActionListener() {
+        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/salida-de-emergencia.png"))); // NOI18N
+        btnsalir.setText("SALIR");
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirAUTIActionPerformed(evt);
+                btnsalirActionPerformed(evt);
             }
         });
 
-        fieldUsuarioAUTI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        fieldUsuarioAUTI.addActionListener(new java.awt.event.ActionListener() {
+        frmusuario.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        frmusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldUsuarioAUTIActionPerformed(evt);
+                frmusuarioActionPerformed(evt);
             }
         });
 
@@ -84,9 +80,9 @@ public class Login extends javax.swing.JFrame {
         lblContrasena.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblContrasena.setText("CONTRASEÑA:");
 
-        fieldContrasenaAUTI.addActionListener(new java.awt.event.ActionListener() {
+        frmclave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldContrasenaAUTIActionPerformed(evt);
+                frmclaveActionPerformed(evt);
             }
         });
 
@@ -106,12 +102,12 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(lblUsuario))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
-                            .addComponent(fieldContrasenaAUTI)))
+                            .addComponent(frmusuario, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                            .addComponent(frmclave)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btningresar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(47, 47, 47))
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
@@ -132,60 +128,40 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUsuario)
-                    .addComponent(fieldUsuarioAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(frmusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblContrasena)
-                    .addComponent(fieldContrasenaAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(frmclave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnIngresarAUTI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSalirAUTI, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(btningresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIngresarAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAUTIActionPerformed
+    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         // TODO add your handling code here:
-        if (fieldUsuarioAUTI.getText().equals("") || fieldContrasenaAUTI.getPassword().equals("")) {
-            JOptionPane.showConfirmDialog(null, "Debe ingresar los datos usuario y/o Contraseña", "Error de Acceso",
-                    JOptionPane.WARNING_MESSAGE);
-            fieldUsuarioAUTI.requestFocus();
-        } else {
+    }//GEN-LAST:event_btningresarActionPerformed
 
-            System.out.println(Hash.md5(fieldContrasenaAUTI.getPassword().toString()));
-            System.out.println(Hash.sha1(fieldContrasenaAUTI.getPassword().toString()));
-
-            Conexión con = new Conexión();
-
-            System.out.println(con.conectar());
-
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.setVisible(true);
-            menu.setLocationRelativeTo(null);
-            this.dispose();
-        }
-    }//GEN-LAST:event_btnIngresarAUTIActionPerformed
-
-    private void btnSalirAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirAUTIActionPerformed
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         // TODO add your handling code here:
-        cerrar();
-    }//GEN-LAST:event_btnSalirAUTIActionPerformed
+    }//GEN-LAST:event_btnsalirActionPerformed
 
-    private void fieldUsuarioAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldUsuarioAUTIActionPerformed
+    private void frmusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frmusuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldUsuarioAUTIActionPerformed
+    }//GEN-LAST:event_frmusuarioActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         // TODO add your handling code here:
-        cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void fieldContrasenaAUTIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldContrasenaAUTIActionPerformed
+    private void frmclaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frmclaveActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldContrasenaAUTIActionPerformed
+    }//GEN-LAST:event_frmclaveActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,21 +198,13 @@ public class Login extends javax.swing.JFrame {
         });
     }
 
-    public void cerrar() {
-        int resp = JOptionPane.showConfirmDialog(null, "Esta seguro/a que desea salir del sistema", "Confirmación de Cierre",
-                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-
-        if (resp == JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnIngresarAUTI;
-    private javax.swing.JButton btnSalirAUTI;
-    private javax.swing.JPasswordField fieldContrasenaAUTI;
-    private javax.swing.JTextField fieldUsuarioAUTI;
+    public javax.swing.JButton btningresar;
+    public javax.swing.JButton btnsalir;
+    public javax.swing.JPasswordField frmclave;
+    public javax.swing.JTextField frmusuario;
     private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblIconAUTI;
     private javax.swing.JLabel lblTituloAutenticacion;
