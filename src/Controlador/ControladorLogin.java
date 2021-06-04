@@ -44,7 +44,7 @@ public class ControladorLogin implements ActionListener{
         
         if(e.getSource()==frm.btningresar)
         {
-            if(frm.frmclave.getText().equals("") || frm.clave.getText().equals(""))
+            if(frm.frmclave.getPassword().equals("") || frm.frmclave.getPassword().equals(""))
             {
                 JOptionPane.showMessageDialog(null,"USUARIO/CLAVE EN BLANCO","ERROR AUTENTICACIÓN",JOptionPane.INFORMATION_MESSAGE);
                 frm.frmusuario.requestFocus();
