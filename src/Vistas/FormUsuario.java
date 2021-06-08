@@ -44,10 +44,10 @@ public class FormUsuario extends javax.swing.JFrame {
         fieldRepContrasenaMU = new javax.swing.JTextField();
         lblTituloMantenedorUsuarios = new javax.swing.JLabel();
         Panel2MantenedorUsuario = new javax.swing.JPanel();
-        btnIngresarMU = new javax.swing.JButton();
+        btningresar = new javax.swing.JButton();
         btnModificarMU = new javax.swing.JButton();
-        btnEliminarMU = new javax.swing.JButton();
-        btnLimpiarMU = new javax.swing.JButton();
+        btneliminar = new javax.swing.JButton();
+        btncancelar = new javax.swing.JButton();
         Panel3MantenedorUsuario = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableListadoUsuariosMU = new javax.swing.JTable();
@@ -148,20 +148,20 @@ public class FormUsuario extends javax.swing.JFrame {
         lblTituloMantenedorUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/equipo.png"))); // NOI18N
         lblTituloMantenedorUsuarios.setText("MANTENEDOR DE USUARIOS");
 
-        btnIngresarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
-        btnIngresarMU.setText("INGRESAR");
+        btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
+        btningresar.setText("INGRESAR");
 
         btnModificarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/editar (3).png"))); // NOI18N
         btnModificarMU.setText("MODIFICAR");
 
-        btnEliminarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
-        btnEliminarMU.setText("ELIMINAR");
+        btneliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
+        btneliminar.setText("ELIMINAR");
 
-        btnLimpiarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
-        btnLimpiarMU.setText("LIMPIAR");
-        btnLimpiarMU.addActionListener(new java.awt.event.ActionListener() {
+        btncancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
+        btncancelar.setText("LIMPIAR");
+        btncancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLimpiarMUActionPerformed(evt);
+                btncancelarActionPerformed(evt);
             }
         });
 
@@ -228,11 +228,11 @@ public class FormUsuario extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel2MantenedorUsuarioLayout.createSequentialGroup()
                         .addComponent(btnModificarMU, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnLimpiarMU)
+                        .addComponent(btncancelar)
                         .addGap(18, 18, 18)
-                        .addComponent(btnEliminarMU)
+                        .addComponent(btneliminar)
                         .addGap(18, 18, 18)
-                        .addComponent(btnIngresarMU))
+                        .addComponent(btningresar))
                     .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -241,10 +241,10 @@ public class FormUsuario extends javax.swing.JFrame {
             .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarMU)
+                    .addComponent(btningresar)
                     .addComponent(btnModificarMU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnEliminarMU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnLimpiarMU))
+                    .addComponent(btneliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btncancelar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -303,10 +303,10 @@ public class FormUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldNombreCompletoMUActionPerformed
 
-    private void btnLimpiarMUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarMUActionPerformed
+    private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
         // TODO add your handling code here:
         limpiar();
-    }//GEN-LAST:event_btnLimpiarMUActionPerformed
+    }//GEN-LAST:event_btncancelarActionPerformed
 
     private void fieldRepContrasenaMUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldRepContrasenaMUActionPerformed
         // TODO add your handling code here:
@@ -369,7 +369,7 @@ public class FormUsuario extends javax.swing.JFrame {
         fieldUsuarioMU.setText("");
         
         btnModificarMU.setEnabled(false);
-        btnEliminarMU.setEnabled(false);
+        btneliminar.setEnabled(false);
         btnExportarMU.setEnabled(false);
         
         fieldNombreCompletoMU.requestFocus();
@@ -392,16 +392,16 @@ public class FormUsuario extends javax.swing.JFrame {
     private javax.swing.JPanel Panel1MantenedorUsuarios;
     private javax.swing.JPanel Panel2MantenedorUsuario;
     private javax.swing.JPanel Panel3MantenedorUsuario;
-    private javax.swing.JButton btnEliminarMU;
-    private javax.swing.JButton btnExportarMU;
-    private javax.swing.JButton btnIngresarMU;
-    private javax.swing.JButton btnLimpiarMU;
-    private javax.swing.JButton btnModificarMU;
+    public javax.swing.JButton btnExportarMU;
+    public javax.swing.JButton btnModificarMU;
     private javax.swing.JButton btnVolverMU;
-    private javax.swing.JTextField fieldContraseñaMU;
-    private javax.swing.JTextField fieldNombreCompletoMU;
-    private javax.swing.JTextField fieldRepContrasenaMU;
-    private javax.swing.JTextField fieldUsuarioMU;
+    public javax.swing.JButton btncancelar;
+    public javax.swing.JButton btneliminar;
+    public javax.swing.JButton btningresar;
+    public javax.swing.JTextField fieldContraseñaMU;
+    public javax.swing.JTextField fieldNombreCompletoMU;
+    public javax.swing.JTextField fieldRepContrasenaMU;
+    public javax.swing.JTextField fieldUsuarioMU;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblContrasenaMU;
@@ -411,6 +411,6 @@ public class FormUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel lblRepContrasenaMU;
     private javax.swing.JLabel lblTituloMantenedorUsuarios;
     private javax.swing.JLabel lblUsuarioMU;
-    private javax.swing.JTable tableListadoUsuariosMU;
+    public javax.swing.JTable tableListadoUsuariosMU;
     // End of variables declaration//GEN-END:variables
 }

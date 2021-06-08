@@ -187,15 +187,27 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldNombreCompletoMUActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldUsuarioMU">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldContrase&#xf1;aMU">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldRepContrasenaMU">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldRepContrasenaMUActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
@@ -221,11 +233,11 @@
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="btnModificarMU" min="-2" pref="127" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnLimpiarMU" min="-2" max="-2" attributes="0"/>
+                          <Component id="btncancelar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnEliminarMU" min="-2" max="-2" attributes="0"/>
+                          <Component id="btneliminar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnIngresarMU" min="-2" max="-2" attributes="0"/>
+                          <Component id="btningresar" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Panel3MantenedorUsuario" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -238,10 +250,10 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnIngresarMU" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btningresar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnModificarMU" alignment="3" max="32767" attributes="0"/>
-                      <Component id="btnEliminarMU" alignment="3" max="32767" attributes="0"/>
-                      <Component id="btnLimpiarMU" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btneliminar" alignment="3" max="32767" attributes="0"/>
+                      <Component id="btncancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="37" max="32767" attributes="0"/>
                   <Component id="Panel3MantenedorUsuario" min="-2" max="-2" attributes="0"/>
@@ -251,13 +263,16 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnIngresarMU">
+        <Component class="javax.swing.JButton" name="btningresar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Icons/log-in ESTE OCUP&#xc9;.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="INGRESAR"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnModificarMU">
           <Properties>
@@ -266,16 +281,22 @@
             </Property>
             <Property name="text" type="java.lang.String" value="MODIFICAR"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnEliminarMU">
+        <Component class="javax.swing.JButton" name="btneliminar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Icons/eliminar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ELIMINAR"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnLimpiarMU">
+        <Component class="javax.swing.JButton" name="btncancelar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Icons/limpiar.png"/>
@@ -283,8 +304,11 @@
             <Property name="text" type="java.lang.String" value="LIMPIAR"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarMUActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncancelarActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Container class="javax.swing.JPanel" name="Panel3MantenedorUsuario">
 
@@ -369,6 +393,9 @@
                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                     </Property>
                   </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
@@ -393,6 +420,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExportarMUActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
