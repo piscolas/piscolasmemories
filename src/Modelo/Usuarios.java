@@ -11,32 +11,42 @@ package Modelo;
  */
 public class Usuarios {
 
-    public Usuarios(int id, String nombre, String usuario, String clave, int estado) {
-        this.id = id;
-        this.nombre = nombre;
-        this.usuario = usuario;
-        this.clave = clave;
-        this.estado = estado;
-    }
-    
     private int id;
     private String nombre;
     private String usuario;
     private String clave;
     private int estado;
+    private String buscar;
+
+    /*public Usuarios(int id, String nombre, String usuario, String clave, int estado, String buscar) {
+        this.id = id;
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.clave = clave;
+        this.estado = estado;
+        this.buscar = buscar;
+    }
 
     Usuarios() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-   
+*/
+    public String getBuscar() {
+        return buscar;
+    }
+
+    public void setBuscar(String buscar) {
+        this.buscar = buscar;
+    }
+
     public int getId() {
-    return id;
+        return id;
     }
 
     public void setId(int id) {
         this.id = id;
     }
-  
+
     public String getNombre() {
         return nombre;
     }
@@ -68,7 +78,5 @@ public class Usuarios {
     public void setEstado(int estado) {
         this.estado = estado;
     }
-    
 
-    
 }

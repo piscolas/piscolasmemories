@@ -19,7 +19,6 @@ public class FormUsuario extends javax.swing.JFrame {
      */
     public FormUsuario() {
         initComponents();
-        limpiar();
     }
 
     /**
@@ -40,19 +39,22 @@ public class FormUsuario extends javax.swing.JFrame {
         lblEstadoMU = new javax.swing.JLabel();
         fieldNombreCompletoMU = new javax.swing.JTextField();
         fieldUsuarioMU = new javax.swing.JTextField();
-        fieldContraseñaMU = new javax.swing.JTextField();
-        fieldRepContrasenaMU = new javax.swing.JTextField();
+        fieldContraseñaMU = new javax.swing.JPasswordField();
+        fieldRepContrasenaMU = new javax.swing.JPasswordField();
         lblTituloMantenedorUsuarios = new javax.swing.JLabel();
         Panel2MantenedorUsuario = new javax.swing.JPanel();
         btningresar = new javax.swing.JButton();
         btnModificarMU = new javax.swing.JButton();
         btneliminar = new javax.swing.JButton();
-        btncancelar = new javax.swing.JButton();
+        btnlimpiar = new javax.swing.JButton();
         Panel3MantenedorUsuario = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableListadoUsuariosMU = new javax.swing.JTable();
         lblListadoUsuariosMU = new javax.swing.JLabel();
         btnExportarMU = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        fieldBuscar = new javax.swing.JTextField();
+        frm_idoculto = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         btnVolverMU = new javax.swing.JButton();
 
@@ -85,24 +87,18 @@ public class FormUsuario extends javax.swing.JFrame {
             }
         });
 
-        fieldRepContrasenaMU.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldRepContrasenaMUActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout Panel1MantenedorUsuariosLayout = new javax.swing.GroupLayout(Panel1MantenedorUsuarios);
         Panel1MantenedorUsuarios.setLayout(Panel1MantenedorUsuariosLayout);
         Panel1MantenedorUsuariosLayout.setHorizontalGroup(
             Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
                         .addComponent(lblNombreCompletoMU)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldNombreCompletoMU))
-                    .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
+                        .addComponent(fieldNombreCompletoMU, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel1MantenedorUsuariosLayout.createSequentialGroup()
                         .addGroup(Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Panel1MantenedorUsuariosLayout.createSequentialGroup()
                                 .addComponent(lblEstadoMU)
@@ -113,14 +109,14 @@ public class FormUsuario extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(fieldUsuarioMU, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblContrasenaMU)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldContraseñaMU, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(lblContrasenaMU)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fieldContraseñaMU, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblRepContrasenaMU)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fieldRepContrasenaMU, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         Panel1MantenedorUsuariosLayout.setVerticalGroup(
             Panel1MantenedorUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,6 +146,11 @@ public class FormUsuario extends javax.swing.JFrame {
 
         btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btningresar.setText("INGRESAR");
+        btningresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btningresarActionPerformed(evt);
+            }
+        });
 
         btnModificarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/editar (3).png"))); // NOI18N
         btnModificarMU.setText("MODIFICAR");
@@ -157,11 +158,11 @@ public class FormUsuario extends javax.swing.JFrame {
         btneliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
         btneliminar.setText("ELIMINAR");
 
-        btncancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
-        btncancelar.setText("LIMPIAR");
-        btncancelar.addActionListener(new java.awt.event.ActionListener() {
+        btnlimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/limpiar.png"))); // NOI18N
+        btnlimpiar.setText("LIMPIAR");
+        btnlimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btncancelarActionPerformed(evt);
+                btnlimpiarActionPerformed(evt);
             }
         });
 
@@ -190,6 +191,14 @@ public class FormUsuario extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Buscar: ");
+
+        fieldBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldBuscarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout Panel3MantenedorUsuarioLayout = new javax.swing.GroupLayout(Panel3MantenedorUsuario);
         Panel3MantenedorUsuario.setLayout(Panel3MantenedorUsuarioLayout);
         Panel3MantenedorUsuarioLayout.setHorizontalGroup(
@@ -201,7 +210,12 @@ public class FormUsuario extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 689, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(Panel3MantenedorUsuarioLayout.createSequentialGroup()
-                        .addComponent(lblListadoUsuariosMU)
+                        .addGroup(Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblListadoUsuariosMU)
+                            .addGroup(Panel3MantenedorUsuarioLayout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldBuscar)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnExportarMU, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22))))
@@ -209,12 +223,18 @@ public class FormUsuario extends javax.swing.JFrame {
         Panel3MantenedorUsuarioLayout.setVerticalGroup(
             Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel3MantenedorUsuarioLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblListadoUsuariosMU)
-                    .addComponent(btnExportarMU))
+                .addGroup(Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel3MantenedorUsuarioLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnExportarMU))
+                    .addGroup(Panel3MantenedorUsuarioLayout.createSequentialGroup()
+                        .addComponent(lblListadoUsuariosMU)
+                        .addGap(18, 18, 18)
+                        .addGroup(Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(fieldBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -224,17 +244,19 @@ public class FormUsuario extends javax.swing.JFrame {
             Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                .addGroup(Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(Panel2MantenedorUsuarioLayout.createSequentialGroup()
+                        .addComponent(frm_idoculto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnModificarMU, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btncancelar)
+                        .addComponent(btnlimpiar)
                         .addGap(18, 18, 18)
                         .addComponent(btneliminar)
                         .addGap(18, 18, 18)
                         .addComponent(btningresar))
                     .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
         Panel2MantenedorUsuarioLayout.setVerticalGroup(
             Panel2MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -244,10 +266,10 @@ public class FormUsuario extends javax.swing.JFrame {
                     .addComponent(btningresar)
                     .addComponent(btnModificarMU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btneliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btncancelar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                    .addComponent(btnlimpiar)
+                    .addComponent(frm_idoculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(Panel3MantenedorUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         btnVolverMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
@@ -269,7 +291,9 @@ public class FormUsuario extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Panel1MantenedorUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(133, 133, 133))
                     .addComponent(Panel2MantenedorUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
@@ -303,14 +327,9 @@ public class FormUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldNombreCompletoMUActionPerformed
 
-    private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
+    private void btnlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarActionPerformed
         // TODO add your handling code here:
-        limpiar();
-    }//GEN-LAST:event_btncancelarActionPerformed
-
-    private void fieldRepContrasenaMUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldRepContrasenaMUActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fieldRepContrasenaMUActionPerformed
+    }//GEN-LAST:event_btnlimpiarActionPerformed
 
     private void btnExportarMUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExportarMUActionPerformed
         // TODO add your handling code here:
@@ -325,6 +344,14 @@ public class FormUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_btnVolverMUActionPerformed
+
+    private void fieldBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldBuscarActionPerformed
+
+    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btningresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -361,19 +388,6 @@ public class FormUsuario extends javax.swing.JFrame {
         });
     }
    
-    public void limpiar(){
-    
-        fieldNombreCompletoMU.setText("");
-        fieldContraseñaMU.setText("");
-        fieldRepContrasenaMU.setText("");
-        fieldUsuarioMU.setText("");
-        
-        btnModificarMU.setEnabled(false);
-        btneliminar.setEnabled(false);
-        btnExportarMU.setEnabled(false);
-        
-        fieldNombreCompletoMU.requestFocus();
-    }
     
     
     public void cerrar()
@@ -394,14 +408,17 @@ public class FormUsuario extends javax.swing.JFrame {
     private javax.swing.JPanel Panel3MantenedorUsuario;
     public javax.swing.JButton btnExportarMU;
     public javax.swing.JButton btnModificarMU;
-    private javax.swing.JButton btnVolverMU;
-    public javax.swing.JButton btncancelar;
+    public javax.swing.JButton btnVolverMU;
     public javax.swing.JButton btneliminar;
     public javax.swing.JButton btningresar;
-    public javax.swing.JTextField fieldContraseñaMU;
+    public javax.swing.JButton btnlimpiar;
+    public javax.swing.JTextField fieldBuscar;
+    public javax.swing.JPasswordField fieldContraseñaMU;
     public javax.swing.JTextField fieldNombreCompletoMU;
-    public javax.swing.JTextField fieldRepContrasenaMU;
+    public javax.swing.JPasswordField fieldRepContrasenaMU;
     public javax.swing.JTextField fieldUsuarioMU;
+    public javax.swing.JTextField frm_idoculto;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblContrasenaMU;

@@ -6,10 +6,10 @@
 package Modelo;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import com.mysql.jdbc.PreparedStatement;
 
 /**
  *
@@ -21,10 +21,10 @@ public class CrudUsuarios extends Conexion{
     {
         PreparedStatement ps=null;
         Connection con=(Connection) conectar();
-        String sql="INSERT INTO usuario (nombre,usuario,clave,estado) VALUES (?,?,?,?) ";
+        String sql="INSERT INTO usuarios (Nombre,usuario,clave,estado,Biblioteca_idBiblioteca) VALUES (?,?,?,?,100)";
         try
         {
-            ps=con.prepareStatement(sql); con.prepareStatement(sql);
+            ps=(PreparedStatement) con.prepareStatement(sql);
             ps.setString(1, usu.getNombre());
             ps.setString(2, usu.getUsuario());
             ps.setString(3, usu.getClave());
@@ -49,10 +49,10 @@ public class CrudUsuarios extends Conexion{
     {
         PreparedStatement ps=null;
         Connection con=(Connection) conectar();
-        String sql="UPDATE usuarios SET nombre=?,usuario=?,clave=?,estado=? WHERE Id=?";
+        String sql="UPDATE usuarios SET Nombre=?,usuario=?,clave=?,estado=? WHERE Id=?";
         try
         {
-            ps=con.prepareStatement(sql); con.prepareStatement(sql);
+            ps=(PreparedStatement) con.prepareStatement(sql);
             ps.setString(1, usu.getNombre());
             ps.setString(2, usu.getUsuario());
             ps.setString(3, usu.getClave()); //PASAR LA CLAVE CIFRADA CON EL HASH
@@ -81,7 +81,7 @@ public class CrudUsuarios extends Conexion{
         String sql="DELETE FROM usuarios WHERE Id=?";
         try
         {
-            ps=con.prepareStatement(sql); con.prepareStatement(sql);
+            ps=(PreparedStatement) con.prepareStatement(sql);
             ps.setInt(1, usu.getId());            
             ps.execute();
             return true;
@@ -110,7 +110,7 @@ public class CrudUsuarios extends Conexion{
         
         try
         {
-            ps=con.prepareStatement(sql);
+            ps=(PreparedStatement) con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next())
             {

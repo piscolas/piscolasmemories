@@ -12,6 +12,8 @@ import Vistas.MenuPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import Config.Hash;
+
 /**
  *
  * @author tomas
@@ -34,7 +36,7 @@ public class ControladorLogin implements ActionListener{
     
     public void iniciar()
     {
-        frm.setTitle("LOGIN PENKA");
+        frm.setTitle("LOGIN BIBLIOTECA");
         frm.setVisible(true);
         frm.setLocationRelativeTo(null);
     }        
@@ -50,7 +52,7 @@ public class ControladorLogin implements ActionListener{
                 frm.frmusuario.requestFocus();
             }else{
                 mod.setUsuario(frm.frmusuario.getText().trim());
-                mod.setClave(frm.frmclave.getText().trim());
+                mod.setClave(String.valueOf(frm.frmclave.getPassword()));
                 
                 if(cons.buscar(mod))
                 {
@@ -66,6 +68,7 @@ public class ControladorLogin implements ActionListener{
             }    
         }
         
+
         
         if(e.getSource()==frm.btnsalir)
         {

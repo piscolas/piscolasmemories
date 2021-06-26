@@ -1,5 +1,8 @@
 package Vistas;
 
+import Controlador.ControladorUsuarios;
+import Modelo.CrudUsuarios;
+import Modelo.Usuarios;
 import javax.swing.JOptionPane;
 
 /*
@@ -225,9 +228,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormUsuariosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormUsuariosMPActionPerformed
         // TODO add your handling code here:
-        FormUsuario usu=new FormUsuario();
-        usu.setVisible(true);
-        usu.setLocationRelativeTo(null);
+        Usuarios usu=new Usuarios();
+        FormUsuario frm=new FormUsuario();
+        CrudUsuarios cons=new CrudUsuarios();
+        ControladorUsuarios ctrl=new ControladorUsuarios(frm,cons,usu);
+        
+        ctrl.iniciar();
+        frm.setVisible(true);
        
     }//GEN-LAST:event_btnFormUsuariosMPActionPerformed
 
