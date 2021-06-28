@@ -106,7 +106,7 @@ public class CrudUsuarios extends Conexion{
         ResultSet rs=null;
         Connection con=(Connection) conectar();
         
-        String sql="Select * from usuarios";
+        String sql="Select Id,Nombre,usuario,estado from usuarios";
         
         try
         {

@@ -21,7 +21,7 @@ public class ConsultaLogin extends Conexion{
        ResultSet rs=null;
        Connection con=(Connection) conectar();
        
-       String sql="select count(*) as val from usuarios where usuario=? and clave=?";
+       String sql="select count(*) as val from usuarios where usuario=? and clave=? and estado=1";
        
        try{
            

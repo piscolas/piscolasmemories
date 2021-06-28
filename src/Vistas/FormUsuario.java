@@ -53,7 +53,7 @@ public class FormUsuario extends javax.swing.JFrame {
         lblListadoUsuariosMU = new javax.swing.JLabel();
         btnExportarMU = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        fieldBuscar = new javax.swing.JTextField();
+        frmbuscar = new javax.swing.JTextField();
         frm_idoculto = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         btnVolverMU = new javax.swing.JButton();
@@ -77,7 +77,7 @@ public class FormUsuario extends javax.swing.JFrame {
 
         lblRepContrasenaMU.setText("Repetir Contraseña:");
 
-        BoxEstadoMU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1" }));
+        BoxEstadoMU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "ACTIVO", "INACTIVO" }));
 
         lblEstadoMU.setText("Estado:");
 
@@ -177,11 +177,17 @@ public class FormUsuario extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tableListadoUsuariosMU=new javax.swing.JTable(){
+            public boolean isCellEditable(int row, int col){
+
+                return false;
+            }
+        };
         jScrollPane1.setViewportView(tableListadoUsuariosMU);
 
         lblListadoUsuariosMU.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblListadoUsuariosMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
-        lblListadoUsuariosMU.setText("LISTADO DE USUARIOS");
+        lblListadoUsuariosMU.setText("LISTADO DE USUARIOS ()");
 
         btnExportarMU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
         btnExportarMU.setText("Exportar a Excel");
@@ -193,9 +199,9 @@ public class FormUsuario extends javax.swing.JFrame {
 
         jLabel1.setText("Buscar: ");
 
-        fieldBuscar.addActionListener(new java.awt.event.ActionListener() {
+        frmbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldBuscarActionPerformed(evt);
+                frmbuscarActionPerformed(evt);
             }
         });
 
@@ -215,7 +221,7 @@ public class FormUsuario extends javax.swing.JFrame {
                             .addGroup(Panel3MantenedorUsuarioLayout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fieldBuscar)))
+                                .addComponent(frmbuscar)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnExportarMU, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22))))
@@ -232,7 +238,7 @@ public class FormUsuario extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(Panel3MantenedorUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(fieldBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(frmbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addContainerGap())
@@ -345,9 +351,9 @@ public class FormUsuario extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnVolverMUActionPerformed
 
-    private void fieldBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldBuscarActionPerformed
+    private void frmbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frmbuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fieldBuscarActionPerformed
+    }//GEN-LAST:event_frmbuscarActionPerformed
 
     private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         // TODO add your handling code here:
@@ -402,7 +408,7 @@ public class FormUsuario extends javax.swing.JFrame {
     }  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> BoxEstadoMU;
+    public javax.swing.JComboBox<String> BoxEstadoMU;
     private javax.swing.JPanel Panel1MantenedorUsuarios;
     private javax.swing.JPanel Panel2MantenedorUsuario;
     private javax.swing.JPanel Panel3MantenedorUsuario;
@@ -412,20 +418,20 @@ public class FormUsuario extends javax.swing.JFrame {
     public javax.swing.JButton btneliminar;
     public javax.swing.JButton btningresar;
     public javax.swing.JButton btnlimpiar;
-    public javax.swing.JTextField fieldBuscar;
     public javax.swing.JPasswordField fieldContraseñaMU;
     public javax.swing.JTextField fieldNombreCompletoMU;
     public javax.swing.JPasswordField fieldRepContrasenaMU;
     public javax.swing.JTextField fieldUsuarioMU;
     public javax.swing.JTextField frm_idoculto;
+    public javax.swing.JTextField frmbuscar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblContrasenaMU;
+    public javax.swing.JLabel lblContrasenaMU;
     private javax.swing.JLabel lblEstadoMU;
-    private javax.swing.JLabel lblListadoUsuariosMU;
+    public javax.swing.JLabel lblListadoUsuariosMU;
     private javax.swing.JLabel lblNombreCompletoMU;
-    private javax.swing.JLabel lblRepContrasenaMU;
+    public javax.swing.JLabel lblRepContrasenaMU;
     private javax.swing.JLabel lblTituloMantenedorUsuarios;
     private javax.swing.JLabel lblUsuarioMU;
     public javax.swing.JTable tableListadoUsuariosMU;
