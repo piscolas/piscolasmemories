@@ -31,7 +31,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
               <Component id="lblTituloMantenedorLibros" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="65" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -47,7 +47,7 @@
               <Component id="lblTituloMantenedorLibros" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="panelMantenedorLibros" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,47 +73,46 @@
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="btnELIMINARML" max="32767" attributes="0"/>
-                                      <Component id="btnBUSCARML" alignment="0" pref="132" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btnELIMINARML" max="32767" attributes="0"/>
+                              <Component id="btnBUSCARML" alignment="0" pref="132" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="btnVolverML" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnINGRESARML" min="-2" pref="132" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="lblPrecioML" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblTituloML" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblNdeSerieML" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblISBNML" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblNdePaginasML" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblEstadoML" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblEditorialML" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAutorML" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAñoPubliML" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnINGRESARML" alignment="1" min="-2" pref="132" max="-2" attributes="0"/>
-                                      <Component id="btnLIMPIARML" alignment="1" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="fieldISBNML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldTituloML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldNroPaginasML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldPrecioML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldAñoPubliML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldNumeroSerieML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="comboBoxEstadoML" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fieldEditorialML" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="fieldAutorML" min="-2" pref="189" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="btnVolverML" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnLIMPIARML" alignment="1" min="-2" pref="132" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="lblPrecioML" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTituloML" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblNdeSerieML" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblISBNML" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblNdePaginasML" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblEstadoML" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblEditorialML" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAutorML" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAñoPubliML" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="fieldISBNML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldTituloML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldNroPaginasML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldPrecioML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldAñoPubliML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldNumeroSerieML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="comboBoxEstadoML" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="fieldEditorialML" alignment="0" max="32767" attributes="0"/>
-                              <Component id="fieldAutorML" min="-2" pref="189" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace pref="57" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="429" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -121,21 +120,26 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblNdeSerieML" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fieldNumeroSerieML" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblISBNML" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fieldISBNML" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblTituloML" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fieldTituloML" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblNdeSerieML" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldNumeroSerieML" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblISBNML" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldISBNML" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblTituloML" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldTituloML" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jScrollPane1" min="-2" pref="99" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -175,11 +179,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnELIMINARML" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnLIMPIARML" alignment="3" max="32767" attributes="0"/>
+                      <Component id="btnLIMPIARML" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="btnVolverML" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -224,16 +228,34 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldNumeroSerieMLActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldISBNML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldTituloML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldNroPaginasML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldPrecioML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldA&#xf1;oPubliML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JComboBox" name="comboBoxEstadoML">
           <Properties>
@@ -246,6 +268,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="lblEditorialML">
@@ -259,11 +282,17 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldEditorialML">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="fieldAutorML">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldAutorMLActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnINGRESARML">
           <Properties>
@@ -272,6 +301,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="INGRESAR"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnBUSCARML">
           <Properties>
@@ -288,6 +320,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="ELIMINAR"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnLIMPIARML">
           <Properties>
@@ -299,6 +334,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLIMPIARMLActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnVolverML">
           <Properties>
@@ -310,7 +348,34 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVolverMLActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tablaLibros">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="4">
+                    <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                    <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                    <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                    <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

@@ -34,13 +34,19 @@ public class FormEditorial extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblNombreEditorialME = new javax.swing.JLabel();
         fieldNombreEditorialME = new javax.swing.JTextField();
-        btnINGRESARME = new javax.swing.JButton();
-        btnBUSCARME = new javax.swing.JButton();
+        btnINGRESAR = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableEditorialesME = new javax.swing.JTable();
         lblListadoEditorialesME = new javax.swing.JLabel();
-        btnELIMINARME = new javax.swing.JButton();
+        btnmodificar = new javax.swing.JButton();
+        btnELIMINAR = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        boxEstado = new javax.swing.JComboBox<>();
+        btnExportar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        frmbuscar = new javax.swing.JTextField();
         btnVolverME = new javax.swing.JButton();
+        frm_id_oculto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("MANTENEDOR DE EDITORIALES");
@@ -57,16 +63,13 @@ public class FormEditorial extends javax.swing.JFrame {
 
         lblNombreEditorialME.setText("Nombre Editorial : ");
 
-        btnINGRESARME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
-        btnINGRESARME.setText("INGRESAR");
-        btnINGRESARME.addActionListener(new java.awt.event.ActionListener() {
+        btnINGRESAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
+        btnINGRESAR.setText("INGRESAR");
+        btnINGRESAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnINGRESARMEActionPerformed(evt);
+                btnINGRESARActionPerformed(evt);
             }
         });
-
-        btnBUSCARME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/browse.png"))); // NOI18N
-        btnBUSCARME.setText("BUSCAR");
 
         tableEditorialesME.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,11 +111,31 @@ public class FormEditorial extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
+        tableEditorialesME = new javax.swing.JTable(){
+            public boolean isCellEditable(int row,int col)
+            {
+                return false;
+            }
+        };
         jScrollPane1.setViewportView(tableEditorialesME);
 
         lblListadoEditorialesME.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblListadoEditorialesME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
         lblListadoEditorialesME.setText("LISTADO EDITORIALES");
+
+        btnmodificar.setText("MODIFICAR");
+
+        btnELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
+        btnELIMINAR.setText("ELIMINAR");
+
+        jLabel1.setText("Estado :");
+
+        boxEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "ACTIVO", "INACTIVO" }));
+
+        btnExportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
+        btnExportar.setText("Exportar");
+
+        jLabel2.setText("Buscar:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -121,20 +144,36 @@ public class FormEditorial extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblNombreEditorialME)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnBUSCARME)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnINGRESARME))
-                            .addComponent(fieldNombreEditorialME, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(153, 153, 153)
-                        .addComponent(lblListadoEditorialesME)))
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(frmbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(lblListadoEditorialesME)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnExportar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblNombreEditorialME)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(4, 4, 4)))
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fieldNombreEditorialME, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(boxEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnINGRESAR)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(153, 153, 153)
+                        .addComponent(btnmodificar)
+                        .addGap(34, 34, 34)
+                        .addComponent(btnELIMINAR)))
+                .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,19 +182,25 @@ public class FormEditorial extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreEditorialME)
                     .addComponent(fieldNombreEditorialME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnINGRESARME)
-                    .addComponent(btnBUSCARME))
-                .addGap(14, 14, 14)
-                .addComponent(lblListadoEditorialesME)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addComponent(boxEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnINGRESAR)
+                    .addComponent(btnmodificar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnELIMINAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblListadoEditorialesME)
+                    .addComponent(btnExportar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(frmbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-
-        btnELIMINARME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
-        btnELIMINARME.setText("ELIMINAR");
 
         btnVolverME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
         btnVolverME.setText("VOLVER AL MENÚ PRINCIPAL");
@@ -176,25 +221,25 @@ public class FormEditorial extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(113, 113, 113)
                         .addComponent(lblTituloMantenedorEditorial)
+                        .addGap(18, 18, 18)
+                        .addComponent(frm_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnVolverME)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnELIMINARME)
-                .addContainerGap())
+                .addGap(134, 134, 134))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTituloMantenedorEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTituloMantenedorEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(frm_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnELIMINARME, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnVolverME, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnVolverME)
                 .addContainerGap())
         );
 
@@ -206,9 +251,9 @@ public class FormEditorial extends javax.swing.JFrame {
         cerrar();
     }//GEN-LAST:event_formWindowClosing
 
-    private void btnINGRESARMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINGRESARMEActionPerformed
+    private void btnINGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINGRESARActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnINGRESARMEActionPerformed
+    }//GEN-LAST:event_btnINGRESARActionPerformed
 
     private void btnVolverMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMEActionPerformed
         // TODO add your handling code here:
@@ -250,11 +295,6 @@ public class FormEditorial extends javax.swing.JFrame {
         });
     }
 
-    public void limpiar() {
-        btnELIMINARME.setEnabled(false);
-        btnBUSCARME.setEnabled(false);
-    }
-
     public void cerrar() {
         int resp = JOptionPane.showConfirmDialog(null, "¿Esta seguro/a que desea cerrar la ventana de Editorial?", "Confirmación de Cierre",
                 JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -265,16 +305,22 @@ public class FormEditorial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBUSCARME;
-    private javax.swing.JButton btnELIMINARME;
-    private javax.swing.JButton btnINGRESARME;
-    private javax.swing.JButton btnVolverME;
-    private javax.swing.JTextField fieldNombreEditorialME;
+    public javax.swing.JComboBox<String> boxEstado;
+    public javax.swing.JButton btnELIMINAR;
+    public javax.swing.JButton btnExportar;
+    public javax.swing.JButton btnINGRESAR;
+    public javax.swing.JButton btnVolverME;
+    public javax.swing.JButton btnmodificar;
+    public javax.swing.JTextField fieldNombreEditorialME;
+    public javax.swing.JTextField frm_id_oculto;
+    public javax.swing.JTextField frmbuscar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblListadoEditorialesME;
+    public javax.swing.JLabel lblListadoEditorialesME;
     private javax.swing.JLabel lblNombreEditorialME;
     private javax.swing.JLabel lblTituloMantenedorEditorial;
-    private javax.swing.JTable tableEditorialesME;
+    public javax.swing.JTable tableEditorialesME;
     // End of variables declaration//GEN-END:variables
 }
