@@ -35,12 +35,15 @@ public class FormIdiomas extends javax.swing.JFrame {
         lvlNombreIdiomaMI = new javax.swing.JLabel();
         fieldNombreIdiomaMI = new javax.swing.JTextField();
         btnINGRESARMI = new javax.swing.JButton();
-        btnBUSCARMI = new javax.swing.JButton();
         btnVolverMI = new javax.swing.JButton();
-        lblListadoIdiomasMI = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        tableIdiomasMI = new javax.swing.JTable();
         btnELIMINARMI = new javax.swing.JButton();
+        btnExportar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        fieldBuscar = new javax.swing.JTextField();
+        lblListadoIdiomasMI = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaIdiomasMI = new javax.swing.JTable();
+        field_id_oculto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("MANTENEDOR DE IDIOMAS");
@@ -67,14 +70,6 @@ public class FormIdiomas extends javax.swing.JFrame {
             }
         });
 
-        btnBUSCARMI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/browse.png"))); // NOI18N
-        btnBUSCARMI.setText("BUSCAR");
-        btnBUSCARMI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBUSCARMIActionPerformed(evt);
-            }
-        });
-
         btnVolverMI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/regreso.png"))); // NOI18N
         btnVolverMI.setText("VOLVER AL MENÚ PRINCIPAL");
         btnVolverMI.addActionListener(new java.awt.event.ActionListener() {
@@ -82,6 +77,19 @@ public class FormIdiomas extends javax.swing.JFrame {
                 btnVolverMIActionPerformed(evt);
             }
         });
+
+        btnELIMINARMI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
+        btnELIMINARMI.setText("ELIMINAR");
+        btnELIMINARMI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnELIMINARMIActionPerformed(evt);
+            }
+        });
+
+        btnExportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
+        btnExportar.setText("Exportar");
+
+        jLabel1.setText("Buscar :");
 
         javax.swing.GroupLayout panelMILayout = new javax.swing.GroupLayout(panelMI);
         panelMI.setLayout(panelMILayout);
@@ -91,18 +99,31 @@ public class FormIdiomas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelMILayout.createSequentialGroup()
-                        .addComponent(lvlNombreIdiomaMI)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fieldNombreIdiomaMI, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelMILayout.createSequentialGroup()
-                        .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btnVolverMI, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelMILayout.createSequentialGroup()
-                                .addComponent(btnBUSCARMI, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lvlNombreIdiomaMI)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fieldNombreIdiomaMI, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelMILayout.createSequentialGroup()
+                                .addComponent(btnINGRESARMI, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnINGRESARMI, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 5, Short.MAX_VALUE)))
-                .addContainerGap())
+                                .addComponent(btnELIMINARMI, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMILayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMILayout.createSequentialGroup()
+                                .addComponent(btnExportar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(74, 74, 74))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMILayout.createSequentialGroup()
+                                .addComponent(btnVolverMI, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))))
+            .addGroup(panelMILayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fieldBuscar)
+                .addGap(67, 67, 67))
         );
         panelMILayout.setVerticalGroup(
             panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,66 +134,35 @@ public class FormIdiomas extends javax.swing.JFrame {
                     .addComponent(fieldNombreIdiomaMI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBUSCARMI)
-                    .addComponent(btnINGRESARMI))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(btnINGRESARMI)
+                    .addComponent(btnELIMINARMI))
+                .addGap(18, 18, 18)
+                .addComponent(btnExportar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelMILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(fieldBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
                 .addComponent(btnVolverMI)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         lblListadoIdiomasMI.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblListadoIdiomasMI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
         lblListadoIdiomasMI.setText("LISTADO DE IDIOMAS");
 
-        tableIdiomasMI.setModel(new javax.swing.table.DefaultTableModel(
+        tablaIdiomasMI.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null},
-                {null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Idiomas"
+                "Title 1", "Title 2", "Title 3", "Title 4"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jScrollPane3.setViewportView(tableIdiomasMI);
-
-        btnELIMINARMI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar.png"))); // NOI18N
-        btnELIMINARMI.setText("ELIMINAR");
-        btnELIMINARMI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnELIMINARMIActionPerformed(evt);
-            }
-        });
+        ));
+        jScrollPane1.setViewportView(tablaIdiomasMI);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -187,26 +177,36 @@ public class FormIdiomas extends javax.swing.JFrame {
                     .addComponent(panelMI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(field_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblListadoIdiomasMI)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnELIMINARMI, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE))
-                .addGap(27, 27, 27))
+                        .addGap(166, 166, 166))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblListadoIdiomasMI)
-                    .addComponent(lblTituloMantenedorIdiomas, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelMI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                        .addComponent(btnELIMINARMI)))
+                        .addGap(20, 20, 20)
+                        .addComponent(lblTituloMantenedorIdiomas, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblListadoIdiomasMI))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(field_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(panelMI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)))
                 .addContainerGap())
         );
 
@@ -225,10 +225,6 @@ public class FormIdiomas extends javax.swing.JFrame {
     private void btnINGRESARMIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINGRESARMIActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnINGRESARMIActionPerformed
-
-    private void btnBUSCARMIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBUSCARMIActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBUSCARMIActionPerformed
 
     private void btnVolverMIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverMIActionPerformed
         // TODO add your handling code here:
@@ -282,16 +278,19 @@ public class FormIdiomas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBUSCARMI;
-    private javax.swing.JButton btnELIMINARMI;
-    private javax.swing.JButton btnINGRESARMI;
-    private javax.swing.JButton btnVolverMI;
-    private javax.swing.JTextField fieldNombreIdiomaMI;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JLabel lblListadoIdiomasMI;
+    public javax.swing.JButton btnELIMINARMI;
+    public javax.swing.JButton btnExportar;
+    public javax.swing.JButton btnINGRESARMI;
+    public javax.swing.JButton btnVolverMI;
+    public javax.swing.JTextField fieldBuscar;
+    public javax.swing.JTextField fieldNombreIdiomaMI;
+    public javax.swing.JTextField field_id_oculto;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JLabel lblListadoIdiomasMI;
     private javax.swing.JLabel lblTituloMantenedorIdiomas;
     private javax.swing.JLabel lvlNombreIdiomaMI;
     private javax.swing.JPanel panelMI;
-    private javax.swing.JTable tableIdiomasMI;
+    public javax.swing.JTable tablaIdiomasMI;
     // End of variables declaration//GEN-END:variables
 }

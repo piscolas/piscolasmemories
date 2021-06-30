@@ -1,10 +1,13 @@
 package Vistas;
 
 import Controlador.ControladorEditorial;
+import Controlador.ControladorIdioma;
 import Controlador.ControladorUsuarios;
 import Modelo.CrudEditorial;
+import Modelo.CrudIdiomas;
 import Modelo.CrudUsuarios;
 import Modelo.Editorial;
+import Modelo.Idioma;
 import Modelo.Usuarios;
 import javax.swing.JOptionPane;
 
@@ -251,9 +254,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormIdiomasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormIdiomasMPActionPerformed
         // TODO add your handling code here:
-        FormIdiomas idioma=new FormIdiomas();
-        idioma.setVisible(true);
-        idioma.setLocationRelativeTo(null);
+        Idioma idi=new Idioma();
+        FormIdiomas frm=new FormIdiomas();
+        CrudIdiomas cons=new CrudIdiomas();
+        ControladorIdioma ctrl=new ControladorIdioma(idi,cons,frm);
+        
+        ctrl.iniciar();
+        frm.setVisible(true);
         
     }//GEN-LAST:event_btnFormIdiomasMPActionPerformed
 

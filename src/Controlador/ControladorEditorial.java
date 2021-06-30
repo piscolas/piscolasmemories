@@ -174,7 +174,7 @@ public class ControladorEditorial implements ActionListener {
         
         if (e.getSource() == frm.btnExportar) {
             if (frm.tableEditorialesME.getRowCount() == 0) {
-                JOptionPane.showMessageDialog(null, "No hay datos en la tabla para exportar.", "Exportación Autores", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "No hay datos en la tabla para exportar.", "Exportación Editoriales", JOptionPane.INFORMATION_MESSAGE);
                 return;
             }
             JFileChooser chooser = new JFileChooser();
@@ -192,7 +192,7 @@ public class ControladorEditorial implements ActionListener {
                 try {
                     ExportarExcel exporta = new ExportarExcel(new File(file), tb, nom);
                     if (exporta.exportar()) {
-                        JOptionPane.showMessageDialog(null, "Los datos fueron exportados a excel.", "Exportación Datos Autores", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Los datos fueron exportados a excel.", "Exportación Datos Editorial", JOptionPane.INFORMATION_MESSAGE);
                     }
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Hubo un  error" + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
