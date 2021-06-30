@@ -1,8 +1,11 @@
 package Vistas;
 
+import Controlador.ControladorAutor;
 import Controlador.ControladorEditorial;
 import Controlador.ControladorIdioma;
 import Controlador.ControladorUsuarios;
+import Modelo.Autor;
+import Modelo.CrudAutor;
 import Modelo.CrudEditorial;
 import Modelo.CrudIdiomas;
 import Modelo.CrudUsuarios;
@@ -246,9 +249,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormAutoresMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormAutoresMPActionPerformed
         // TODO add your handling code here:
-        FormAutor autor=new FormAutor();
-        autor.setVisible(true);
-        autor.setLocationRelativeTo(null);
+        Autor auto=new Autor();
+        FormAutor frm=new FormAutor();
+        CrudAutor cons=new CrudAutor();
+        ControladorAutor ctrl=new ControladorAutor(auto,cons,frm);
+        
+        ctrl.iniciar();
+        frm.setVisible(true);
         
     }//GEN-LAST:event_btnFormAutoresMPActionPerformed
 

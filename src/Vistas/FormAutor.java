@@ -32,8 +32,6 @@ public class FormAutor extends javax.swing.JFrame {
 
         fieldNacionalidadMA = new javax.swing.JTextField();
         lblNacionalidadMA = new javax.swing.JLabel();
-        lblOtrosTitulosMA = new javax.swing.JLabel();
-        fieldOtrosTitulosMA = new javax.swing.JTextField();
         lblSexoMA = new javax.swing.JLabel();
         comboBoxSexoMA = new javax.swing.JComboBox<>();
         lblNombreMA = new javax.swing.JLabel();
@@ -42,12 +40,21 @@ public class FormAutor extends javax.swing.JFrame {
         fieldApellidoMA = new javax.swing.JTextField();
         lblTituloMA = new javax.swing.JLabel();
         lblCodAutorMA = new javax.swing.JLabel();
-        fieldCodigoAutorMA = new javax.swing.JTextField();
+        fieldAlias = new javax.swing.JTextField();
         btnINGRESARMA = new javax.swing.JButton();
         btnLIMPIARMA = new javax.swing.JButton();
         lblApellidoPaternoMA = new javax.swing.JLabel();
         fieldApellidoPaternoMA = new javax.swing.JTextField();
         btnVolverMA = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaAutores = new javax.swing.JTable();
+        btnELIMINAR = new javax.swing.JButton();
+        btnMODIFICAR = new javax.swing.JButton();
+        lblLISTADOAUTORES = new javax.swing.JLabel();
+        field_idoculto = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        fieldBuscar = new javax.swing.JTextField();
+        btnEXPORTAR = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("BUSCADOR DE AUTORES");
@@ -60,11 +67,9 @@ public class FormAutor extends javax.swing.JFrame {
 
         lblNacionalidadMA.setText("Nacionalidad:");
 
-        lblOtrosTitulosMA.setText("Otros títulos:");
-
         lblSexoMA.setText("Sexo:");
 
-        comboBoxSexoMA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino", "No Binario" }));
+        comboBoxSexoMA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Masculino", "Femenino", " " }));
 
         lblNombreMA.setText("Nombre:");
 
@@ -80,7 +85,7 @@ public class FormAutor extends javax.swing.JFrame {
         lblTituloMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/escritor.png"))); // NOI18N
         lblTituloMA.setText("MANTENEDOR DE AUTORES");
 
-        lblCodAutorMA.setText("Código Autor:");
+        lblCodAutorMA.setText("Alias:");
 
         btnINGRESARMA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btnINGRESARMA.setText("INGRESAR");
@@ -114,89 +119,156 @@ public class FormAutor extends javax.swing.JFrame {
             }
         });
 
+        tablaAutores.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tablaAutores);
+
+        btnELIMINAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/eliminar (5).png"))); // NOI18N
+        btnELIMINAR.setText("ELIMINAR");
+
+        btnMODIFICAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/editar (3).png"))); // NOI18N
+        btnMODIFICAR.setText("MODIFICAR");
+
+        lblLISTADOAUTORES.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblLISTADOAUTORES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/lista-de-quehaceres.png"))); // NOI18N
+        lblLISTADOAUTORES.setText("Listado Autores");
+
+        jLabel1.setText("Buscar :");
+
+        btnEXPORTAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
+        btnEXPORTAR.setText("Exportar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblApellidoMaternoMA)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblNacionalidadMA)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblSexoMA)
-                            .addComponent(lblOtrosTitulosMA)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblCodAutorMA)
-                        .addGap(1, 1, 1))
-                    .addComponent(lblNombreMA)
-                    .addComponent(lblApellidoPaternoMA))
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblCodAutorMA)
+                            .addComponent(lblSexoMA)
+                            .addComponent(lblApellidoMaternoMA)
+                            .addComponent(lblNacionalidadMA)
+                            .addComponent(lblNombreMA)
+                            .addComponent(lblApellidoPaternoMA))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(fieldNacionalidadMA, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fieldNombreMA, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(fieldAlias, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fieldApellidoMA, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fieldApellidoPaternoMA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(field_idoculto, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnINGRESARMA, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                            .addComponent(btnELIMINAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnMODIFICAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE))))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fieldNacionalidadMA)
-                    .addComponent(fieldApellidoMA)
-                    .addComponent(fieldNombreMA)
-                    .addComponent(fieldApellidoPaternoMA)
-                    .addComponent(fieldOtrosTitulosMA)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(fieldCodigoAutorMA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 233, Short.MAX_VALUE)
-                .addComponent(lblTituloMA)
-                .addGap(179, 179, 179))
+                        .addGap(55, 55, 55)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblLISTADOAUTORES))
+                        .addGap(183, 183, 183))))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnINGRESARMA, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnVolverMA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(362, 362, 362)
+                        .addComponent(lblTituloMA))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnEXPORTAR, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTituloMA)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTituloMA)
+                    .addComponent(field_idoculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreMA)
                     .addComponent(fieldNombreMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblApellidoMaternoMA)
-                    .addComponent(fieldApellidoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldApellidoPaternoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblApellidoPaternoMA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldNacionalidadMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNacionalidadMA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblOtrosTitulosMA)
-                    .addComponent(fieldOtrosTitulosMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblApellidoPaternoMA)
+                            .addComponent(fieldApellidoPaternoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(fieldApellidoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblApellidoMaternoMA))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(fieldNacionalidadMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNacionalidadMA))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblSexoMA)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblCodAutorMA)
+                                    .addComponent(fieldAlias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(58, 58, 58)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnINGRESARMA)
+                                    .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnELIMINAR)
+                                    .addComponent(btnMODIFICAR)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(btnEXPORTAR)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboBoxSexoMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSexoMA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fieldCodigoAutorMA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCodAutorMA))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnINGRESARMA)
-                    .addComponent(btnLIMPIARMA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnVolverMA, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1)
+                    .addComponent(fieldBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(lblLISTADOAUTORES)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -217,7 +289,6 @@ public class FormAutor extends javax.swing.JFrame {
 
     private void btnLIMPIARMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLIMPIARMAActionPerformed
         // TODO add your handling code here:
-        limpiar();
     }//GEN-LAST:event_btnLIMPIARMAActionPerformed
 
     private void fieldApellidoPaternoMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldApellidoPaternoMAActionPerformed
@@ -263,18 +334,7 @@ public class FormAutor extends javax.swing.JFrame {
             }
         });
     }
-    public void limpiar()
-    {
-         fieldNombreMA.setText("");
-         fieldApellidoMA.setText("");
-         fieldNacionalidadMA.setText("");
-         fieldOtrosTitulosMA.setText("");
-         fieldCodigoAutorMA.setText("");
-      
-         
-         fieldNombreMA.requestFocus();
-    }
-    
+   
         public void cerrar()
     {
         int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea cerrar la ventana de Autor?","Confirmación de Cierre",
@@ -287,23 +347,30 @@ public class FormAutor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnINGRESARMA;
-    private javax.swing.JButton btnLIMPIARMA;
-    private javax.swing.JButton btnVolverMA;
-    private javax.swing.JComboBox<String> comboBoxSexoMA;
-    private javax.swing.JTextField fieldApellidoMA;
-    private javax.swing.JTextField fieldApellidoPaternoMA;
-    private javax.swing.JTextField fieldCodigoAutorMA;
-    private javax.swing.JTextField fieldNacionalidadMA;
-    private javax.swing.JTextField fieldNombreMA;
-    private javax.swing.JTextField fieldOtrosTitulosMA;
+    public javax.swing.JButton btnELIMINAR;
+    public javax.swing.JButton btnEXPORTAR;
+    public javax.swing.JButton btnINGRESARMA;
+    public javax.swing.JButton btnLIMPIARMA;
+    public javax.swing.JButton btnMODIFICAR;
+    public javax.swing.JButton btnVolverMA;
+    public javax.swing.JComboBox<String> comboBoxSexoMA;
+    public javax.swing.JTextField fieldAlias;
+    public javax.swing.JTextField fieldApellidoMA;
+    public javax.swing.JTextField fieldApellidoPaternoMA;
+    public javax.swing.JTextField fieldBuscar;
+    public javax.swing.JTextField fieldNacionalidadMA;
+    public javax.swing.JTextField fieldNombreMA;
+    public javax.swing.JTextField field_idoculto;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblApellidoMaternoMA;
     private javax.swing.JLabel lblApellidoPaternoMA;
     private javax.swing.JLabel lblCodAutorMA;
+    public javax.swing.JLabel lblLISTADOAUTORES;
     private javax.swing.JLabel lblNacionalidadMA;
     private javax.swing.JLabel lblNombreMA;
-    private javax.swing.JLabel lblOtrosTitulosMA;
     private javax.swing.JLabel lblSexoMA;
     private javax.swing.JLabel lblTituloMA;
+    public javax.swing.JTable tablaAutores;
     // End of variables declaration//GEN-END:variables
 }
