@@ -1,7 +1,10 @@
 package Vistas;
 
+import Controlador.ControladorEditorial;
 import Controlador.ControladorUsuarios;
+import Modelo.CrudEditorial;
 import Modelo.CrudUsuarios;
+import Modelo.Editorial;
 import Modelo.Usuarios;
 import javax.swing.JOptionPane;
 
@@ -274,10 +277,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormEditorialesMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormEditorialesMPActionPerformed
         // TODO add your handling code here:
-        FormEditorial editorial=new FormEditorial();
-        editorial.setVisible(true);
-        editorial.setLocationRelativeTo(null);
+        Editorial edit=new Editorial();
+        FormEditorial frm=new FormEditorial();
+        CrudEditorial cons=new CrudEditorial();
+        ControladorEditorial ctrl=new ControladorEditorial(edit,cons,frm);
         
+        ctrl.iniciar();
+        frm.setVisible(true);
     }//GEN-LAST:event_btnFormEditorialesMPActionPerformed
 
     private void btnFormArrendarLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormArrendarLibrosMPActionPerformed

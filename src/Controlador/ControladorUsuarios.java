@@ -150,6 +150,7 @@ public class ControladorUsuarios implements ActionListener {
             usu.setNombre(frm.fieldNombreCompletoMU.getText());
             usu.setUsuario(frm.fieldUsuarioMU.getText());
             usu.setClave(Hash.md5(String.valueOf(frm.fieldRepContrasenaMU)));
+            
             if (frm.BoxEstadoMU.getSelectedItem() != "Seleccionar") {
                 if (frm.BoxEstadoMU.getSelectedItem() == "ACTIVO") {
                     usu.setEstado(1);

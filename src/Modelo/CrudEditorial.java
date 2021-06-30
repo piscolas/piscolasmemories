@@ -17,14 +17,14 @@ import java.util.ArrayList;
  */
 public class CrudEditorial extends Conexion {
 
-    public boolean insertar(Editorial editorial) {
+    public boolean insertar(Editorial edit) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
         String sql = "INSERT INTO editorial (nombreEditorial, estadoEditorial) values (?,?)";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setString(1, editorial.getNombreEditorial());
-            ps.setInt(2, editorial.getEstadoEditorial());
+            ps.setString(1, edit.getNombreEditorial());
+            ps.setInt(2, edit.getEstadoEditorial());
             ps.execute();
             return true;
         } catch (SQLException e) {
@@ -40,14 +40,15 @@ public class CrudEditorial extends Conexion {
         }
     }
 
-    public boolean modificar(Editorial editorial) {
+    public boolean modificar(Editorial edit) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
         String sql = "UPDATE editorial SET nombreEditorial=?,estadoEditorial=? WHERE idEditorial=?";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setString(1, editorial.getNombreEditorial());
-            ps.setInt(2, editorial.getEstadoEditorial());
+            ps.setString(1, edit.getNombreEditorial());
+            ps.setInt(2, edit.getEstadoEditorial());
+            ps.setInt(3, edit.getIdEditorial());
             ps.execute();
             return true;
         } catch (SQLException e) {
@@ -63,13 +64,13 @@ public class CrudEditorial extends Conexion {
         }
     }
 
-    public boolean eliminar(Editorial editorial) {
+    public boolean eliminar(Editorial edit) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
         String sql = "DELETE from editorial where idEditorial=?";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setInt(1, editorial.getEstadoEditorial());
+            ps.setInt(1, edit.getIdEditorial());
             ps.execute();
             return true;
 
@@ -93,7 +94,7 @@ public class CrudEditorial extends Conexion {
         ResultSet rs = null;
         Connection con = (Connection) conectar();
 
-        String sql = "select * from editorial";
+        String sql = "select idEditorial,nombreEditorial,estadoEditorial from editorial";
 
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
