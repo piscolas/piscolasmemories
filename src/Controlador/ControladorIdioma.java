@@ -112,21 +112,35 @@ public class ControladorIdioma implements ActionListener {
         }
     }
 
+    public boolean Validar() {
+        Boolean sw = true;
+
+        if (frm.fieldNombreIdiomaMI.equals("")) {
+            sw = false;
+        }
+
+        return sw;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == frm.btnINGRESARMI) {
+            if (frm.fieldNombreIdiomaMI.getText().equals("")) {
 
-            idi.setNombreIdioma(frm.fieldNombreIdiomaMI.getText());
+                JOptionPane.showMessageDialog(null, "Hay campos en Blanco!");
 
-            if (cons.insertar(idi)) {
-                JOptionPane.showMessageDialog(null, "El Idioma se ha INGRESADO sin problemas");
-                limpiar();
             } else {
-                JOptionPane.showMessageDialog(null, "Error al INGRESAR Idioma");
-                limpiar();
-            }
+                idi.setNombreIdioma(frm.fieldNombreIdiomaMI.getText());
 
+                if (cons.insertar(idi)) {
+                    JOptionPane.showMessageDialog(null, "El Idioma se ha INGRESADO sin problemas");
+                    limpiar();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Error al INGRESAR Idioma");
+                    limpiar();
+                }
+            }
         }
 
         if (e.getSource() == frm.btnELIMINARMI) {

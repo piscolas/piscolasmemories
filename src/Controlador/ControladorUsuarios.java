@@ -18,6 +18,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -107,9 +108,9 @@ public class ControladorUsuarios implements ActionListener {
         frm.BoxEstadoMU.setSelectedIndex(0);
 
         cargarTabla(frm.tableListadoUsuariosMU);
-        frm.lblListadoUsuariosMU.setText("LISTADO DE USUARIOS ("+frm.tableListadoUsuariosMU.getRowCount()+")");
+        frm.lblListadoUsuariosMU.setText("LISTADO DE USUARIOS (" + frm.tableListadoUsuariosMU.getRowCount() + ")");
     }
-    
+
     public void buscar(String consulta, JTable jtableBuscar) {
         DefaultTableModel dm = (DefaultTableModel) jtableBuscar.getModel();
         TableRowSorter<DefaultTableModel> tr = new TableRowSorter<>(dm);
@@ -146,25 +147,34 @@ public class ControladorUsuarios implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == frm.btningresar) {
+            if (frm.fieldNombreCompletoMU.getText().equals("") || frm.fieldUsuarioMU.getText().equals("") || frm.fieldContraseñaMU.getPassword().equals("") || frm.fieldRepContrasenaMU.getPassword().equals("") || frm.BoxEstadoMU.getSelectedItem().equals("Seleccionar")) {
+                JOptionPane.showMessageDialog(null, "Hay campos en Blanco!");
 
-            usu.setNombre(frm.fieldNombreCompletoMU.getText());
-            usu.setUsuario(frm.fieldUsuarioMU.getText());
-            usu.setClave(Hash.md5(String.valueOf(frm.fieldRepContrasenaMU)));
-            
-            if (frm.BoxEstadoMU.getSelectedItem() != "Seleccionar") {
-                if (frm.BoxEstadoMU.getSelectedItem() == "ACTIVO") {
-                    usu.setEstado(1);
-                } else {
-                    usu.setEstado(0);
-                }
-            }
-
-            if (cons.insertar(usu)) {
-                JOptionPane.showMessageDialog(null, "El Usuario se ha INGRESADO sin problemas");
-                limpiar();
             } else {
-                JOptionPane.showMessageDialog(null, "Error al INGRESAR Usuario");
-                limpiar();
+                if (Arrays.equals(frm.fieldContraseñaMU.getPassword(), frm.fieldRepContrasenaMU.getPassword())) {
+
+                    usu.setNombre(frm.fieldNombreCompletoMU.getText());
+                    usu.setUsuario(frm.fieldUsuarioMU.getText());
+                    usu.setClave(Hash.md5(String.valueOf(frm.fieldRepContrasenaMU)));
+
+                    if (frm.BoxEstadoMU.getSelectedItem() != "Seleccionar") {
+                        if (frm.BoxEstadoMU.getSelectedItem() == "ACTIVO") {
+                            usu.setEstado(1);
+                        } else {
+                            usu.setEstado(0);
+                        }
+                    }
+
+                    if (cons.insertar(usu)) {
+                        JOptionPane.showMessageDialog(null, "El Usuario se ha INGRESADO sin problemas");
+                        limpiar();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Error al INGRESAR Usuario");
+                        limpiar();
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "¡Contraseñas no coinciden!");
+                }
             }
 
         }

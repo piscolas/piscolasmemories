@@ -152,7 +152,10 @@ public class ControladorAutor implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == frm.btnINGRESARMA) {
-
+            if (frm.fieldNombreMA.getText().equals("") || frm.fieldApellidoPaternoMA.getText().equals("") || frm.fieldApellidoMA.getText().equals("") || frm.fieldNacionalidadMA.getText().equals("") || frm.fieldAlias.getText().equals("") || frm.comboBoxSexoMA.getSelectedItem().equals("Seleccionar")) {
+                
+                JOptionPane.showMessageDialog(null, "Hay campos en Blanco!");
+            }else{
             auto.setNombre(frm.fieldNombreMA.getText());
             auto.setApPaterno(frm.fieldApellidoPaternoMA.getText());
             auto.setApMaterno(frm.fieldApellidoMA.getText());
@@ -174,7 +177,7 @@ public class ControladorAutor implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Error al INGRESAR Autor");
                 limpiar();
             }
-
+            }
         }
         
         if (e.getSource() == frm.btnMODIFICAR) {

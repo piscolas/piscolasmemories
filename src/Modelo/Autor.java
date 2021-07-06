@@ -10,7 +10,7 @@ package Modelo;
  * @author some-
  */
 public class Autor {
-    
+
     private int id_autor;
     private String nombre;
     private String apPaterno;
@@ -18,6 +18,15 @@ public class Autor {
     private String nacionalidad;
     private String alias;
     private int sexo;
+    private int estado;
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
 
     public int getId_autor() {
         return id_autor;
@@ -74,6 +83,5 @@ public class Autor {
     public void setSexo(int sexo) {
         this.sexo = sexo;
     }
-    
-    
+
 }

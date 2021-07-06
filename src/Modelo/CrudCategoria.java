@@ -15,21 +15,16 @@ import java.util.ArrayList;
  *
  * @author some-
  */
-public class CrudAutor extends Conexion {
-
-    public boolean insertar(Autor autor) {
+public class CrudCategoria extends Conexion{
+    
+    public boolean insertar(Categoria cat) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql = "INSERT INTO autor (nombreAutor,apPaternoAutor,apMaternoAutor,alias,Nacionalidad,Sexo,estado) VALUES(?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO categoria (nombreCategoria, estadoCategoria) values (?,?)";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setString(1, autor.getNombre());
-            ps.setString(2, autor.getApPaterno());
-            ps.setString(3, autor.getApMaterno());
-            ps.setString(4, autor.getAlias());
-            ps.setString(5, autor.getNacionalidad());
-            ps.setInt(6, autor.getSexo());
-            ps.setInt(7, autor.getEstado());
+            ps.setString(1, cat.getNombreCAT());
+            ps.setInt(2, cat.getEstadoCAT());
             ps.execute();
             return true;
         } catch (SQLException e) {
@@ -44,22 +39,16 @@ public class CrudAutor extends Conexion {
             }
         }
     }
-
-    public boolean modificar(Autor autor) {
+    
+    public boolean modificar(Categoria cat) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql
-                = "UPDATE autor SET nombreAutor =  ?,apPaternoAutor =  ?,apMaternoAutor =  ?,alias =  ?, Nacionalidad=?, Sexo=?, estado=? where  idAutor =  ? ";
+        String sql = "UPDATE categoria SET nombreCategoria=?,estadoCategoria=? WHERE idCategoria=?";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setString(1, autor.getNombre());
-            ps.setString(2, autor.getApPaterno());
-            ps.setString(3, autor.getApMaterno());
-            ps.setString(4, autor.getAlias());
-            ps.setString(5, autor.getNacionalidad());
-            ps.setInt(6, autor.getSexo());
-            ps.setInt(7, autor.getEstado());
-            ps.setInt(8, autor.getId_autor());
+            ps.setString(1, cat.getNombreCAT());
+            ps.setInt(2, cat.getEstadoCAT());
+            ps.setInt(3, cat.getID_CAT());
             ps.execute();
             return true;
         } catch (SQLException e) {
@@ -69,19 +58,19 @@ public class CrudAutor extends Conexion {
             try {
                 con.close();
             } catch (SQLException e) {
-                System.err.println(e);
+                System.out.println(e);
                 return false;
             }
         }
     }
-
-    public boolean eliminar(Autor autor) {
+    
+    public boolean eliminar(Categoria cat) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql = "DELETE from autor where idAutor=?";
+        String sql = "DELETE from categoria where idCategoria=?";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
-            ps.setInt(1, autor.getId_autor());
+            ps.setInt(1, cat.getID_CAT());
             ps.execute();
             return true;
 
@@ -97,30 +86,26 @@ public class CrudAutor extends Conexion {
             }
         }
     }
+    
+    public ArrayList<Categoria> ListaCategoria() {
 
-    public ArrayList<Autor> ListaAutor() {
-
-        ArrayList<Autor> listaautores = new ArrayList<Autor>();
+        ArrayList<Categoria> listacategoria = new ArrayList<Categoria>();
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = (Connection) conectar();
 
-        String sql = "select * from autor";
+        String sql = "select idCategoria,nombreCategoria,estadoCategoria from categoria";
 
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                Autor auto = new Autor();
-                auto.setId_autor(rs.getInt(1));
-                auto.setNombre(rs.getString(2));
-                auto.setApPaterno(rs.getString(3));
-                auto.setApMaterno(rs.getString(4));
-                auto.setAlias(rs.getString(5));
-                auto.setNacionalidad(rs.getString(6));
-                auto.setSexo(rs.getInt(7));
+                Categoria cat = new Categoria();
+                cat.setID_CAT(rs.getInt(1));
+                cat.setNombreCAT(rs.getString(2));
+                cat.setEstadoCAT(rs.getInt(3));
 
-                listaautores.add(auto);
+                listacategoria.add(cat);
             }
             ps.close();
 
@@ -133,7 +118,20 @@ public class CrudAutor extends Conexion {
                 System.err.println(e);
             }
         }
-        return listaautores;
+        return listacategoria;
     }
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

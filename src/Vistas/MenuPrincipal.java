@@ -1,16 +1,22 @@
 package Vistas;
 
 import Controlador.ControladorAutor;
+import Controlador.ControladorCategoria;
 import Controlador.ControladorEditorial;
 import Controlador.ControladorIdioma;
+import Controlador.ControladorLibro;
 import Controlador.ControladorUsuarios;
 import Modelo.Autor;
+import Modelo.Categoria;
 import Modelo.CrudAutor;
+import Modelo.CrudCategoria;
 import Modelo.CrudEditorial;
 import Modelo.CrudIdiomas;
+import Modelo.CrudLibro;
 import Modelo.CrudUsuarios;
 import Modelo.Editorial;
 import Modelo.Idioma;
+import Modelo.Libro;
 import Modelo.Usuarios;
 import javax.swing.JOptionPane;
 
@@ -19,7 +25,6 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author tomas
@@ -237,38 +242,38 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormUsuariosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormUsuariosMPActionPerformed
         // TODO add your handling code here:
-        Usuarios usu=new Usuarios();
-        FormUsuario frm=new FormUsuario();
-        CrudUsuarios cons=new CrudUsuarios();
-        ControladorUsuarios ctrl=new ControladorUsuarios(frm,cons,usu);
-        
+        Usuarios usu = new Usuarios();
+        FormUsuario frm = new FormUsuario();
+        CrudUsuarios cons = new CrudUsuarios();
+        ControladorUsuarios ctrl = new ControladorUsuarios(frm, cons, usu);
+
         ctrl.iniciar();
         frm.setVisible(true);
-       
+
     }//GEN-LAST:event_btnFormUsuariosMPActionPerformed
 
     private void btnFormAutoresMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormAutoresMPActionPerformed
         // TODO add your handling code here:
-        Autor auto=new Autor();
-        FormAutor frm=new FormAutor();
-        CrudAutor cons=new CrudAutor();
-        ControladorAutor ctrl=new ControladorAutor(auto,cons,frm);
-        
+        Autor auto = new Autor();
+        FormAutor frm = new FormAutor();
+        CrudAutor cons = new CrudAutor();
+        ControladorAutor ctrl = new ControladorAutor(auto, cons, frm);
+
         ctrl.iniciar();
         frm.setVisible(true);
-        
+
     }//GEN-LAST:event_btnFormAutoresMPActionPerformed
 
     private void btnFormIdiomasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormIdiomasMPActionPerformed
         // TODO add your handling code here:
-        Idioma idi=new Idioma();
-        FormIdiomas frm=new FormIdiomas();
-        CrudIdiomas cons=new CrudIdiomas();
-        ControladorIdioma ctrl=new ControladorIdioma(idi,cons,frm);
-        
+        Idioma idi = new Idioma();
+        FormIdiomas frm = new FormIdiomas();
+        CrudIdiomas cons = new CrudIdiomas();
+        ControladorIdioma ctrl = new ControladorIdioma(idi, cons, frm);
+
         ctrl.iniciar();
         frm.setVisible(true);
-        
+
     }//GEN-LAST:event_btnFormIdiomasMPActionPerformed
 
     private void btnSalirDelSistemaMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirDelSistemaMPActionPerformed
@@ -278,10 +283,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnDevolverLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevolverLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormDevolverLibros devolverL=new FormDevolverLibros();
+        FormDevolverLibros devolverL = new FormDevolverLibros();
         devolverL.setVisible(true);
         devolverL.setLocationRelativeTo(null);
-        
+
     }//GEN-LAST:event_btnDevolverLibrosMPActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -291,45 +296,49 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFormEditorialesMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormEditorialesMPActionPerformed
         // TODO add your handling code here:
-        Editorial edit=new Editorial();
-        FormEditorial frm=new FormEditorial();
-        CrudEditorial cons=new CrudEditorial();
-        ControladorEditorial ctrl=new ControladorEditorial(edit,cons,frm);
-        
+        Editorial edit = new Editorial();
+        FormEditorial frm = new FormEditorial();
+        CrudEditorial cons = new CrudEditorial();
+        ControladorEditorial ctrl = new ControladorEditorial(edit, cons, frm);
+
         ctrl.iniciar();
         frm.setVisible(true);
     }//GEN-LAST:event_btnFormEditorialesMPActionPerformed
 
     private void btnFormArrendarLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormArrendarLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormArrendarLibros arriendo=new FormArrendarLibros();
+        FormArrendarLibros arriendo = new FormArrendarLibros();
         arriendo.setVisible(true);
         arriendo.setLocationRelativeTo(null);
-        
+
     }//GEN-LAST:event_btnFormArrendarLibrosMPActionPerformed
 
     private void btnFormCategoriasMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormCategoriasMPActionPerformed
         // TODO add your handling code here:
-        FormCategoria categoria=new FormCategoria();
-        categoria.setVisible(true);
-        categoria.setLocationRelativeTo(null);
-        
+        FormCategoria frm = new FormCategoria();
+        Categoria cat = new Categoria();
+        CrudCategoria cons = new CrudCategoria();
+        ControladorCategoria ctrl = new ControladorCategoria(cat, cons, frm);
+        ctrl.iniciar();
+
     }//GEN-LAST:event_btnFormCategoriasMPActionPerformed
 
     private void btnFormLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormLibros libro=new FormLibros();
-        libro.setVisible(true);
-        libro.setLocationRelativeTo(null);
-        
+        FormLibros frm = new FormLibros();
+        Libro libro = new Libro();
+        CrudLibro cons = new CrudLibro();
+        ControladorLibro ctrl = new ControladorLibro(libro, cons, frm);
+        ctrl.iniciar();
+
     }//GEN-LAST:event_btnFormLibrosMPActionPerformed
 
     private void btnFormVenderLibrosMPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFormVenderLibrosMPActionPerformed
         // TODO add your handling code here:
-        FormVenderLibros ventaLibro=new FormVenderLibros();
+        FormVenderLibros ventaLibro = new FormVenderLibros();
         ventaLibro.setVisible(true);
         ventaLibro.setLocationRelativeTo(null);
-        
+
     }//GEN-LAST:event_btnFormVenderLibrosMPActionPerformed
 
     /**
@@ -366,19 +375,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void cerrar()
-    {
-        int resp=JOptionPane.showConfirmDialog(null,"¿Esta seguro/a que desea salir del sistema?","Confirmación de Cierre",
-                JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
-        
-        if(resp==JOptionPane.YES_OPTION)
-        {
+
+    public void cerrar() {
+        int resp = JOptionPane.showConfirmDialog(null, "¿Esta seguro/a que desea salir del sistema?", "Confirmación de Cierre",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+        if (resp == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
-    }  
-    
-    
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDevolverLibrosMP;
