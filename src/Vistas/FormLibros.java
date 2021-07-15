@@ -46,8 +46,6 @@ public class FormLibros extends javax.swing.JFrame {
         fieldPrecioML = new javax.swing.JTextField();
         fieldAñoPubliML = new javax.swing.JTextField();
         comboBoxEstadoML = new javax.swing.JComboBox<>();
-        lblEditorialML = new javax.swing.JLabel();
-        lblAutorML = new javax.swing.JLabel();
         btnINGRESARML = new javax.swing.JButton();
         btnMODIFICAR = new javax.swing.JButton();
         btnELIMINARML = new javax.swing.JButton();
@@ -55,12 +53,6 @@ public class FormLibros extends javax.swing.JFrame {
         btnVolverML = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaLibros = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        comboEditorial = new javax.swing.JComboBox<>();
-        comboAutor = new javax.swing.JComboBox<>();
-        comboIdioma = new javax.swing.JComboBox<>();
-        comboCategoria = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         fieldBUSCAR = new javax.swing.JTextField();
         lbl_listado = new javax.swing.JLabel();
@@ -107,10 +99,6 @@ public class FormLibros extends javax.swing.JFrame {
             }
         });
 
-        lblEditorialML.setText("Editorial :");
-
-        lblAutorML.setText("Autor :");
-
         btnINGRESARML.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/log-in ESTE OCUPÉ.png"))); // NOI18N
         btnINGRESARML.setText("INGRESAR");
 
@@ -155,18 +143,6 @@ public class FormLibros extends javax.swing.JFrame {
         };
         jScrollPane1.setViewportView(tablaLibros);
 
-        jLabel1.setText("Idioma :");
-
-        jLabel2.setText("Categoria :");
-
-        comboEditorial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboAutor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboIdioma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jLabel3.setText("Buscar:");
 
         lbl_listado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -192,11 +168,7 @@ public class FormLibros extends javax.swing.JFrame {
                             .addComponent(lblISBNML)
                             .addComponent(lblNdePaginasML)
                             .addComponent(lblEstadoML)
-                            .addComponent(lblEditorialML)
-                            .addComponent(lblAutorML)
-                            .addComponent(lblAñoPubliML)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(lblAñoPubliML))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(fieldISBNML, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
@@ -205,11 +177,7 @@ public class FormLibros extends javax.swing.JFrame {
                             .addComponent(fieldPrecioML)
                             .addComponent(fieldAñoPubliML)
                             .addComponent(fieldNumeroSerieML)
-                            .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboIdioma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
                         .addComponent(btnELIMINARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
@@ -272,23 +240,7 @@ public class FormLibros extends javax.swing.JFrame {
                 .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblEstadoML))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblEditorialML)
-                    .addComponent(comboEditorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(7, 7, 7)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblAutorML)
-                    .addComponent(comboAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(comboIdioma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(comboCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
+                .addGap(153, 153, 153)
                 .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnINGRESARML)
                     .addComponent(btnMODIFICAR))
@@ -407,11 +359,7 @@ public class FormLibros extends javax.swing.JFrame {
     public javax.swing.JButton btnLIMPIARML;
     public javax.swing.JButton btnMODIFICAR;
     public javax.swing.JButton btnVolverML;
-    public javax.swing.JComboBox<String> comboAutor;
     public javax.swing.JComboBox<String> comboBoxEstadoML;
-    public javax.swing.JComboBox<String> comboCategoria;
-    public javax.swing.JComboBox<String> comboEditorial;
-    public javax.swing.JComboBox<String> comboIdioma;
     public javax.swing.JTextField fieldAñoPubliML;
     public javax.swing.JTextField fieldBUSCAR;
     public javax.swing.JTextField fieldISBNML;
@@ -420,13 +368,9 @@ public class FormLibros extends javax.swing.JFrame {
     public javax.swing.JTextField fieldPrecioML;
     public javax.swing.JTextField fieldTituloML;
     public javax.swing.JTextField field_id_oculto;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblAutorML;
     private javax.swing.JLabel lblAñoPubliML;
-    private javax.swing.JLabel lblEditorialML;
     private javax.swing.JLabel lblEstadoML;
     private javax.swing.JLabel lblISBNML;
     private javax.swing.JLabel lblNdePaginasML;

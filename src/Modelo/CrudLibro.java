@@ -20,7 +20,7 @@ public class CrudLibro extends Conexion {
     public boolean insertar(Libro libro) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql = "INSERT INTO libro (numeroSerie,isbn,titulo,numpagina,precio,anhopublicacion,estado,editorial_idEditorial,Biblioteca_idBiblioteca) VALUES(?,?,?,?,?,?,?,?,100)";
+        String sql = "INSERT INTO libro (numeroSerie,isbn,titulo,numpagina,precio,anhopublicacion,estado,Biblioteca_idBiblioteca) VALUES(?,?,?,?,?,?,?,100)";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
             ps.setInt(1, libro.getNumSerie());

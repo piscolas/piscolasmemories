@@ -54,7 +54,7 @@ public class ControladorLibro implements ActionListener {
         this.cons = cons;
         this.frm = frm;
 
-        frm.comboAutor.addActionListener(this);
+        
         frm.btnINGRESARML.addActionListener(this);
         frm.btnELIMINARML.addActionListener(this);
         frm.btnMODIFICAR.addActionListener(this);
@@ -62,13 +62,6 @@ public class ControladorLibro implements ActionListener {
         frm.btnLIMPIARML.addActionListener(this);
     }
 
-    private void cargarAutores() {
-        frm.comboAutor.removeAllItems();
-        ArrayList<Autor> cargarAutores = cons.ListaAutor();
-        for (int i = 0; i < cargarAutores.size(); i++) {
-            frm.comboAutor.addItem(cargarAutores.get(i).getId_autor() + "-" + cargarAutores.get(i).getAlias());
-        }
-    }
 
     public void iniciar() {
         frm.setTitle("Mantenedor de Libros");
@@ -76,7 +69,7 @@ public class ControladorLibro implements ActionListener {
         frm.setLocationRelativeTo(null);
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
-        cargarAutores();
+        limpiar();
         frm.tablaLibros.addMouseListener(new MouseAdapter() {
 
             public void mousePressed(MouseEvent evt) {
@@ -120,10 +113,6 @@ public class ControladorLibro implements ActionListener {
         frm.fieldPrecioML.setText("");
         frm.fieldAñoPubliML.setText("");
         frm.comboBoxEstadoML.setSelectedIndex(0);
-        frm.comboEditorial.setSelectedIndex(0);
-        frm.comboAutor.setSelectedIndex(0);
-        frm.comboIdioma.setSelectedIndex(0);
-        frm.comboCategoria.setSelectedIndex(0);
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
         frm.field_id_oculto.setVisible(false);
