@@ -20,7 +20,7 @@ public class CrudLibro extends Conexion {
     public boolean insertar(Libro libro) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql = "INSERT INTO libro (numeroSerie,isbn,titulo,numpagina,precio,anhopublicacion,estado,Biblioteca_idBiblioteca) VALUES(?,?,?,?,?,?,?,100)";
+        String sql = "INSERT INTO libro (numeroSerie,isbn,titulo,numpagina,precio,estado,Biblioteca_idBiblioteca) VALUES(?,?,?,?,?,?,100)";
         try {
             ps = (PreparedStatement) con.prepareStatement(sql);
             ps.setInt(1, libro.getNumSerie());
@@ -28,9 +28,7 @@ public class CrudLibro extends Conexion {
             ps.setString(3, libro.getTitulo());
             ps.setInt(4, libro.getNumPag());
             ps.setInt(5, libro.getPrecio());
-            ps.setInt(6, libro.getAñoPub());
-            ps.setInt(7, libro.getEstadoLibro());
-            ps.setInt(8, libro.getIdEditorial());
+            ps.setInt(6, libro.getEstadoLibro());
             ps.execute();
             return true;
         } catch (SQLException e) {
@@ -117,9 +115,7 @@ public class CrudLibro extends Conexion {
                 libro.setTitulo(rs.getString(4));
                 libro.setNumPag(rs.getInt(5));
                 libro.setPrecio(rs.getInt(6));
-                libro.setAñoPub(rs.getInt(7));
-                libro.setEstadoLibro(rs.getInt(8));
-                libro.setIdEditorial(rs.getInt(9));
+                libro.setEstadoLibro(rs.getInt(7));
 
                 listaLibros.add(libro);
             }

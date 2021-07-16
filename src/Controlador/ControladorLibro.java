@@ -55,11 +55,11 @@ public class ControladorLibro implements ActionListener {
         this.frm = frm;
 
         
-        frm.btnINGRESARML.addActionListener(this);
-        frm.btnELIMINARML.addActionListener(this);
-        frm.btnMODIFICAR.addActionListener(this);
-        frm.btnEXPORTAR.addActionListener(this);
-        frm.btnLIMPIARML.addActionListener(this);
+        this.frm.btnINGRESARML.addActionListener(this);
+        this.frm.btnELIMINARML.addActionListener(this);
+        this.frm.btnMODIFICAR.addActionListener(this);
+        this.frm.btnEXPORTAR.addActionListener(this);
+        this.frm.btnLIMPIARML.addActionListener(this);
     }
 
 
@@ -67,6 +67,7 @@ public class ControladorLibro implements ActionListener {
         frm.setTitle("Mantenedor de Libros");
         frm.setVisible(true);
         frm.setLocationRelativeTo(null);
+        frm.fieldNumeroSerieML.requestFocus();
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
         limpiar();
@@ -140,14 +141,9 @@ public class ControladorLibro implements ActionListener {
         modeloE.addColumn("TITULO");
         modeloE.addColumn("NUM. PAG");
         modeloE.addColumn("PRECIO");
-        modeloE.addColumn("AÑO PUBLICACION");
         modeloE.addColumn("ESTADO");
-        modeloE.addColumn("EDITORIAL");
-        modeloE.addColumn("AUTOR");
-        modeloE.addColumn("IDIOMA");
-        modeloE.addColumn("CATEGORIA");
 
-        Object[] columna = new Object[12];
+        Object[] columna = new Object[7];
 
         int numregistros = cons.ListaLibros().size();
         for (int i = 0; i <= numregistros - 1; i++) {
@@ -157,17 +153,12 @@ public class ControladorLibro implements ActionListener {
             columna[3] = cons.ListaLibros().get(i).getTitulo();
             columna[4] = cons.ListaLibros().get(i).getNumPag();
             columna[5] = cons.ListaLibros().get(i).getPrecio();
-            columna[6] = cons.ListaLibros().get(i).getAñoPub();
-            columna[7] = cons.ListaLibros().get(i).getEstadoLibro();
-            columna[8] = cons.ListaLibros().get(i).getIdEditorial();
-            columna[9] = cons.ListaLibros().get(i).getIdAutor();
-            columna[10] = cons.ListaLibros().get(i).getIdIdioma();
-            columna[11] = cons.ListaLibros().get(i).getIdCategoria();
+            columna[6] = cons.ListaLibros().get(i).getEstadoLibro();
 
-            if (columna[7].equals(1)) {
-                columna[7] = "ACTIVO";
+            if (columna[6].equals(1)) {
+                columna[6] = "ACTIVO";
             } else {
-                columna[7] = "INACTIVO";
+                columna[6] = "INACTIVO";
             }
             modeloE.addRow(columna);
         }
@@ -184,7 +175,7 @@ public class ControladorLibro implements ActionListener {
                 libro.setISBNLibro(frm.fieldISBNML.getText());
                 libro.setTitulo(frm.fieldTituloML.getText());
                 libro.setNumPag(Integer.parseInt(frm.fieldNroPaginasML.getText()));
-                libro.setAñoPub(Integer.parseInt(frm.fieldAñoPubliML.getText()));
+                libro.setPrecio(Integer.parseInt(frm.fieldPrecioML.getText()));
 
                 if (frm.comboBoxEstadoML.getSelectedItem() != "Seleccionar") {
                     if (frm.comboBoxEstadoML.getSelectedItem() == "ACTIVO") {
@@ -208,7 +199,7 @@ public class ControladorLibro implements ActionListener {
             libro.setISBNLibro(frm.fieldISBNML.getText());
             libro.setTitulo(frm.fieldTituloML.getText());
             libro.setNumPag(Integer.parseInt(frm.fieldNroPaginasML.getText()));
-            libro.setAñoPub(Integer.parseInt(frm.fieldAñoPubliML.getText()));
+            libro.setPrecio(Integer.parseInt(frm.fieldPrecioML.getText()));
 
             if (frm.comboBoxEstadoML.getSelectedItem() != "Seleccionar") {
                 if (frm.comboBoxEstadoML.getSelectedItem() == "ACTIVO") {
