@@ -5,6 +5,8 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author some-
@@ -118,6 +120,10 @@ public class Libro {
 
     public void setIdAutor(int idAutor) {
         this.idAutor = idAutor;
+    }
+
+    public ArrayList<Autor> ListaAutor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

@@ -54,14 +54,14 @@ public class ControladorLibro implements ActionListener {
         this.cons = cons;
         this.frm = frm;
 
-        
         this.frm.btnINGRESARML.addActionListener(this);
         this.frm.btnELIMINARML.addActionListener(this);
         this.frm.btnMODIFICAR.addActionListener(this);
         this.frm.btnEXPORTAR.addActionListener(this);
         this.frm.btnLIMPIARML.addActionListener(this);
+        this.frm.btnagregarAutor.addActionListener(this);
+        this.frm.comboAutores.addActionListener(this);
     }
-
 
     public void iniciar() {
         frm.setTitle("Mantenedor de Libros");
@@ -70,6 +70,7 @@ public class ControladorLibro implements ActionListener {
         frm.fieldNumeroSerieML.requestFocus();
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
+        cargarAutores();
         limpiar();
         frm.tablaLibros.addMouseListener(new MouseAdapter() {
 
@@ -83,9 +84,8 @@ public class ControladorLibro implements ActionListener {
                 frm.fieldTituloML.setText(String.valueOf(model.getValueAt(row, 3)));
                 frm.fieldNroPaginasML.setText(String.valueOf(model.getValueAt(row, 4)));
                 frm.fieldPrecioML.setText(String.valueOf(model.getValueAt(row, 5)));
-                frm.fieldAñoPubliML.setText(String.valueOf(model.getValueAt(row, 6)));
 
-                if (model.getValueAt(row, 7).equals("ACTIVO")) {
+                if (model.getValueAt(row, 6).equals("ACTIVO")) {
                     frm.comboBoxEstadoML.setSelectedItem("ACTIVO");
                 } else {
                     frm.comboBoxEstadoML.setSelectedItem("INACTIVO");
@@ -132,21 +132,21 @@ public class ControladorLibro implements ActionListener {
     }
 
     public void cargarTabla(JTable tablaLibro) {
-        DefaultTableModel modeloE = new DefaultTableModel();
+        DefaultTableModel modeloL = new DefaultTableModel();
 
-        tablaLibro.setModel(modeloE);
-        modeloE.addColumn("ID");
-        modeloE.addColumn("NUM. SERIE");
-        modeloE.addColumn("ISBN");
-        modeloE.addColumn("TITULO");
-        modeloE.addColumn("NUM. PAG");
-        modeloE.addColumn("PRECIO");
-        modeloE.addColumn("ESTADO");
+        tablaLibro.setModel(modeloL);
+        modeloL.addColumn("ID");
+        modeloL.addColumn("NUM. SERIE");
+        modeloL.addColumn("ISBN");
+        modeloL.addColumn("TITULO");
+        modeloL.addColumn("NUM. PAG");
+        modeloL.addColumn("PRECIO");
+        modeloL.addColumn("ESTADO");
 
         Object[] columna = new Object[7];
 
         int numregistros = cons.ListaLibros().size();
-        for (int i = 0; i <= numregistros - 1; i++) {
+        for (int i = 0; i <= numregistros ; i++) {
             columna[0] = cons.ListaLibros().get(i).getID_Libro();
             columna[1] = cons.ListaLibros().get(i).getNumSerie();
             columna[2] = cons.ListaLibros().get(i).getISBNLibro();
@@ -160,7 +160,16 @@ public class ControladorLibro implements ActionListener {
             } else {
                 columna[6] = "INACTIVO";
             }
-            modeloE.addRow(columna);
+            modeloL.addRow(columna);
+        }
+    }
+
+    private void cargarAutores() {
+        frm.comboAutores.removeAllItems();
+
+        ArrayList<Autor> cargarAutores = cons.ListaAutor();
+        for (int i = 0; i < cargarAutores.size(); i++) {
+            frm.comboAutores.addItem(cargarAutores.get(i).getId_autor()+ "-"+ cargarAutores.get(i).getNombre());
         }
     }
 
@@ -217,8 +226,8 @@ public class ControladorLibro implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Error al MODIFICAR los datos del Libro");
             }
         }
-        
-         if (e.getSource() == frm.btnELIMINARML) {
+
+        if (e.getSource() == frm.btnELIMINARML) {
             libro.setID_Libro(Integer.parseInt(frm.field_id_oculto.getText()));
             if (cons.eliminar(libro)) {
                 JOptionPane.showMessageDialog(null, "El Libro ha sido ELIMINADO sin problemas");
@@ -227,8 +236,8 @@ public class ControladorLibro implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Error al ELIMINAR los datos del Libro");
             }
         }
-         
-         if (e.getSource() == frm.btnEXPORTAR) {
+
+        if (e.getSource() == frm.btnEXPORTAR) {
             if (frm.tablaLibros.getRowCount() == 0) {
                 JOptionPane.showMessageDialog(null, "No hay datos en la tabla para exportar.", "Exportación Libros", JOptionPane.INFORMATION_MESSAGE);
                 return;

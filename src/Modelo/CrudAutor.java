@@ -119,6 +119,7 @@ public class CrudAutor extends Conexion {
                 auto.setAlias(rs.getString(5));
                 auto.setNacionalidad(rs.getString(6));
                 auto.setSexo(rs.getInt(7));
+                auto.setEstado(rs.getInt(8));
 
                 listaautores.add(auto);
             }

@@ -57,6 +57,15 @@ public class FormLibros extends javax.swing.JFrame {
         fieldBUSCAR = new javax.swing.JTextField();
         lbl_listado = new javax.swing.JLabel();
         btnEXPORTAR = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        GrillaAutores = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        comboAutores = new javax.swing.JComboBox<>();
+        id_Autor = new javax.swing.JLabel();
+        nombre_autor = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        GrillaAutoresCheck = new javax.swing.JTable();
+        btnagregarAutor = new javax.swing.JButton();
         field_id_oculto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -152,52 +161,104 @@ public class FormLibros extends javax.swing.JFrame {
         btnEXPORTAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/excel.png"))); // NOI18N
         btnEXPORTAR.setText("Exportar");
 
+        GrillaAutores.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(GrillaAutores);
+
+        jLabel1.setText("AUTORES");
+
+        comboAutores.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        id_Autor.setText("ID=");
+
+        nombre_autor.setText("NOMBRE=");
+
+        GrillaAutoresCheck.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(GrillaAutoresCheck);
+
+        btnagregarAutor.setText("AGREGAR AUTOR");
+
         javax.swing.GroupLayout panelMantenedorLibrosLayout = new javax.swing.GroupLayout(panelMantenedorLibros);
         panelMantenedorLibros.setLayout(panelMantenedorLibrosLayout);
         panelMantenedorLibrosLayout.setHorizontalGroup(
             panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(btnVolverML, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
-                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblPrecioML)
-                            .addComponent(lblTituloML)
-                            .addComponent(lblNdeSerieML)
-                            .addComponent(lblISBNML)
-                            .addComponent(lblNdePaginasML)
-                            .addComponent(lblEstadoML)
-                            .addComponent(lblAñoPubliML))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(fieldISBNML, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
-                            .addComponent(fieldTituloML)
-                            .addComponent(fieldNroPaginasML)
-                            .addComponent(fieldPrecioML)
-                            .addComponent(fieldAñoPubliML)
-                            .addComponent(fieldNumeroSerieML)
-                            .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
-                        .addComponent(btnELIMINARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                        .addComponent(btnLIMPIARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelMantenedorLibrosLayout.createSequentialGroup()
-                        .addComponent(btnINGRESARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnMODIFICAR, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(94, 94, 94)
                 .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fieldBUSCAR, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(158, 158, 158)
-                        .addComponent(lbl_listado)
-                        .addGap(96, 96, 96)
-                        .addComponent(btnEXPORTAR))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 851, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(37, Short.MAX_VALUE))
+                        .addGap(62, 62, 62)
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnVolverML, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblPrecioML)
+                                    .addComponent(lblTituloML)
+                                    .addComponent(lblNdeSerieML)
+                                    .addComponent(lblISBNML)
+                                    .addComponent(lblNdePaginasML)
+                                    .addComponent(lblEstadoML)
+                                    .addComponent(lblAñoPubliML))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(fieldISBNML, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
+                                    .addComponent(fieldTituloML)
+                                    .addComponent(fieldNroPaginasML)
+                                    .addComponent(fieldPrecioML)
+                                    .addComponent(fieldAñoPubliML)
+                                    .addComponent(fieldNumeroSerieML)
+                                    .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                                .addComponent(btnELIMINARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                                .addComponent(btnLIMPIARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelMantenedorLibrosLayout.createSequentialGroup()
+                                .addComponent(btnINGRESARML, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnMODIFICAR, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(94, 94, 94)
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fieldBUSCAR, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(158, 158, 158)
+                                .addComponent(lbl_listado)
+                                .addGap(96, 96, 96)
+                                .addComponent(btnEXPORTAR))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 851, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(comboAutores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
+                                .addComponent(id_Autor)
+                                .addGap(86, 86, 86)
+                                .addComponent(nombre_autor))
+                            .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING))))
+                    .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                        .addGap(590, 590, 590)
+                        .addComponent(btnagregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(471, Short.MAX_VALUE))
         );
         panelMantenedorLibrosLayout.setVerticalGroup(
             panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -237,20 +298,37 @@ public class FormLibros extends javax.swing.JFrame {
                     .addComponent(lblAñoPubliML)
                     .addComponent(fieldAñoPubliML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblEstadoML))
-                .addGap(153, 153, 153)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnINGRESARML)
-                    .addComponent(btnMODIFICAR))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnELIMINARML)
-                    .addComponent(btnLIMPIARML, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(btnVolverML)
-                .addContainerGap())
+                .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(comboBoxEstadoML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblEstadoML))
+                        .addGap(18, 18, 18)
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnINGRESARML)
+                            .addComponent(btnMODIFICAR))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnELIMINARML)
+                            .addComponent(btnLIMPIARML, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(btnVolverML)
+                        .addGap(376, 376, 376))
+                    .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(comboAutores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(id_Autor)
+                                .addComponent(nombre_autor)))
+                        .addGap(20, 20, 20)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnagregarAutor)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -271,12 +349,15 @@ public class FormLibros extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTituloMantenedorLibros)
-                    .addComponent(field_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(lblTituloMantenedorLibros))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(field_id_oculto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelMantenedorLibros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelMantenedorLibros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -353,12 +434,16 @@ public class FormLibros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTable GrillaAutores;
+    public javax.swing.JTable GrillaAutoresCheck;
     public javax.swing.JButton btnELIMINARML;
     public javax.swing.JButton btnEXPORTAR;
     public javax.swing.JButton btnINGRESARML;
     public javax.swing.JButton btnLIMPIARML;
     public javax.swing.JButton btnMODIFICAR;
     public javax.swing.JButton btnVolverML;
+    public javax.swing.JButton btnagregarAutor;
+    public javax.swing.JComboBox<String> comboAutores;
     public javax.swing.JComboBox<String> comboBoxEstadoML;
     public javax.swing.JTextField fieldAñoPubliML;
     public javax.swing.JTextField fieldBUSCAR;
@@ -368,8 +453,12 @@ public class FormLibros extends javax.swing.JFrame {
     public javax.swing.JTextField fieldPrecioML;
     public javax.swing.JTextField fieldTituloML;
     public javax.swing.JTextField field_id_oculto;
+    public javax.swing.JLabel id_Autor;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JLabel lblAñoPubliML;
     private javax.swing.JLabel lblEstadoML;
     private javax.swing.JLabel lblISBNML;
@@ -379,6 +468,7 @@ public class FormLibros extends javax.swing.JFrame {
     private javax.swing.JLabel lblTituloML;
     private javax.swing.JLabel lblTituloMantenedorLibros;
     public javax.swing.JLabel lbl_listado;
+    public javax.swing.JLabel nombre_autor;
     public javax.swing.JPanel panelMantenedorLibros;
     public javax.swing.JTable tablaLibros;
     // End of variables declaration//GEN-END:variables

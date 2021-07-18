@@ -75,6 +75,11 @@ public class ControladorAutor implements ActionListener {
                 } else {
                     frm.comboBoxSexoMA.setSelectedItem("Femenino");
                 }
+                if (model.getValueAt(row, 7).equals("ACTIVO")) {
+                    frm.comboEstado.setSelectedItem("ACTIVO");
+                } else {
+                    frm.comboEstado.setSelectedItem("INACTIVO");
+                }
 
                 frm.btnINGRESARMA.setVisible(false);
                 frm.btnMODIFICAR.setEnabled(true);
@@ -124,8 +129,9 @@ public class ControladorAutor implements ActionListener {
         modeloA.addColumn("ALIAS");
         modeloA.addColumn("NACIONALIDAD");
         modeloA.addColumn("SEXO");
+        modeloA.addColumn("ESTADO");
 
-        Object[] columna = new Object[7];
+        Object[] columna = new Object[8];
         int numeroRegistros = cons.ListaAutor().size();
         for (int i = 0; i < numeroRegistros; i++) {
             columna[0] = cons.ListaAutor().get(i).getId_autor();
@@ -135,12 +141,19 @@ public class ControladorAutor implements ActionListener {
             columna[4] = cons.ListaAutor().get(i).getAlias();
             columna[5] = cons.ListaAutor().get(i).getNacionalidad();
             columna[6] = cons.ListaAutor().get(i).getSexo();
+            
 
             if (columna[6].equals(1)) {
                 columna[6] = "Masculino";
 
             } else {
                 columna[6] = "Femenino";
+            }
+            columna[7] = cons.ListaAutor().get(i).getEstado();
+            if (columna[7].equals(1)) {
+                columna[7]="ACTIVO";
+            }else{
+                columna[7]="INACTIVO";
             }
             modeloA.addRow(columna);
         }
@@ -169,6 +182,14 @@ public class ControladorAutor implements ActionListener {
                     auto.setSexo(0);
                 }
             }
+            
+            if (frm.comboEstado.getSelectedItem() != "Seleccionar") {
+                        if (frm.comboEstado.getSelectedItem() == "ACTIVO") {
+                            auto.setEstado(1);
+                        } else {
+                            auto.setEstado(0);
+                        }
+                    }
 
             if (cons.insertar(auto)) {
                 JOptionPane.showMessageDialog(null, "El Autor se ha INGRESADO sin problemas");
@@ -193,6 +214,13 @@ public class ControladorAutor implements ActionListener {
                     auto.setSexo(0);
                 }
             }
+            if (frm.comboEstado.getSelectedItem() != "Seleccionar") {
+                if (frm.comboEstado.getSelectedItem() == "ACTIVO") {
+                    auto.setEstado(1);
+                } else {
+                    auto.setEstado(0);
+                }
+            }
             auto.setId_autor(Integer.parseInt(frm.field_idoculto.getText()));
 
             if (cons.modificar(auto)) {
@@ -200,6 +228,7 @@ public class ControladorAutor implements ActionListener {
                 limpiar();
             } else {
                 JOptionPane.showMessageDialog(null, "Error al MODIFICAR los datos del Autor");
+                limpiar();
             }
         }
         
