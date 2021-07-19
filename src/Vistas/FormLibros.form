@@ -204,7 +204,6 @@
                       <Component id="lblAñoPubliML" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="fieldAñoPubliML" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -475,6 +474,7 @@
                 </Property>
               </Properties>
               <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="GrillaAutores = new javax.swing.JTable(){&#xa;public boolean isCellEditable(int row,int col)&#xa;{&#xa; return false;&#xa;}&#xa;};"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
               </AuxValues>
             </Component>

@@ -47,7 +47,7 @@ public class CrudLibro extends Conexion {
     public boolean modificar(Libro libro) {
         PreparedStatement ps = null;
         Connection con = (Connection) conectar();
-        String sql = "UPDATE libro SET numeroSerie=?,isbn=?,titulo=?,numpagina=?,precio=?,anhopublicacion=?,estado=?,editorial_idEditorial=? WHERE idLibro=?";
+        String sql = "UPDATE libro SET numeroSerie=?,isbn=?,titulo=?,numpagina=?,precio=?,anhopublicacion=?,estado=? WHERE idLibro=?";
         try {
             ps.setInt(1, libro.getNumSerie());
             ps.setString(2, libro.getISBNLibro());

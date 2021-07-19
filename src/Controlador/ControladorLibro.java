@@ -71,6 +71,7 @@ public class ControladorLibro implements ActionListener {
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
         cargarAutores();
+        cargarTablaAutores(frm.GrillaAutores);
         limpiar();
         frm.tablaLibros.addMouseListener(new MouseAdapter() {
 
@@ -146,7 +147,7 @@ public class ControladorLibro implements ActionListener {
         Object[] columna = new Object[7];
 
         int numregistros = cons.ListaLibros().size();
-        for (int i = 0; i <= numregistros ; i++) {
+        for (int i = 0; i <= numregistros; i++) {
             columna[0] = cons.ListaLibros().get(i).getID_Libro();
             columna[1] = cons.ListaLibros().get(i).getNumSerie();
             columna[2] = cons.ListaLibros().get(i).getISBNLibro();
@@ -169,7 +170,37 @@ public class ControladorLibro implements ActionListener {
 
         ArrayList<Autor> cargarAutores = cons.ListaAutor();
         for (int i = 0; i < cargarAutores.size(); i++) {
-            frm.comboAutores.addItem(cargarAutores.get(i).getId_autor()+ "-"+ cargarAutores.get(i).getNombre());
+            frm.comboAutores.addItem(cargarAutores.get(i).getId_autor() + "-" + cargarAutores.get(i).getNombre());
+        }
+
+    }
+
+    public void cargarTablaAutores(JTable tablaAutor) {
+        DefaultTableModel modeloA = new DefaultTableModel();
+
+        tablaAutor.setModel(modeloA);
+        modeloA.addColumn("ID");
+        modeloA.addColumn("NOMBRE");
+        modeloA.addColumn("AP. PATERNO");
+        modeloA.addColumn("AP. MATERNO");
+        modeloA.addColumn("ALIAS");
+        modeloA.addColumn("ESTADO");
+
+        Object[] columna = new Object[6];
+        int numregistros = cons.ListaAutor().size();
+        for (int i = 0; i <= numregistros - 1; i++) {
+            columna[0] = cons.ListaAutor().get(i).getId_autor();
+            columna[1] = cons.ListaAutor().get(i).getNombre();
+            columna[2] = cons.ListaAutor().get(i).getApPaterno();
+            columna[3] = cons.ListaAutor().get(i).getApMaterno();
+            columna[4] = cons.ListaAutor().get(i).getAlias();
+            columna[5] = cons.ListaAutor().get(i).getEstado();
+            if (columna[5].equals(1)) {
+                columna[5] = "ACTIVO";
+            } else {
+                columna[5] = "INACTIVO";
+            }
+            modeloA.addRow(columna);
         }
     }
 
@@ -262,6 +293,16 @@ public class ControladorLibro implements ActionListener {
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Hubo un  error" + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
+            }
+        }
+
+        if (e.getSource() == frm.comboAutores) {
+            if (frm.comboAutores.getSelectedIndex() >= 0) {
+                String id = frm.comboAutores.getSelectedItem().toString();
+                int largo = id.length();
+                int posicion = id.indexOf("-");
+                frm.id_Autor.setText("ID:" + id.substring(0, posicion));
+                frm.nombre_autor.setText("Nombre:" + id.substring(posicion + 1, largo));
             }
         }
     }

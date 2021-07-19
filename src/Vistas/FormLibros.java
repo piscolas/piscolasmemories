@@ -172,6 +172,12 @@ public class FormLibros extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        GrillaAutores = new javax.swing.JTable(){
+            public boolean isCellEditable(int row,int col)
+            {
+                return false;
+            }
+        };
         jScrollPane2.setViewportView(GrillaAutores);
 
         jLabel1.setText("AUTORES");
@@ -297,7 +303,6 @@ public class FormLibros extends javax.swing.JFrame {
                 .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblAñoPubliML)
                     .addComponent(fieldAñoPubliML, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelMantenedorLibrosLayout.createSequentialGroup()
                         .addGroup(panelMantenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
