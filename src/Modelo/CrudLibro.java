@@ -98,14 +98,14 @@ public class CrudLibro extends Conexion {
     public ArrayList<Libro> ListaLibros() {
 
         ArrayList<Libro> listaLibros = new ArrayList<Libro>();
-        com.mysql.jdbc.PreparedStatement ps = null;
+        PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = (Connection) conectar();
 
-        String sql = "Select idLibro,numeroSerie,isbn,titulo,numpagina,precio,anhopublicacion,estado,editorial_idEditorial from libro";
+        String sql = "Select idLibro,numeroSerie,isbn,titulo,numpagina,precio,estado from libro";
 
         try {
-            ps = (com.mysql.jdbc.PreparedStatement) con.prepareStatement(sql);
+            ps = (PreparedStatement) con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
                 Libro libro = new Libro();
@@ -131,43 +131,140 @@ public class CrudLibro extends Conexion {
         return listaLibros;
     }
 
+    public ArrayList<Autor> ListaAutor() {
 
+        ArrayList<Autor> listaautores = new ArrayList<Autor>();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = (Connection) conectar();
 
-        public ArrayList<Autor> ListaAutor() {
+        String sql = "select * from autor where estado=1";
 
-            ArrayList<Autor> listaautores = new ArrayList<Autor>();
-            PreparedStatement ps = null;
-            ResultSet rs = null;
-            Connection con = (Connection) conectar();
+        try {
+            ps = (PreparedStatement) con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Autor auto = new Autor();
+                auto.setId_autor(rs.getInt(1));
+                auto.setNombre(rs.getString(2));
+                auto.setApPaterno(rs.getString(3));
+                auto.setApMaterno(rs.getString(4));
+                auto.setAlias(rs.getString(5));
+                auto.setNacionalidad(rs.getString(6));
+                auto.setSexo(rs.getInt(7));
+                auto.setEstado(rs.getInt(8));
 
-            String sql = "select * from autor where estado=1";
+                listaautores.add(auto);
+            }
+            ps.close();
 
+        } catch (SQLException e) {
+            System.err.println(e);
+        } finally {
             try {
-                ps = (PreparedStatement) con.prepareStatement(sql);
-                rs = ps.executeQuery();
-                while (rs.next()) {
-                    Autor auto = new Autor();
-                    auto.setId_autor(rs.getInt(1));
-                    auto.setNombre(rs.getString(2));
-                    auto.setApPaterno(rs.getString(3));
-                    auto.setApMaterno(rs.getString(4));
-                    auto.setAlias(rs.getString(5));
-                    auto.setEstado(rs.getInt(6));
-                    listaautores.add(auto);
-                }
-                ps.close();
-
+                con.close();
             } catch (SQLException e) {
                 System.err.println(e);
-            } finally {
-                try {
-                    con.close();
-                } catch (SQLException e) {
-                    System.err.println(e);
-                }
             }
-            return listaautores;
         }
+        return listaautores;
     }
 
+    public ArrayList<Categoria> ListaCategoria() {
 
+        ArrayList<Categoria> listacategoria = new ArrayList<Categoria>();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = (Connection) conectar();
+
+        String sql = "select * from categoria where estadoCategoria=1";
+
+        try {
+            ps = (PreparedStatement) con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Categoria cat = new Categoria();
+                cat.setID_CAT(rs.getInt(1));
+                cat.setNombreCAT(rs.getString(2));
+                cat.setEstadoCAT(rs.getInt(3));
+
+                listacategoria.add(cat);
+            }
+            ps.close();
+
+        } catch (SQLException e) {
+            System.err.println(e);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.err.println(e);
+            }
+        }
+        return listacategoria;
+    }
+
+    public ArrayList<Editorial> ListaEditorial() {
+
+        ArrayList<Editorial> listaeditorial = new ArrayList<Editorial>();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = (Connection) conectar();
+
+        String sql = "select * from editorial where estadoEditorial=1";
+
+        try {
+            ps = (PreparedStatement) con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Editorial editorial = new Editorial();
+                editorial.setIdEditorial(rs.getInt(1));
+                editorial.setNombreEditorial(rs.getString(2));
+                editorial.setEstadoEditorial(rs.getInt(3));
+
+                listaeditorial.add(editorial);
+            }
+            ps.close();
+
+        } catch (SQLException e) {
+            System.err.println(e);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.err.println(e);
+            }
+        }
+        return listaeditorial;
+    }
+
+    public ArrayList<Idioma> ListaIdiomas() {
+
+        ArrayList<Idioma> listaIdiomas = new ArrayList<Idioma>();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = (Connection) conectar();
+
+        String sql = "Select * from idioma where estadoIdioma=1";
+
+        try {
+            ps = (PreparedStatement) con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Idioma idi = new Idioma();
+                idi.setIdIdioma(rs.getInt(1));
+                idi.setNombreIdioma(rs.getString(2));
+                listaIdiomas.add(idi);
+            }
+        } catch (SQLException e) {
+            System.err.println(e);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.err.println(e);
+            }
+        }
+        return listaIdiomas;
+    }
+}

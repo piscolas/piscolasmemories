@@ -36,6 +36,7 @@ import javax.swing.JTable;
 import javax.swing.RowFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
@@ -61,6 +62,12 @@ public class ControladorLibro implements ActionListener {
         this.frm.btnLIMPIARML.addActionListener(this);
         this.frm.btnagregarAutor.addActionListener(this);
         this.frm.comboAutores.addActionListener(this);
+        this.frm.btnCat.addActionListener(this);
+        this.frm.comboCateg.addActionListener(this);
+        this.frm.btnEditorial.addActionListener(this);
+        this.frm.comboEditorial.addActionListener(this);
+        this.frm.btnIdioma.addActionListener(this);
+        this.frm.comboIdiomas.addActionListener(this);
     }
 
     public void iniciar() {
@@ -71,8 +78,20 @@ public class ControladorLibro implements ActionListener {
         frm.btnMODIFICAR.setEnabled(false);
         frm.btnELIMINARML.setEnabled(false);
         cargarAutores();
+        cargarCategorias();
+        cargarEditoriales();
+        cargarIdiomas();
         cargarTablaAutores(frm.GrillaAutores);
+        cargarTablaCategorias(frm.GrillaCateg);
+        cargarTablaEditoriales(frm.GrillaEditorial);
+        cargarTablaIdiomas(frm.GrillaIdioma);
+        cargarTablaAutoresCheckBox(frm.GrillaAutoresCheck);
+        cargarTablaCategoriasCheck(frm.GrillaCategCheck);
+        cargarTablaEditorialesCheck(frm.GrillaEditorialCheck);
+        cargarTablaIdiomasCheck(frm.GrillaIdiomaCheck);
         limpiar();
+        
+
         frm.tablaLibros.addMouseListener(new MouseAdapter() {
 
             public void mousePressed(MouseEvent evt) {
@@ -115,8 +134,8 @@ public class ControladorLibro implements ActionListener {
         frm.fieldPrecioML.setText("");
         frm.fieldAñoPubliML.setText("");
         frm.comboBoxEstadoML.setSelectedIndex(0);
-        frm.btnMODIFICAR.setEnabled(false);
-        frm.btnELIMINARML.setEnabled(false);
+        frm.btnMODIFICAR.setEnabled(true);
+        frm.btnELIMINARML.setEnabled(true);
         frm.field_id_oculto.setVisible(false);
         frm.btnINGRESARML.setVisible(true);
         frm.fieldNumeroSerieML.requestFocus();
@@ -132,10 +151,10 @@ public class ControladorLibro implements ActionListener {
         tr.setRowFilter(RowFilter.regexFilter("(?i)" + consulta));
     }
 
-    public void cargarTabla(JTable tablaLibro) {
+    public void cargarTabla(JTable tablaLibros) {
         DefaultTableModel modeloL = new DefaultTableModel();
 
-        tablaLibro.setModel(modeloL);
+        tablaLibros.setModel(modeloL);
         modeloL.addColumn("ID");
         modeloL.addColumn("NUM. SERIE");
         modeloL.addColumn("ISBN");
@@ -170,14 +189,148 @@ public class ControladorLibro implements ActionListener {
 
         ArrayList<Autor> cargarAutores = cons.ListaAutor();
         for (int i = 0; i < cargarAutores.size(); i++) {
-            frm.comboAutores.addItem(cargarAutores.get(i).getId_autor() + "-" + cargarAutores.get(i).getNombre());
+            frm.comboAutores.addItem(cargarAutores.get(i).getId_autor() + "-" + cargarAutores.get(i).getAlias());
         }
 
     }
 
+    private void cargarCategorias() {
+        frm.comboCateg.removeAllItems();
+        ArrayList<Categoria> cargarCategoria = cons.ListaCategoria();
+        for (int i = 0; i < cargarCategoria.size(); i++) {
+            frm.comboCateg.addItem(cargarCategoria.get(i).getID_CAT() + "-" + cargarCategoria.get(i).getNombreCAT());
+        }
+    }
+
+    private void cargarEditoriales() {
+        frm.comboEditorial.removeAllItems();
+        ArrayList<Editorial> cargarEditoriales = cons.ListaEditorial();
+        for (int i = 0; i < cargarEditoriales.size(); i++) {
+            frm.comboEditorial.addItem(cargarEditoriales.get(i).getIdEditorial() + "-" + cargarEditoriales.get(i).getNombreEditorial());
+        }
+    }
+
+    private void cargarIdiomas() {
+        frm.comboIdiomas.removeAllItems();
+        ArrayList<Idioma> cargarIdiomas = cons.ListaIdiomas();
+        for (int i = 0; i < cargarIdiomas.size(); i++) {
+            frm.comboIdiomas.addItem(cargarIdiomas.get(i).getIdIdioma() + "-" + cargarIdiomas.get(i).getNombreIdioma());
+        }
+    }
+
     public void cargarTablaAutores(JTable tablaAutor) {
         DefaultTableModel modeloA = new DefaultTableModel();
+        tablaAutor.setModel(modeloA);
+        modeloA.addColumn("ID");
+        modeloA.addColumn("NOMBRE");
+        modeloA.addColumn("APELLIDO P");
+        modeloA.addColumn("APELLIDO M");
+        modeloA.addColumn("ALIAS");
+        modeloA.addColumn("NACIONALIDAD");
+        modeloA.addColumn("SEXO");
+        modeloA.addColumn("ESTADO");
 
+        Object[] columna = new Object[8];
+        int numeroRegistros = cons.ListaAutor().size();
+        for (int i = 0; i < numeroRegistros; i++) {
+            columna[0] = cons.ListaAutor().get(i).getId_autor();
+            columna[1] = cons.ListaAutor().get(i).getNombre();
+            columna[2] = cons.ListaAutor().get(i).getApPaterno();
+            columna[3] = cons.ListaAutor().get(i).getApMaterno();
+            columna[4] = cons.ListaAutor().get(i).getAlias();
+            columna[5] = cons.ListaAutor().get(i).getNacionalidad();
+            columna[6] = cons.ListaAutor().get(i).getSexo();
+
+            if (columna[6].equals(1)) {
+                columna[6] = "Masculino";
+
+            } else {
+                columna[6] = "Femenino";
+            }
+            columna[7] = cons.ListaAutor().get(i).getEstado();
+            if (columna[7].equals(1)) {
+                columna[7] = "ACTIVO";
+            } else {
+                columna[7] = "INACTIVO";
+            }
+            modeloA.addRow(columna);
+        }
+    }
+
+    public void cargarTablaCategorias(JTable tablaCategoria) {
+        DefaultTableModel modeloC = new DefaultTableModel();
+
+        tablaCategoria.setModel(modeloC);
+        modeloC.addColumn("ID");
+        modeloC.addColumn("NOMBRE");
+        modeloC.addColumn("ESTADO");
+
+        Object[] columna = new Object[3];
+
+        int numregistros = cons.ListaCategoria().size();
+        for (int i = 0; i <= numregistros - 1; i++) {
+            columna[0] = cons.ListaCategoria().get(i).getID_CAT();
+            columna[1] = cons.ListaCategoria().get(i).getNombreCAT();
+            columna[2] = cons.ListaCategoria().get(i).getEstadoCAT();
+
+            if (columna[2].equals(1)) {
+                columna[2] = "ACTIVO";
+            } else {
+                columna[2] = "INACTIVO";
+            }
+            modeloC.addRow(columna);
+        }
+    }
+
+    public void cargarTablaEditoriales(JTable tablaEditorial) {
+        DefaultTableModel modeloE = new DefaultTableModel();
+
+        tablaEditorial.setModel(modeloE);
+        modeloE.addColumn("ID");
+        modeloE.addColumn("NOMBRE");
+        modeloE.addColumn("ESTADO");
+
+        Object[] columna = new Object[3];
+
+        int numregistros = cons.ListaEditorial().size();
+        for (int i = 0; i <= numregistros - 1; i++) {
+            columna[0] = cons.ListaEditorial().get(i).getIdEditorial();
+            columna[1] = cons.ListaEditorial().get(i).getNombreEditorial();
+            columna[2] = cons.ListaEditorial().get(i).getEstadoEditorial();
+
+            if (columna[2].equals(1)) {
+                columna[2] = "ACTIVO";
+            } else {
+                columna[2] = "INACTIVO";
+            }
+            modeloE.addRow(columna);
+        }
+    }
+
+    public void cargarTablaIdiomas(JTable tablaIdioma) {
+        DefaultTableModel modeloI = new DefaultTableModel();
+        tablaIdioma.setModel(modeloI);
+        modeloI.addColumn("ID");
+        modeloI.addColumn("IDIOMA");
+
+        Object[] columna = new Object[2];
+        int numeroRegistros = cons.ListaIdiomas().size();
+        for (int i = 0; i < numeroRegistros; i++) {
+            columna[0] = cons.ListaIdiomas().get(i).getIdIdioma();
+            columna[1] = cons.ListaIdiomas().get(i).getNombreIdioma();
+
+            modeloI.addRow(columna);
+        }
+    }
+
+    public void addCheckbox(int columna, JTable tabla) {
+        TableColumn tc = tabla.getColumnModel().getColumn(columna);
+        tc.setCellEditor(tabla.getDefaultEditor(Boolean.class));
+        tc.setCellRenderer(tabla.getDefaultRenderer(Boolean.class));
+    }
+
+    public void cargarTablaAutoresCheckBox(JTable tablaAutor) {
+        DefaultTableModel modeloA = new DefaultTableModel();
         tablaAutor.setModel(modeloA);
         modeloA.addColumn("ID");
         modeloA.addColumn("NOMBRE");
@@ -185,8 +338,8 @@ public class ControladorLibro implements ActionListener {
         modeloA.addColumn("AP. MATERNO");
         modeloA.addColumn("ALIAS");
         modeloA.addColumn("ESTADO");
-
-        Object[] columna = new Object[6];
+        modeloA.addColumn("SELECCIÓN");
+        Object[] columna = new Object[7];
         int numregistros = cons.ListaAutor().size();
         for (int i = 0; i <= numregistros - 1; i++) {
             columna[0] = cons.ListaAutor().get(i).getId_autor();
@@ -202,6 +355,83 @@ public class ControladorLibro implements ActionListener {
             }
             modeloA.addRow(columna);
         }
+        addCheckbox(6, frm.GrillaAutoresCheck);
+    }
+
+    public void cargarTablaCategoriasCheck(JTable tablaCategoria) {
+        DefaultTableModel modeloC = new DefaultTableModel();
+
+        tablaCategoria.setModel(modeloC);
+        modeloC.addColumn("ID");
+        modeloC.addColumn("NOMBRE");
+        modeloC.addColumn("ESTADO");
+        modeloC.addColumn("SELECCION");
+
+        Object[] columna = new Object[4];
+
+        int numregistros = cons.ListaCategoria().size();
+        for (int i = 0; i <= numregistros - 1; i++) {
+            columna[0] = cons.ListaCategoria().get(i).getID_CAT();
+            columna[1] = cons.ListaCategoria().get(i).getNombreCAT();
+            columna[2] = cons.ListaCategoria().get(i).getEstadoCAT();
+
+            if (columna[2].equals(1)) {
+                columna[2] = "ACTIVO";
+            } else {
+                columna[2] = "INACTIVO";
+            }
+            modeloC.addRow(columna);
+        }
+        addCheckbox(3, frm.GrillaCategCheck);
+    }
+
+    public void cargarTablaEditorialesCheck(JTable tablaEditorial) {
+        DefaultTableModel modeloE = new DefaultTableModel();
+
+        tablaEditorial.setModel(modeloE);
+        modeloE.addColumn("ID");
+        modeloE.addColumn("NOMBRE");
+        modeloE.addColumn("ESTADO");
+        modeloE.addColumn("SELECCIONAR");
+
+        Object[] columna = new Object[4];
+
+        int numregistros = cons.ListaEditorial().size();
+        for (int i = 0; i <= numregistros - 1; i++) {
+            columna[0] = cons.ListaEditorial().get(i).getIdEditorial();
+            columna[1] = cons.ListaEditorial().get(i).getNombreEditorial();
+            columna[2] = cons.ListaEditorial().get(i).getEstadoEditorial();
+
+            if (columna[2].equals(1)) {
+                columna[2] = "ACTIVO";
+            } else {
+                columna[2] = "INACTIVO";
+            }
+            modeloE.addRow(columna);
+        }
+        addCheckbox(3, frm.GrillaEditorialCheck);
+    }
+
+    public void cargarTablaIdiomasCheck(JTable tablaIdioma) {
+        DefaultTableModel modeloI = new DefaultTableModel();
+        tablaIdioma.setModel(modeloI);
+        modeloI.addColumn("ID");
+        modeloI.addColumn("IDIOMA");
+        modeloI.addColumn("SELECCIONAR");
+
+        Object[] columna = new Object[3];
+        int numeroRegistros = cons.ListaIdiomas().size();
+        for (int i = 0; i < numeroRegistros; i++) {
+            columna[0] = cons.ListaIdiomas().get(i).getIdIdioma();
+            columna[1] = cons.ListaIdiomas().get(i).getNombreIdioma();
+
+            modeloI.addRow(columna);
+        }
+        addCheckbox(2, frm.GrillaIdiomaCheck);
+    }
+
+    public boolean Seleccionado(int fila, int columna, JTable tabla) {
+        return tabla.getValueAt(fila, columna) != null;
     }
 
     @Override
@@ -295,7 +525,9 @@ public class ControladorLibro implements ActionListener {
                 }
             }
         }
-
+        if (e.getSource() == frm.btnLIMPIARML) {
+            limpiar();
+        }
         if (e.getSource() == frm.comboAutores) {
             if (frm.comboAutores.getSelectedIndex() >= 0) {
                 String id = frm.comboAutores.getSelectedItem().toString();
@@ -303,6 +535,72 @@ public class ControladorLibro implements ActionListener {
                 int posicion = id.indexOf("-");
                 frm.id_Autor.setText("ID:" + id.substring(0, posicion));
                 frm.nombre_autor.setText("Nombre:" + id.substring(posicion + 1, largo));
+            }
+        }
+
+        if (e.getSource() == frm.comboCateg) {
+            if (frm.comboCateg.getSelectedIndex() >= 0) {
+                String id = frm.comboCateg.getSelectedItem().toString();
+                int largo = id.length();
+                int posicion = id.indexOf("-");
+                frm.id_cat.setText("ID:" + id.substring(0, posicion));
+                frm.nombre_cat.setText("Nombre:" + id.substring(posicion + 1, largo));
+            }
+        }
+
+        if (e.getSource() == frm.comboEditorial) {
+            if (frm.comboEditorial.getSelectedIndex() >= 0) {
+                String id = frm.comboEditorial.getSelectedItem().toString();
+                int largo = id.length();
+                int posicion = id.indexOf("-");
+                frm.id_editoriales.setText("ID:" + id.substring(0, posicion));
+                frm.nombre_editoriales.setText("Nombre:" + id.substring(posicion + 1, largo));
+            }
+        }
+
+        if (e.getSource() == frm.comboIdiomas) {
+            if (frm.comboIdiomas.getSelectedIndex() >= 0) {
+                String id = frm.comboIdiomas.getSelectedItem().toString();
+                int largo = id.length();
+                int posicion = id.indexOf("-");
+                frm.id_idiomas.setText("ID:" + id.substring(0, posicion));
+                frm.nombre_idiomas.setText("Nombre:" + id.substring(posicion + 1, largo));
+            }
+        }
+
+        if (e.getSource() == frm.btnagregarAutor) {
+            for (int i = 0; i < frm.GrillaAutoresCheck.getRowCount(); i++) {
+                if (Seleccionado(i, 6, frm.GrillaAutoresCheck)) {
+                    String id = frm.GrillaAutoresCheck.getValueAt(i, 0).toString();
+                    JOptionPane.showMessageDialog(null, id, "Mostrar Autores Seleccionados", JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        }
+
+        if (e.getSource() == frm.btnCat) {
+            for (int i = 0; i < frm.GrillaCategCheck.getRowCount(); i++) {
+                if (Seleccionado(i, 6, frm.GrillaCategCheck)) {
+                    String id = frm.GrillaCategCheck.getValueAt(i, 0).toString();
+                    JOptionPane.showMessageDialog(null, id, "Mostrar Categorias Seleccionadas", JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        }
+
+        if (e.getSource() == frm.btnEditorial) {
+            for (int i = 0; i < frm.GrillaEditorialCheck.getRowCount(); i++) {
+                if (Seleccionado(i, 6, frm.GrillaEditorialCheck)) {
+                    String id = frm.GrillaEditorialCheck.getValueAt(i, 0).toString();
+                    JOptionPane.showMessageDialog(null, id, "Mostrar Editoriales Seleccionadas", JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        }
+
+        if (e.getSource() == frm.btnIdioma) {
+            for (int i = 0; i < frm.GrillaIdiomaCheck.getRowCount(); i++) {
+                if (Seleccionado(i, 6, frm.GrillaIdiomaCheck)) {
+                    String id = frm.GrillaIdiomaCheck.getValueAt(i, 0).toString();
+                    JOptionPane.showMessageDialog(null, id, "Mostrar Idiomas Seleccionados", JOptionPane.INFORMATION_MESSAGE);
+                }
             }
         }
     }
