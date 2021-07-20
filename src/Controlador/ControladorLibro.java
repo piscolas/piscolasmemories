@@ -91,6 +91,7 @@ public class ControladorLibro implements ActionListener {
         cargarTablaIdiomasCheck(frm.GrillaIdiomaCheck);
         limpiar();
         
+        
 
         frm.tablaLibros.addMouseListener(new MouseAdapter() {
 
@@ -579,7 +580,7 @@ public class ControladorLibro implements ActionListener {
 
         if (e.getSource() == frm.btnCat) {
             for (int i = 0; i < frm.GrillaCategCheck.getRowCount(); i++) {
-                if (Seleccionado(i, 6, frm.GrillaCategCheck)) {
+                if (Seleccionado(i, 3, frm.GrillaCategCheck)) {
                     String id = frm.GrillaCategCheck.getValueAt(i, 0).toString();
                     JOptionPane.showMessageDialog(null, id, "Mostrar Categorias Seleccionadas", JOptionPane.INFORMATION_MESSAGE);
                 }
@@ -588,7 +589,7 @@ public class ControladorLibro implements ActionListener {
 
         if (e.getSource() == frm.btnEditorial) {
             for (int i = 0; i < frm.GrillaEditorialCheck.getRowCount(); i++) {
-                if (Seleccionado(i, 6, frm.GrillaEditorialCheck)) {
+                if (Seleccionado(i, 3, frm.GrillaEditorialCheck)) {
                     String id = frm.GrillaEditorialCheck.getValueAt(i, 0).toString();
                     JOptionPane.showMessageDialog(null, id, "Mostrar Editoriales Seleccionadas", JOptionPane.INFORMATION_MESSAGE);
                 }
@@ -597,7 +598,7 @@ public class ControladorLibro implements ActionListener {
 
         if (e.getSource() == frm.btnIdioma) {
             for (int i = 0; i < frm.GrillaIdiomaCheck.getRowCount(); i++) {
-                if (Seleccionado(i, 6, frm.GrillaIdiomaCheck)) {
+                if (Seleccionado(i, 2, frm.GrillaIdiomaCheck)) {
                     String id = frm.GrillaIdiomaCheck.getValueAt(i, 0).toString();
                     JOptionPane.showMessageDialog(null, id, "Mostrar Idiomas Seleccionados", JOptionPane.INFORMATION_MESSAGE);
                 }

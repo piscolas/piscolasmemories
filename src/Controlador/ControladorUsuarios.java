@@ -128,7 +128,7 @@ public class ControladorUsuarios implements ActionListener {
 
         Object[] columna = new Object[4];
         int numeroRegistros = cons.ListaUsuario().size();
-        for (int i = 0; i < numeroRegistros; i++) {
+        for (int i = 0; i < numeroRegistros -1; i++) {
             columna[0] = cons.ListaUsuario().get(i).getId();
             columna[1] = cons.ListaUsuario().get(i).getNombre();
             columna[2] = cons.ListaUsuario().get(i).getUsuario();
